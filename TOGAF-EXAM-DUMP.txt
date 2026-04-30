@@ -1,0 +1,159 @@
+Q: Which of the following best describes the purpose of the TOGAF Architecture Development Method (ADM)?
+S1: To provide a step-by-step process for developing and managing enterprise architectures
+S2: To define the IT infrastructure standards for an organisation
+S3: To replace all existing IT governance frameworks in an organisation
+S4: To document the current state of the business only
+A: S1
+E: The ADM is the core of TOGAF and provides a tested and repeatable process for developing and maintaining architectures. It is iterative and can be adapted to the needs of the organisation.
+
+Q: In TOGAF, what is the primary output of Phase A (Architecture Vision)?
+S1: The Architecture Definition Document
+S2: The Statement of Architecture Work
+S3: The Architecture Roadmap
+S4: The Implementation and Migration Plan
+A: S2
+E: Phase A produces the Statement of Architecture Work (SoAW), which formally defines the scope, approach, schedule, and stakeholders for the architecture engagement. The Architecture Roadmap is first produced in Phase E.
+
+Q: Which phase of the ADM is concerned with providing architectural oversight of implementation projects?
+S1: Phase E — Opportunities and Solutions
+S2: Phase F — Migration Planning
+S3: Phase G — Implementation Governance
+S4: Phase H — Architecture Change Management
+A: S3
+E: Phase G is Implementation Governance. Its purpose is to ensure that implementation projects conform to the defined architecture. It includes conducting architecture compliance reviews and managing Architecture Contracts.
+
+Q: What is an Architecture Building Block (ABB)?
+S1: A specific named technology product used to implement a capability
+S2: A reusable component of business, IT, or architectural capability with no specific implementation detail
+S3: A deliverable produced during Phase D
+S4: A database of all approved technology standards
+A: S2
+E: An ABB defines a required capability in terms of what it does, without specifying how it is implemented. This distinguishes it from a Solution Building Block (SBB), which specifies the actual product or solution.
+
+Q: Which of the following correctly describes the difference between a View and a Viewpoint in TOGAF?
+S1: A View is a template; a Viewpoint is the content produced from that template
+S2: A Viewpoint is a template for constructing Views; a View is the specific content produced
+S3: Views and Viewpoints are interchangeable terms in TOGAF
+S4: A Viewpoint defines business concerns; a View defines technical concerns
+A: S2
+E: A Viewpoint defines the conventions, stakeholders, and concerns it addresses — it is a reusable template. A View is the specific representation of the architecture produced by applying that viewpoint to a particular architecture.
+
+Q: Where in the ADM are Architecture Contracts formally signed?
+S1: Phase E — Opportunities and Solutions
+S2: Phase F — Migration Planning
+S3: Phase G — Implementation Governance
+S4: Phase H — Architecture Change Management
+A: S3
+E: Architecture Contracts are drafted in Phase F but are formally signed and become operative in Phase G during the Implementation Governance phase. Phase G uses contracts to govern conformance of implementation projects.
+
+Q: In the Enterprise Continuum, which level represents architectures that are specific to a single organisation?
+S1: Foundation Architecture
+S2: Common Systems Architecture
+S3: Industry Architecture
+S4: Organisation-Specific Architecture
+A: S4
+E: The Enterprise Continuum runs from the most generic (Foundation) to the most specific (Organisation-Specific). An Organisation-Specific Architecture is tailored to the needs of a particular enterprise and is least reusable across other organisations.
+
+Q: What does the TOGAF Technical Reference Model (TRM) primarily provide?
+S1: A taxonomy of platform services for the Application Platform
+S2: A project governance framework for IT delivery
+S3: A list of approved vendor products for technology selection
+S4: A data model for the Architecture Repository
+A: S1
+E: The TRM provides a fundamental taxonomy and set of generic platform service categories that can be used to describe and classify the services provided by an Application Platform. It is used primarily in Phase D (Technology Architecture).
+
+Q: Which of the following is a responsibility of the Architecture Board?
+S1: Managing the day-to-day operation of IT services
+S2: Approving and maintaining Architecture Principles
+S3: Writing software code for implementation projects
+S4: Setting corporate financial strategy
+A: S2
+E: The Architecture Board is responsible for reviewing and maintaining the overall direction of architecture. This includes approving Architecture Principles, reviewing architectural work products, granting dispensations, and maintaining the Governance Log.
+
+Q: What is the correct governance hierarchy in TOGAF from broadest to most specific?
+S1: IT Governance → Technology Governance → Corporate Governance → Architecture Governance
+S2: Corporate Governance → Technology Governance → IT Governance → Architecture Governance
+S3: Architecture Governance → IT Governance → Technology Governance → Corporate Governance
+S4: Technology Governance → Corporate Governance → Architecture Governance → IT Governance
+A: S2
+E: TOGAF defines a four-level hierarchy with Corporate Governance at the top (broadest) down to Architecture Governance (most specific). Architecture Governance operates within the boundaries set by all three levels above it.
+
+Q: Which phase of the ADM is the ONLY phase that runs continuously throughout the entire ADM cycle?
+S1: Phase A — Architecture Vision
+S2: Phase G — Implementation Governance
+S3: Requirements Management
+S4: Phase H — Architecture Change Management
+A: S3
+E: Requirements Management is the only continuous phase in the ADM. It runs alongside all other phases throughout the architecture development cycle, feeding requirements in and out of each phase as they evolve.
+
+Q: What is the purpose of an Architecture Compliance Review in Phase G?
+S1: To assess whether the enterprise's business strategy is aligned with market trends
+S2: To verify that implementation projects conform to the defined architecture
+S3: To review whether the architecture team has the right skills
+S4: To update the Architecture Principles
+A: S2
+E: Architecture Compliance Reviews in Phase G assess whether implementation projects are building solutions that conform to the approved Target Architecture. The Architecture Board conducts these reviews and can grant dispensations for justified non-conformance.
+
+Q: In TOGAF, what is a Dispensation?
+S1: A formal approval to deviate from a conformance requirement, recorded in the Governance Log
+S2: A change request to modify the Target Architecture
+S3: A report generated at the end of Phase G
+S4: An exemption from following the ADM process
+A: S1
+E: A Dispensation is formal permission, granted by the Architecture Board, for a project to deviate from one or more conformance requirements. It is recorded in the Governance Log and typically includes conditions that must be met.
+
+Q: Which of the following is NOT a component of the Architecture Repository?
+S1: Architecture Landscape
+S2: Standards Library
+S3: Governance Log
+S4: Architecture Vision
+A: S4
+E: The Architecture Vision is a deliverable produced in Phase A, not a component of the Architecture Repository. The six components of the Repository are: Architecture Metamodel, Architecture Capability, Architecture Landscape, Standards Library, Reference Library, and Governance Log.
+
+Q: The Integrated Information Infrastructure Reference Model (III-RM) is primarily concerned with which of the following?
+S1: Describing the taxonomy of services within a single Application Platform
+S2: Enabling seamless information flow across heterogeneous systems and organisations
+S3: Governing the procurement of technology products
+S4: Defining the data entities used in business processes
+A: S2
+E: The III-RM addresses the concept of "boundaryless information flow" — enabling any authorised person to access any information from any application, at any time, using any device, regardless of underlying technology or organisational boundary.
+
+Q: In the TOGAF stakeholder analysis technique, what does the Interest × Influence matrix determine?
+S1: The technical skills of each stakeholder
+S2: The communication strategy for each stakeholder group
+S3: The budget allocation for each project phase
+S4: The governance authority of each stakeholder
+A: S2
+E: The Interest × Influence matrix classifies stakeholders into four quadrants (Manage Closely, Keep Satisfied, Keep Informed, Monitor) to determine how much engagement effort to invest and what form that engagement should take.
+
+Q: What is the key difference between Conformance and Compliance in TOGAF?
+S1: Conformance applies to business processes; Compliance applies to IT systems
+S2: Conformance means matching the approved architecture; Compliance means meeting all standards and obligations
+S3: They are the same concept described differently in different contexts
+S4: Compliance is assessed by the Architecture Board; Conformance by project managers
+A: S2
+E: Conformance asks whether a solution matches the approved architecture. Compliance asks whether all applicable standards, regulations, and contractual obligations are met. Conformance is necessary but not sufficient for compliance.
+
+Q: Which ADM phase first produces the Architecture Roadmap?
+S1: Phase A — Architecture Vision
+S2: Phase D — Technology Architecture
+S3: Phase E — Opportunities and Solutions
+S4: Phase F — Migration Planning
+A: S3
+E: The Architecture Roadmap is first produced in Phase E (Opportunities and Solutions), where work packages are identified and prioritised into transition architectures. Phase F refines and finalises the roadmap into the Implementation and Migration Plan.
+
+Q: In TOGAF's Content Framework, what is the correct hierarchy of architecture outputs?
+S1: Artefact → Building Block → Deliverable
+S2: Deliverable → Artefact → Building Block
+S3: Building Block → Artefact → Deliverable
+S4: All three are at the same level of formality
+A: S2
+E: Deliverables are the most formal (contractually specified and signed off). Artefacts are components within deliverables (e.g. diagrams, matrices). Building Blocks are reusable components of capability. Deliverable > Artefact > Building Block in terms of formality.
+
+Q: Which of the following best describes the Architecture Capability Framework?
+S1: A framework for assessing the technical capability of IT infrastructure
+S2: The organisational structures, roles, skills, and processes needed to establish and operate an architecture practice
+S3: A methodology for evaluating the maturity of business processes
+S4: A reference model for information security architecture
+A: S2
+E: The Architecture Capability Framework defines the organisation, roles, responsibilities, skills, and processes needed to run an enterprise architecture practice. It addresses how to establish and operate the architecture function, not the architecture content itself.
