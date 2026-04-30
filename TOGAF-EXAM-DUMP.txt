@@ -157,3 +157,626 @@ S3: A methodology for evaluating the maturity of business processes
 S4: A reference model for information security architecture
 A: S2
 E: The Architecture Capability Framework defines the organisation, roles, responsibilities, skills, and processes needed to run an enterprise architecture practice. It addresses how to establish and operate the architecture function, not the architecture content itself.
+
+
+SOURCE: not sure
+
+Q: According to TOGAF, which of the following are the architecture domains that are commonly accepted subsets of an overall enterprise architecture?
+S1: Application, Business, Data, Technology
+S2: Capability, Segment, Strategic
+S3: Context, Definition, Governance, Transformation
+S4: Definition, Realization Transition, Vision
+A: S1
+E: Application, Business, Data, Technology is the common domains accepted by overall enterprise architecture
+
+Q: Which one of the following statements about the structure of the TOGAF 9 document is true?
+S1: Part I describes the TOGAF approach to Enterprise Architecture
+S2: Part II describes the definitions of terms used and the changes between versions of TOGAF
+S3: Part III describes requirements management and is considered to be the core of TOGAF
+S4: Part IV describes the ADM: a collection of guidelines and techniques used in TOGAF 9
+A: S1
+E: Part I provides a high-level introduction to the key concepts of Enterprise Architecture and in particular the TOGAF approach. It contains the definitions of terms used throughout the standard
+
+Q: According to TOGAF, which one of the following best describes an enterprise architecture?
+S1: An architecture of a commercial organization
+S2: An architecture that consists of more than one subsidiary company
+S3: An architecture that crosses multiple systems, and multiple functional groups within the enterprise
+S4: The highest level of architecture that can be achieved in a given organization
+A: S3
+E: According to TOGAF, an enterprise architecture is a comprehensive, high-level description of the structure and behavior of an enterprise or organization. It encompasses various aspects of the organization, including its business processes, information systems, technology infrastructure, and more. It aims to align an organization's strategic goals and objectives with its operations and IT assets.
+
+Q: In TOGAF, what is the difference between an artifact and a deliverable?
+S1: An artifact contains one of more deliverables
+S2: Artifacts and deliverables are synonymous; there is no difference between them
+S3: Deliverable are prepared by the Project Manager, whereas artifacts are defines by the Architect
+S4: Deliverable are reusable, whereas artifacts are unique to a given architecture project
+S5: Deliverable are specified as contractual outputs from a project, whereas artifacts are not
+A: S5
+E: Artifacts include document and models created throughout the process. Deliverables refer to formal and significant outputs that mark the completion of a phase.
+
+
+Q: According to the TOGAF Documentation Categorization Model, which category describes a technique that is reference by processes categorized as TOGAF Core and TOGAF Mandated?
+S1: TOGAF Guidelines and Techniques
+S2: TOGAF Recommended
+S3: TOGAF Supporting
+S4: TOGAF Extension
+A: TOGAF Recommended
+E: this question is no longer valid for TOGAF 9.2
+
+
+Q: Which one of the following lists the main components within the TOGAF Architecture Repository?
+S1: Organizational Metamodel, Architecture Capability, Architecture Landscape, Best Practices, Reference Library, Compliance Strategy
+S2: Architecture Metamodel, Organizational Capability Model, Application Landscape, SIB, Reference Library, Governance Model
+S3: Business Metamodel, Architecture Capability, Architecture Landscape, SIB, Reference Library, Governance Log
+S4: Architecture Metamodel, Architecture Capability, Architecture Landscape, SIB, Reference Library, Governance Log
+A: S4
+E: Architecture Metamodel, Architecture Capability, Architecture Landscape, Standards Information Base (SIB), Reference Library, Governance Log
+
+
+Q: Which of the following reasons best describes why the ADM numbering scheme for versioning output is an example and not mandatory?
+S1: To show the evolution of deliverables
+S2: To permit adaptation as required
+S3: To enable use with the Architecture Content Framework
+S4: To support change management
+A: S2
+E: The ADM numbering scheme is provided as an example. It should be adapted by the architect to meet the requirements of the organization and to work with the architecture tools and repositories employed by the organization.
+
+
+Q: According to TOGAF, where should architecture governance artifacts be stored?
+S1: In the Integrated Information Reference Model
+S2: In the Standard Information Base
+S3: In the Foundation Architecture
+S4: In the Architecture Repository
+A: S4
+E: Architecture governance artifacts should be stored in the Architecture Repository. The Architecture Repository is a key component of the TOGAF framework that stores and manages all the architectural outputs produced during the architecture development process. Architecture governance artifacts are documents, templates, guidelines, and records related to the governance of the architecture development and maintenance process. They include items such as governance frameworks, policies, guidelines for architecture compliance, decision records, and reports related to architecture governance activities.
+
+Q: Which one of the following best describes the implications of TOGAF being a generic framework?
+S1: The organization must utilize an architecture tool in order to tailor the templates for use
+S2: It must be adapted to satisfy organization specific requirements
+S3: It can be utilized by most enterprises without further customization
+S4: It can be only be used for enterprise level architecture projects
+S5: It should only be employed under the supervision of highly trained consultants
+A: S2
+E: TOGAF is designed to be a generic framework that can be adapted and customized to meet the specific needs and requirements of individual organizations. It provides a foundation and guidelines for developing enterprise architectures, but it must be tailored and adapted to align with the unique context, goals, and processes of each organization.
+
+Q: Which of the following is the architecture domain that describes the logical software and hardware capabilities?
+S1: Application Architecture
+S2: Business Architecture
+S3: Data Architecture
+S4: Technology Architecture
+A: S4
+E: The Technology Architecture describes the logical software and hardware capabilities that are required to support the deployment of business, data, and application services; this includes IT infrastructure, middleware, networks, communications, processing, standards, etc.
+
+Q: Which section of the TOGAF document describes the processes, skills and roles to establish and operate an architecture function within an enterprise?
+S1: Part II: Architecture Development Method
+S2: Part III: ADM Guidelines and Techniques
+S3: Part IV: Architecture Content Framework
+S4: Part VI: TOGAF Reference Models
+S5: Part VII: Architecture Capability Framework
+A: S5
+E: TOGAF 9.2 has only six parts: PART I - Introduction, PART II - Architecture Development Method, PART III - ADM Guidelines & Techniques, PART IV - Architecture Content Framework, PART V - Enterprise Continuum & Tools, PART VI - Architecture Capability Framework. The correct answer is "Architecture Capability Framework". It should be Part VI - Architecture Capability Framework.
+
+Q: Which one of the following is NOT an element of an architecture framework?
+S1: A common vocabulary
+S2: A list of recommended standards
+S3: A method for designing an information system in terms of building blocks
+S4: A set of structures which can be used to develop a broad range of architectures
+S5: A system development lifecycle method for software engineering
+A: S5
+E: Architecture frameworks provide a structured approach to enterprise architecture development and management. They offer a common language, recommended standards, design methods, and structures for various architecture domains. SDLC methods, while relevant for software development, are not core elements of architecture frameworks.
+
+Q: Which one of the following describes classification methods for architecture and solution artifacts within the Architecture Repository?
+S1: Architecture Landscape
+S2: Architecture Vision
+S3: Enterprise Continuum
+S4: Governance Log
+S5: Standards Information Base
+A: S3
+E: The Enterprise Continuum is a way to classify architecture and solution artifacts as they evolve from generic Foundation Architectures to Organization-Specific Architectures. This continuum provides a method for classifying all the architecture and solution artifacts, both internal and external to the enterprise, that exist at different levels of abstraction.
+
+
+Q: Complete the sentence. To promote effective architectural activity within the enterprise, TOGAF 9 recommends the establishment of a(n)____
+S1: Enterprise Architecture Capability
+S2: IT Governing Board
+S3: Program Management Office
+S4: Quality Assurance department
+S5: Service Management department
+A: S1
+E: To be check.. some said For TOGAF 10 this has been renamed to the Architecture Board
+
+
+Q: According to the TOGAF Document Categorization Model, which category is for resources NOT referenced by content within the other categories?
+S1: TOGAF Core
+S2: TOGAF Extension
+S3: TOGAF Mandatory
+S4: TOGAF Recommended
+S5: TOGAF Supporting
+A: S5
+E: To be check.. some said is no not valid for TOGAF 9.2.. not sure for latest
+
+Q: Which phase of the ADM is used to finalize a set of transition architectures that will support implementation?
+S1: Phase D
+S2: Phase E
+S3: Phase F
+S4: Phase G
+S5: Phase H
+A: S3
+E: Phase F Builds the detailed roadmap and schedule, but uses Transition Architectures already defined in Phase E
+
+Q: Complete the sentence. TOGAF 9 Part III provides techniques, such as developing principles and gap analysis, to support tasks within the ____
+S1: Architecture Capability Framework
+S2: Architecture Continuum
+S3: Architecture Development Method
+S4: Architecture Landscape
+S5: Architecture Repository
+A: S3
+E: No explanation 
+
+Q: According to TOGAF, the recommended dimensions used to define the scope of an architecture include all the following, except:
+S1: Architecture Domains
+S2: Enterprise Focus
+S3: Level of Detail
+S4: Subject Matter
+S5: Time Period
+
+Q: What level of the Architecture Landscape provides a long-term summary view of the entire enterprise?
+S1: Capability Architecture
+S2: Operational Architecture
+S3: Segment Architecture
+S4: Strategic Architecture
+S5: Tactical Architecture
+A: S4
+E: Strategic Architectures (see Part I, Section 3.74 of TOGAF document) show a long-term summary view of the entire enterprise. Strategic Architectures provide an organizing framework for operational and change activity and allow for direction setting at an executive
+
+Q: What part of the Architecture Repository holds specifications to which architecture must conform?
+S1: Standards Information Base
+S2: Enterprise Continuum
+S3: Governance Log
+S4: Architecture Landscape
+S5: Reference Library
+A: S1
+E: The Standards Information Base captures the standards with which new architectures must comply 
+
+
+EXAM CODE: OGEA-101 
+SOURCE: https://www.itexams.com/exam/OGEA-101
+
+Q: Which statement about Requirements Management is most correct?
+S1: Requirements Management and stakeholder engagement are placed at the center of architecture development
+S2: Stakeholder requirements are captured once in Phase A and managed throughout the ADM cycle
+S3: Requirements Management is a step of all ADM phases
+S4: The purpose of Requirements Management is to process change requests
+A: S1
+E: 
+
+
+Q: Which of the following best describes the class of information known as the Reference Library within the Architecture Repository?
+S1: A record of the governance activity across the enterprise
+S2: Process to support governance of the Architecture Repository
+S3: Specifications to which architectures must conform
+S4: Guidelines and templates used to create new architectures
+A: S4
+E: 
+
+
+Q: Which of the following describes how the Enterprise Continuum is used when developing an enterprise architecture?
+S1: To describe how an architecture addresses stakeholder concerns
+S2: To classify architecture and solution assets
+S3: To identify and understand business requirements
+S4: To coordinate with the other management frameworks in use
+A: S2
+E:
+
+
+Q: What is used to structure architectural information in an orderly way so that it can be processed to meet stakeholder needs?
+S1: An EA Library
+S2: A Content Metamodel
+S3: A Stakeholder Map
+S4: An Architecture Framework
+A: S2
+E: 
+
+
+Q: Which of the following is responsibility of an Architecture Board?
+S1: Conducting assessments of the maturity level of architecture discipline within the organization
+S2: Creating the Statement of Architecture Work
+S3: Allocating resources for architecture projects
+S4: Establishing targets for re-use of components
+A: S4
+E:
+
+
+Q: Which of the following describes a purpose of Architecture Principles?
+S1: To establish a common understanding of how to control the business in pursuit of strategic objectives
+S2: To describe likely impacts resulting from successful deployment of the target architecture
+S3: To form a contract between sponsoring organization and the enterprise architects
+S4: To provide a better understanding about the enterprise's culture and values
+A: S4
+E: 
+
+
+Q: Which of the following does the TOGAF standard describe as a package of functionality defined to meet business needs across an organization?
+S1: A deliverable
+S2: An application
+S3: A solution architecture
+S4: A building block
+A: S4
+E:
+
+
+Q: Complete the sentence. When considering agile development, Architecture to Support Project will identify what products the Enterprise needs, the boundary of the products, and what constraints a product owner has; this defines the Enterprise's ______.
+S1: workflow management
+S2: lifecycle economics
+S3: backlog
+S4: operations
+A: S3
+E: 
+
+
+Q: Which of the following best describes the purpose of the Gap Analysis technique?
+S1: To govern the architecture throughout its implementation process
+S2: To develop a set of general rules guidelines for the architecture
+S3: To allocate resources for architecture projects
+S4: To identify items omitted from the Target Architecture
+A: S4
+E:
+
+
+
+SOURCE: https://www.examtopics.com/exams/the-open-group/ogea-101/view/
+
+Q: Which statement about Requirement Management is most correct?
+S1: Requirements Management and stakeholder engagement are placed at the center of architecture development
+S2: Stakeholder requirements are captured once in Phase A and managed throughout the ADM cycle
+S3: Requirements Management is a step of all ADM phases
+S4: The purpose of Requirements Management is to process change requests
+A: S1
+E: Requirements Management is not a step in each ADM phase. It is a continuous process that interacts with all phases.
+
+
+Q: Which of the following best describes the class of information known as the Reference Library within the Architecture Repository?
+S1: A record of the governance activity across the enterprise
+S2: Processes to support governance of the Architecture Repository
+S3: Specifications to which architectures must conform
+S4: Guidelines and templates used to create new architectures
+A: S4
+E: The Reference Library provides guidelines, templates, patterns, and other forms of reference material that can be leveraged in order to accelerate the creation of new architectures for the enterprise
+
+
+Q: Which of the following describes how the Enterprise Continuum is used when developing an enterprise architecture?
+S1: To describe how an architecture addresses stakeholder concerns
+S2: To classify architecture and solution assets
+S3: To identify and understand business requirements
+S4: To coordinate with the other management frameworks in use
+A: S2
+E: The Enterprise Continuum provides methods for classifying architecture and solution artifacts, both internal and external to the Architecture Repository, as they evolve from generic Foundation Architectures to Organization-Specific Architectures.
+
+
+Q: What is used to structure architectural information in orderly way so that it can be processed to meet stakeholder needs?
+S1: An EA library
+S2: A Content Metamodel
+S3: A Stakeholder Map
+S4: An Architecture Framework
+A: S2
+E: The Content Metamodel is used to structure architectural information in an orderly way so that it can be processed to meet stakeholder needs.
+
+
+Q: Which of the following is a responsibility of an Architecture Board?
+S1: Conducting assessments of the maturity level of architecture discipline within the organization
+S2: Creating the Statement of Architecture Work
+S3: Allocating resources for architecture projects
+S4: Establishing targets for re-use of components
+A: Q4
+E: Responsibilities
+The Architecture Board is typically made responsible, and accountable, for achieving some or all of the following goals:
+- Providing the basis for all decision-making with regard to the architectures
+- Consistency between sub-architectures
+- Establishing targets for re-use of components
+
+
+Q: Which of the following describes a purpose of Architecture Principles?
+S1: To establish a common understanding of how to control the business in pursuit of strategic objectives
+S2: To describe likely impacts resulting from successful deployment of the target architecture
+S3: To form a contract between sponsoring organization and the enterprise architects
+S4: To provide a better understanding about the enterprise's culture and values
+A: S4
+E: Architecture Principles provide high‑level rules and guidelines that steer how the enterprise uses and designs IT and business capabilities to achieve its strategic goals.​ Their purpose is to create a shared understanding and consistent decision basis across the organization about how the business should be directed and controlled.
+
+
+
+Q: Which of the following does the TOGAF standard describe as a package of functionality defined to meet business needs across an organization?
+S1: A deliverable
+S2: An application
+S3: A solution architecture
+S4: A building block
+A: S4
+E: In TOGAF, a building block is explicitly defined as a package of functionality designed to meet business needs across an organization.
+
+
+Q: Which section of the TOGAF document describes the process, skills and roles to establish and operate an architecture function within an enterprise?
+S1: Part II: Architecture Development Method
+S2: Part III: ADM Guidelines and Techniques
+S3: Part IV: Architecture Content Framework
+S4: Part VI: TOGAF Reference Models
+S5: Part VII: Architecture Capability Framework
+A: S5
+E: In order to successfully operate an architecture function within an enterprise, it is necessary to put in place appropriate organization structures, processes, roles, responsibilities, and skills to realize the Architecture Capability. TOGAF 9.2 has only six parts: PART I - Introduction, PART II - Architecture Development Method, PART III - ADM Guidelines & Techniques, PART IV - Architecture Content Framework, PART V - Enterprise Continuum & Tools, PART VI - Architecture Capability Framework. The correct answer is "Architecture Capability Framework
+
+
+
+SOURCE: https://www.validexamdumps.com/the-open-group/ogea-101-dumps
+
+Q: Which of the following is the application of the concepts of risk assessment and risk analysis in the decision-making process?
+S1: Information Security Management
+S2: Security Governance
+S3: Risk Management
+S4: Security Architecture
+A: S3
+E: The correct answer is Risk Management because risk assessment and risk analysis are core parts of the risk management process. In TOGAF, risk management is used to support architectural and implementation decision-making by identifying risks, evaluating their likelihood and impact, and determining appropriate responses. This allows stakeholders and architects to make informed choices about architecture options, transition paths, implementation timing, and governance actions.
+Risk assessment focuses on understanding the nature of identified risks and estimating their significance. Risk analysis examines those risks in more detail to determine consequences, priorities, and possible treatments. These activities are not stand-alone disciplines in TOGAF; they are applied as part of Risk Management, which provides the structured method for using risk information in decisions.
+The other options are related but not as precise. Information Security Management focuses on managing security controls and policies. Security Governance is concerned with oversight and accountability. Security Architecture defines structural security capabilities and controls. While all may use risk-related information, the direct application of risk assessment and risk analysis in decision-making belongs to Risk Management. Therefore, according to TOGAF terminology and governance practice, the best answer is C.
+
+Q: Complete the sentence. The purpose of Enterprise Architecture is to _______
+S1: take major improvement decisions
+S2: control the bigger changesscri
+S3: guide effective change
+S4: govern the stakeholders
+A: S3
+E: The purpose of Enterprise Architecture is to guide effective change by providing a coherent and consistent view of the enterprise's current and future state, as well as the roadmap and principles for achieving it. Enterprise Architecture helps to align business and IT strategies, optimize resources and investments, reduce complexity and risks, enhance agility and innovation, and deliver value to stakeholders. Reference: The TOGAF Standard | The Open Group Website, Section 1.3 Executive Overview.
+
+
+Q: Consider the following ADM phases objectives.
+   Objective:
+   1. Develop the Target Data Architecture that enables the Business Architecture and the Architecture Vision
+   2. Develop the Target Business Architecture that describes how the enterprise needs to operate to archive the business goals
+   3. Develop a high-level aspirational vision of the capabilities and business value to be delivered as a result of the proposed Enterprise Architecture
+   4. Identify candidate Architecture Roadmap components based upon gaps between the Baseline and Target Technology Architectures
+   Which phase does each objective match?
+S1: 1B-2D-3A-4C
+S2: 1C-2D-3B-4A
+S3: 1C-2B-3A-4D
+S4: 1A-2B-3C-4D 
+A: S3
+E: *Phase A: Architecture Vision
+   - Develop a high-level aspirational vision of the capabilities and business value to be delivered as a result of the proposed Enterprise Architecture
+   - Define the scope and boundaries of the architecture engagement
+   - Identify the key stakeholders and their concerns and expectations
+   - Define the Architecture Vision statement and the Architecture Definition Document
+   - Obtain approval and commitment from the sponsors and stakeholders
+   *Phase B: Business Architecture
+   - Develop the Target Business Architecture that describes how the enterprise needs to operate to achieve the business goals
+   - Define the Baseline Business Architecture, if not available
+   - Perform a gap analysis between the Baseline and Target Business Architectures
+   - Define candidate roadmap components for the Business Architecture
+   - Resolve impacts across the Architecture Landscape
+   *Phase C: Information Systems Architecture
+   - Develop the Target Data Architecture that enables the Business Architecture and the Architecture Vision
+   - Develop the Target Application Architecture that supports the Business Architecture and the Architecture Vision
+   - Define the Baseline Data and Application Architectures, if not available
+   - Perform a gap analysis between the Baseline and Target Data and Application Architectures
+   - Define candidate roadmap components for the Information Systems Architecture
+   - Resolve impacts across the Architecture Landscape
+   *Phase D: Technology Architecture
+   - Develop the Target Technology Architecture that enables the Information Systems Architecture and the Architecture Vision
+   - Define the Baseline Technology Architecture, if not available
+   - Perform a gap analysis between the Baseline and Target Technology Architectures
+   - Identify candidate Architecture Roadmap components based upon gaps between the Baseline and Target Technology Architectures
+   - Resolve impacts across the Architecture Landscape
+   Therefore, the correct matching of the objectives and the phases is:
+   *1C: Develop the Target Data Architecture that enables the Business Architecture and the Architecture Vision
+   *2B: Develop the Target Business Architecture that describes how the enterprise needs to operate to achieve the business goals
+   *3A: Develop a high-level aspirational vision of the capabilities and business value to be delivered as a result of the proposed Enterprise Architecture
+   *4D: Identify candidate Architecture Roadmap components based upon gaps between the Baseline and Target Technology Architectures
+
+
+Q: Consider the diagram showing a classification model for Architecture Landscapes.
+   What are the items labelled A, B and C
+S1: A-Corporate Capability, B-Portfolio Capability, C-Project Capability
+S2: A-Strategy Architecture, B-Tactic Architecture, C-Operational Architecture
+S3: A-Architecture Vision, B-Business Architecture, C-Architecture Development
+S4: A-Capability Architecture, B-Segment Architecture, C-Enterprise Strategic Architecture
+A: S4
+E: --need to find--
+
+
+Q: Which ADM phase focusses on defining the problem to be solved, identifying the stakeholders, their concerns, and requirements?
+S1: Phase
+S2: Preliminary Phase
+S3: Phase
+S4: Phase A
+A: S4
+E: Phase A: Architecture Vision is the first phase of the Architecture Development Method (ADM) cycle, which is the core of the TOGAF standard. The main purpose of this phase is to define the scope and approach of the architecture development, and to create the Architecture Vision, which is a high-level description of the desired outcomes and benefits of the proposed architecture. To achieve this purpose, this phase focuses on defining the problem to be solved, identifying the stakeholders, their concerns, and requirements, and establishing the business goals and drivers that motivate the architecture work. This phase also involves obtaining the approval and commitment of the sponsors and other key stakeholders, and initiating the Architecture Governance process.
+The TOGAF Standard, Version 9.2, Part II: Architecture Development Method (ADM), Chapter 5: Introduction to the ADM : The TOGAF Standard, Version 9.2, Part II: Architecture Development Method (ADM), Chapter 18: Phase A: Architecture Vision : The TOGAF Standard, Version 9.2, Part II: Architecture Development Method (ADM), Chapter 18.3: Inputs : The TOGAF Standard, Version 9.2, Part II: Architecture Development Method (ADM), Chapter 18.4: Steps
+
+
+SOURCE: https://www.scribd.com/document/870298764/OGEA-101-demo
+
+Q: What is presented as ”striking a balance between positive and negative outcomes resulting from therealization of either opportunities or threats?
+S1: Agile development
+S2: Architecture Security
+S3: Transitio Management
+S4: Risk Management 
+A: S4 
+E: Risk Management is the process of identifying, assessing, and responding to risks that may affect the achievement of the enterprise’s objectives. Risk Management involves balancing positive and negative outcomes resulting from the realization of either opportunities or threats. Reference: The TOGAF® Standard | The Open Group Website, Sec on 3.3.3 Risk Management
+
+
+Q: Which of the following are the four purposes that typically frame the planning horizon, depth and breadth of an Architecture Project, and the contents of the EA Repository?
+S1: General Foundational Subordinate and Superior Architecture
+S2: Segment, Capability. Enterprise and End-to-end Target Architecture
+S3: Avant-Garde Big-Bang, Discreet and Cohesive
+S4: Strategy Portfolio Project Solution Delivery
+A: S4
+E: Strategy Portfolio Project Solution Delivery are the four purposes that typically frame the planning horizon, depth and breadth of an Architecture Project, and the contents of the EA Repository. They correspond to different levels of abstraction and granularity in the architecture development process. Reference: The TOGRAF Standard, Version 9.2 - The Open Group, Section 2.4 Architecture Repository
+
+
+Q: Complete the sentence. Business Transformation Readiness Assessment is _____
+S1: a joint effort between corporate staff lines of business and IT planners
+S2: to ensure the active support of powerful stakeholders
+S3: a way to put building blocks into context thereby supporting re-usable solutions
+S4: widely used to validate an architecture that is being developed
+A: S1
+E: Business Transformation Readiness Assessment is a joint effort between corporate staff  lines of business and IT planners to evaluate the readiness of the organization to undergo change. It involves assessing factors such as vision, commitment, capacity, capability, culture, and motivation that may influence the success of a business transformation initiative. Reference: The TOGAF® Standard | The Open Group Website, Sec on 3.3.2 Business Transformation Readiness Assessment.
+
+
+Q: Complete the following sentence. In the ADM documents which are under development and have not undergone any formal review and approval process are_______________.
+S1: Called ‘’draft’’
+S2: Invalid
+S3: In between phases
+S4: Known as ‘’Version 0.1’’
+A: S1
+E: In the ADM documents which are under development and have not undergone any formal review and approval process are called "draft". This indicates that they are subject to change and refinement as the architecture development progresses. Reference: The TOGAF® Standard | The Open Group Website, Sec on 4.2.5 Architecture Deliverables.
+
+Q: Complete the sentence The TOGAF standard covers the development of four architecture domains. Business. Data, Technology and__________________.
+S1: Segment
+S2: Transition
+S3: Capability
+S4: Application
+A: S4
+E: --- need to find out---
+
+
+SOURCE: https://www.scribd.com/document/913773558/First-Foundations-Level-Exam?_gl=1*g201sa*_up*MQ..*_ga*MzM0MzMxMzI4LjE3NzczMzkxOTA.*_ga_8KZ8BV0P5W*czE3NzczMzkxOTAkbzEkZzAkdDE3NzczMzkxOTAkajYwJGwwJGgw*_ga_Z4ZC50DED6*czE3NzczMzkxOTEkbzEkZzAkdDE3NzczMzkxOTEkajYwJGwwJGgw&v=0.902
+
+Q: What types of architecture are commonly accepted as part of Enterprise Architecture?
+S1: Business, information, technology, and application
+S2: Functional, data, technology, and business
+S3: Application, data, infrastructure and business
+S4: Technology, application, integration and business
+S5: Technology, data, applications, and business
+A: S5
+E: 
+
+
+Q: Which of the following describes and architecture from a specific point of view?
+S1: A deliverable
+S2: A  building block
+S3: An architectural block
+S4: An artifact
+S5: A Building Block of Solution
+A: S2
+E:
+
+
+Q: Which of the following is incorrect when describing the Architecture Deliverables?
+S1: The architecture deliverables contain artifacts
+S2: The artifacts within the deliverables may include catalogs, matrices, and diagrams
+S3: An architecture definition document is an architectural product
+S4: The architecture deliverables may consist of more than one artifact
+S5: Deliverable cannot be used as building blocks
+A: S5
+E:
+
+
+Q: The main components within an architecture repository are:
+S1: Architecture metamodel, reference library, architecture environment, information base of standards, governance record, and architectural capability
+S2: Architecture metamodel, reference library, architecture environment, information base of standards, architecture board and architecture capacity
+S3: Architecture metamodel, reference library, architecture environment, information base of standards, architecture board and governance registry
+S4: Metamodel of architecture, reference library, architecture environment, Base of information about standards, Architecure Board, Architecture Capacity, Reference Models externals, External standards and Architecture dashboard
+S5: Metamodel of architecture, reference library, architecture environment, information base of standards, governance record, architectural capability and the continuum of the enterprise
+A: S5
+E:
+
+
+Q: In which phase of the ADM are the results of the gap analysis of the four taken into account domains of architecture?
+S1: Phase E
+S2: Phase F
+S3: Phase G
+S4: Phase H
+S5: Requirements Management
+A: S1
+E:
+
+
+Q: According to TOGAF, all of the following are suggested characteristics of a framework architecture, except ____
+S1: common vocabulary
+S2: A list of recommended standards
+S3: A method for designing a target state of the company in terms of building blocks
+S4: A set of structures that can be used to develop a wide range of architectures
+S5: A software development life cycle method
+A: S5
+E:
+
+
+Q: Which phase of the TOGAF architecture development includes the development of architectures, data and application?
+S1: Phase A
+S2: Phase B
+S3: Phase C
+S4: Phase D
+S5: Phase E
+A: S3
+E:
+
+
+Q: In which phase of TOGAF ADM do the activities include the assessment of dependencies, costs and the benefits of migration projects?
+S1: Phase E
+S2: Phase F
+S3: Phase G
+S4: Phase H
+S5: Requirements Management
+A: S3
+E:
+
+
+Q: Complete the sentence: Phase A begins upon receiving _______
+S1: approval of the Director of Information
+S2: a directive from the General Director
+S3: a job application for architecture from the sponsoring organization
+S4: the implementation and migration plan
+S5: the requirements analysis document
+A: S5
+E:
+
+
+Q: What technique does TOGAF recommend for identifying and understanding the requirements that an architecture should it address?
+S1: Stakeholder Management
+S2: Risk management
+S3: Gap analysis
+S4: Business scenarios
+S5: Principles of architecture
+A: S4
+E:
+
+
+Q: Which of the following options best completes the sentence: The Business Continuum ______
+S1: describes an open standards database of the industry
+S2: is a framework of architecture
+S3: is a technical reference model
+S4: provides a method for the development of the architecture
+S5: provides method for classifying artifacts
+A: S1
+E:
+
+
+Q: According to TOGAF, what is the reason for the first execution of an ADM cycle? Will it be more difficult than the later cycles?
+S1: Because management is not familiar with the ADM process
+S2: Because there are few architecture assets available
+S3: Due to the lack of government
+S4: Due to the insufficiency of qualified architecture professionals
+S5: Because the base architecture must be completely defined throughout the company
+A: S5
+E:
+
+Q: The architecture deliverables and the work products created in an ADM phase are. They are modified through later phases, how does TOGAF suggest tracking changes?
+S1: Change Control Committee
+S2: Document control points and diary
+S3: Publish and subscribe to the system
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
