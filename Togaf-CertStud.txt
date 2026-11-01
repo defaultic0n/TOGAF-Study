@@ -1,0 +1,329 @@
+Source: https://certstud.com/certifications/togaf/practice/foundation
+
+
+Q: A sponsor has approved the start of an architecture engagement and wants a single signed document that fixes the scope of work, names and deliverables and the schedule, and commits the architecture team to deliver against named milestones. Which Phase A output satisfies this requirement?
+S1: The Statement of Architecture Work, which is the contract between the architecture organization and the sponsor.
+S2: The Architecture Vision, which sets the high-level aspiration but leaves scope and schedule to be fixed later
+S3: The Business Transformation Readiness Assessment, which confirms the organization can absorb the change
+S4: The Architecture Definition Document, which records the detailed basedline and target for every domain
+A: S1
+E: The Statement of Architecture Work is the Phase A deliverable that contracts the architecture team to the sponsor, fixing the scope, deliverables, schedule, and acceptance criteria for the engagement. 
+
+Q: A supplier is about to start building a solution that must conform to the enterprise's target state. The chief architect wants a mutually accepted instrument that records what the supplier must produce, the quality gates the work has to clear, and the conformance obligations on both sides. Which governance artefact should be established with the supplier?
+S1: A compliance review that inspects the delivered solution against the agreed target state
+S2: An architecture contract that commits the supplier to the agreed deliverables and quality gates
+S3: A change request that amends the target state so that the supplier's current design is accepted without rework
+S4: A dispensation that lets the supplier depart from a standard while a ruling is pending
+A: S2
+E: an architecture contract is the governance artefact that sets out, between the architecture function and the delivery party, the deliverables expected, the quality gates and the conformance obligations the work must satisfy
+
+Q: A payments platform has a current-state description and a future-state description of its technology, and the programme board now asks which elements are absent today and which can be carried over as the platform changes. The lead architect wants the technique that sets the two descriptions side by side and states what has to be added or removed. Which technique should the architect apply?
+S1: Stakeholder management, which identifies who cares about the architecture and how to involve them.
+S2: Business transformation readiness assessment, which measures how ready the enterprise is to change.
+S3: Gap analysis, which compares the baseline and target to identify the missing building blocks.
+S4: Architecture principles, which guide how the team makes decisions across the work.
+A: S3
+E: Gap analysis compares the baseline and target architectures and lists the building blocks that must be added or removed to reach the target state
+
+Q: A sponsor presses the team to skip straight to modelling and asks what value the opening stage of a cycle adds. The lead explains that this early step aligns the people who matter behind a common picture of the intended result and obtains formal permission to carry on. Which focus does that explanation describe?
+S1: Scheduling the projects, costs, and release windows that will deliver the target end state.
+S2: Cataloguing each application and server so the estate inventory is complete before scoping begins.
+S3: Resolving every open requirement so no change can arise once the design work starts.
+S4: Gaining agreement on an aspirational vision and approval of a statement that authorises the work.
+A: S4
+E: Phase A gains agreement on an aspirational vision and approval of a statement that authorises the work, so it fixes a shared sense of the intended result and the mandate to pursue it before detailed design consumes effort.
+
+Q: A retail bank's architecture board must decide whether to approve a project that cannot meet an agreed technology standard because the chosen supplier product lacks the required feature. The lead architect wants to follow TOGAF guidance for handling an agreed, temporary departure from the target architecture. Which governance instrument applies to this decision?
+S1: A dispensation that grants time-limited permission to depart from the standard.
+S2: An Architecture Contract that ties the project to the obligations both parties agreed.
+S3: A compliance review that records the project's deviation against the standard.
+S4: A change request raised to amend the standard for every project in the bank.
+A: S1
+E: a dispensation is the governance instrument that grants time-limited permission to depart from an architecture standard when a project cannot comply.
+
+Q: A project cannot meet one mandatory integration standard and the Architecture Board must formally decide whether to allow a temporary, recorded deviation rather than let the team proceed informally. What does the board grant, and what does it rely on to judge whether the project otherwise conforms?
+S1: A solution building block, with the judgment informed by the gap analysis.
+S2: A dispensation, with the judgment informed by a compliance assessment against the architecture contract.
+S3: An architecture principle, with the judgment informed by the project's own test results.
+S4: A statement of architecture work, with the judgment informed by the stakeholder map.
+A: S2
+E: A dispensation is the formal, recorded permission to deviate from a standard, and the Architecture Board makes that decision based on a compliance assessment that measures the project against its architecture contract.
+
+Q: During ADM coaching, this primary purpose is displayed: "To align iterative ADM cycles with sprint-based delivery so architecture guidance stays current as solutions evolve". Which ADM technique is being referenced?
+S1: Gap Analysis, per the TOGAF Standard.
+S2: a dispensation, per the TOGAF Standard.
+S3: using TOGAF with agile delivery.
+S4: Digital Enterprise guidance for the ADM.
+A: S3
+E: "using TOGAF with agile delivery." The quoted statement is the TOGAF Standard's primary purpose for using TOGAF with agile delivery
+
+Q: A postal operator is restoring Requirements Management after mid-cycle requirement loss. Sponsors describe this delivery risk: Landscape views are years out of date. Which statement is the Standard-aligned next step?
+S1: Promote reusable templates and reference architectures into the Reference Library.
+S2: Unify through continuous Requirements Management feeding ADM phases.
+S3: Consult the relevant TOGAF Library security guidance during ADM work.
+S4: Refresh Architecture Landscape views to reflect current enterprise state.
+A: S4
+E: The Architecture Landscape captures the architecture in use today, so when its views are years out of date they must be refreshed to reflect the current enterprise state, which is the baseline later change work depends on.
+
+Q: A semiconductor supplier is segmenting EA by product line and must apply federated governance across levels. The operating constraint to resolve is new requirements appear mid-cycle and risk being lost between phases. How should the practice restore method compliance on this item?
+S1: Capture and re-prioritize them through the continuous Requirements Management process.
+S2: Use a Communications Plan and viewpoint-based views tailored to each stakeholder group.
+S3: Treat data as a first-class concern in Phase C and related architecture decisions.
+S4: Allow return to earlier ADM phases when new information requires refining prior outputs.
+A: S1
+E: Requirements Management runs continuously alongside the ADM, so new requirements are captured through the continuous Requirements Management process and re-prioritised as they arrive, then fed into the phases, which is how they avoid being lost between stages. A communications plan, treating data as a first-class concern, or deliberately returning to earlier phases does not provide that standing intake and prioritisation.
+
+Q: A programme must specify, for a required customer-authentication capability, first the vendor-neutral specification that commits the enterprise to no particular product, and later the specific purchased product that actually implements it. Which two building block types, in order, does the programme need?
+S1: Two Architecture Building Blocks, one for the specification and one for the product.
+S2: An Architecture Building Block to define the capability, then a Solution Building Block to implement it.
+S3: A single component that serves as both the specification and the product, so no second building block is needed.
+S4: Two Solution Building Blocks, one for the vendor-neutral specification and one for the purchased product.
+A: S2
+E: Architecture Building Blocks (ABBs) are vendor-neutral specifications that define what a capability should do. They represent the "what" without specifying how it will be implemented.
+Solution Building Blocks (SBBs) are specific implementations of ABBs, typically representing actual products or technologies that will implement the capability.
+
+Q: At the start of Phase A, a programme has a broad mandate to 'improve customer experience' but no agreement on the boundaries of the work, the stakeholders who must be consulted, or what success looks like. Which set of Phase A activities must be performed first to give the engagement a sound foundation?
+S1: Establish the scope, identify stakeholders and their concerns, confirm the business goals, and develop the Architecture Vision.
+S2: Produce the detailed data model, finalize the technology platform, and place hardware orders to remove procurement risk.
+S3: Draft the implementation and migration plan and assign delivery teams to the first work package.
+S4: Run compliance reviews on the current systems and grant dispensations for any deviations.
+A: S1
+E: Phase A begins by establishing the scope of the engagement, identifying stakeholders and their concerns, confirming the business goals and drivers, and developing the Architecture Vision that frames all later work.
+
+Q: A project cannot meet a mandated security standard before its scheduled go-live but promises to conform within six months. The project asks for formal permission to proceed. Under architecture governance, what is the appropriate mechanism?
+S1: A change request to rewrite the standard so the project is compliant.
+S2: A time-limited dispensation granted by the Architecture Board.
+S3: A compliance review that records the project as fully conformant.
+S4: An exception agreed privately between the project and its vendor.
+A: S2
+E: Architecture governance provides for a dispensation, a time-limited permission granted by the Architecture Board when a project cannot comply, which lets the work proceed while the deviation is recorded and bounded.
+
+Q: A professional body completes its Preliminary Phase, then six months later absorbs a rival association with different governance. The chief architect asks whether the earlier Preliminary Phase work still stands. What is the correct response?
+S1: The absorbed association must run its own separate ADM and never share a framework.
+S2: The Preliminary Phase is run once and its outputs, including governance, remain fixed forever.
+S3: The Preliminary Phase can be revisited whenever the organisational context changes materially.
+S4: The Preliminary Phase outputs are superseded automatically as soon as any ADM phase starts.
+A: S3
+E: The Preliminary Phase is not a one-off; TOGAF expects it to be revisited when the organisational context changes materially, so absorbing an association with different governance justifies re-running it.
+
+Q: A ministry has run three architecture engagements in two years. Each one re-argued who may approve a design, how much tailoring of the method is permitted, and what level of maturity the practice is aiming for. Sponsors now want all of that settled once and for all, before a fourth engagement begins. Which Preliminary Phase output settles it?
+S1: The Architecture Vision, which sponsors approve to confirm the value the fourth engagement is meant to create.
+S2: The Request for Architecture Work, which the sponsors issue in order to trigger the fourth engagement formally.
+S3: The Architecture Requirements Specification, which records the measurable criteria a design has to satisfy.
+S4: The Organizational Model for Enterprise Architecture, which fixes authority, tailoring, and maturity targets.
+A: S4
+E: The Organizational Model for Enterprise Architecture, which fixes authority, tailoring, and maturity targets. It is the Preliminary Phase deliverable that establishes the architecture capability itself: which units are in scope, who decides what, how far the method may be tailored, and the maturity being pursued, so later engagements inherit the answers instead of renegotiating them
+
+Q: Eighteen months after a timber manufacturer deployed its digital twin architecture, nobody checks whether the environment around it has moved on. Two suppliers have withdrawn products used as building blocks, and a new safety rule affects the plant network, yet no assessment of either has been made. What is the practice failing to do?
+S1: Operate Phase H, monitoring business and technology change and assessing the impact of each on the architecture.
+S2: Operate Phase G, holding suppliers to the Architecture Contracts that cover the withdrawn building blocks.
+S3: Operate Phase F, re-sequencing the roadmap so the withdrawn products are replaced in the next tranche.
+S4: Operate Phase E, re-opening the search for candidate solutions now that two products have become unavailable.
+A: S1
+E: perate Phase H, monitoring business and technology change and assessing the impact of each on the architecture. Architecture Change Management is a standing activity after deployment: it watches for shifts such as a withdrawn product or a new safety rule, classifies what each one means, and decides whether the ADM should be re-entered.
+
+
+Q: A practice keeps approved standards, current-state diagrams, reusable patterns, and board decisions in one shared folder, so no one can tell which assets are mandated, which describe today, or which exemptions are still open. What should it do?
+S1: Archive anything older than a year so only recent assets remain available.
+S2: Separate the material into the Architecture Landscape, Standards Library, Reference Library.
+S3: Publish an index of the folder so each document can be found without anything being moved.
+S4: Classify every asset on the Enterprise Continuum from generic to organization-specific.
+A: S2
+E: Those partitions of the Architecture Repository exist so the current landscape, mandated standards, reusable assets, and the record of decisions and exemptions can each be found and trusted for what they are. 
+
+Q: A newly appointed chief architect at a regional bank is preparing the first Architecture Vision for a core-banking replacement. The CIO supports the effort, but the head of retail operations, who controls the majority of the budget and whose staff will be most affected, has not been engaged and is known to resist technology-led change. Before scheduling the first stakeholder meeting, which action best reflects the stakeholder management guidance in the TOGAF ADM?
+S1: Ask the CIO to send a general project announcement to all department heads describing the core-banking replacement.
+S2: Add the head of retail operations to the distribution list for the Architecture Vision once it is formally approved.
+S3: Map the head of retail operations as a high-power, high-interest stakeholder and tailor engagement accordingly.
+S4: Record the head of retail operations in the communications plan with the same monthly briefing as all other department heads.
+A: S3
+E: the head of retail operations combines high power (budget control) with high interest (affected staff), which the stakeholder map treats as a key player requiring early, tailored, high-touch engagement to surface resistance before it hardens
+
+Q: A telecoms operator has recruited strong technologists into its new architecture team, but reviews show they struggle to engage business stakeholders and run architecture projects. Which action best strengthens the team's overall architecture capability?
+S1: Require the architects to complete a vendor product certification each quarter.
+S2: Replace the team with external contractors whenever stakeholder work is needed.
+S3: Reassign the architects to pure technology design work where they are strongest.
+S4: Use an architecture skills framework to identify and close the competency gaps.
+A: S4
+E: Use an architecture skills framework to identify the competencies the practice needs and to close the competency gaps the reviews exposed, because such a framework sets out the roles an architecture function requires together with the skills and proficiency each role demands. It therefore shows where engagement and project management are weak and how to strengthen them deliberately. Sending the specialists back to pure design work, or adding a product certification, does nothing to build the missing engagement and delivery abilities. Substituting outsiders for the team delivers today's workload while leaving the internal ability unchanged.
+
+
+Q: A bank's architecture board accepts that a proposed change to its core banking platform would alter the fundamental business model and data ownership across divisions. The change is large but urgent. How should the architects proceed with the ADM?
+S1: Undertake a re-architecting change by re-entering the full ADM cycle from the architecture vision phase.
+S2: Amend the existing architecture contract in Phase G so delivery can absorb the change without a new cycle.
+S3: Re-enter the ADM only at the technology architecture phase, since the change is ultimately a platform concern.
+S4: Escalate the decision to the finance committee because fundamental change is a funding matter, not an architecture one.
+A: S1
+E: A change that alters the fundamental business model and data ownership is re-architecting and warrants re-entering the full ADM cycle from the architecture vision phase. 
+
+Q: Two divisions in a logistics firm each propose a different integration platform for the same customer-facing service. The programme director wants an authority that can arbitrate the conflict and ratify the chosen architecture. Which body should be given this role?
+S1: The enterprise architecture team, because it authored both competing platform proposals.
+S2: The Architecture Board, which resolves architecture disputes and ratifies architecture changes.
+S3: The vendor's account team, since it knows the technical strengths of both platforms.
+S4: The delivery programme's own steering committee, since it funds and schedules the integration work.
+A: S2
+E: In enterprise architecture governance, the Architecture Board serves as the authoritative body for resolving architectural conflicts and ratifying architectural decisions.
+
+Q: A health insurer wants to describe a planned eligibility-checking service before deciding which vendor package will supply it. The lead architect insists the description stay free of any named product so it can be reused if the supplier changes. Which kind of block does that description represent?
+S1: An Architecture Building Block, a capability specification that remains independent of any product.
+S2: A reference architecture, an external pattern published by a sector body for reuse.
+S3: A Solution Building Block, a selected product or component that fulfils one or more capabilities.
+S4: A technology standard, a rule that limits which platforms the organization may purchase.
+A: S1
+E: An Architecture Building Block is a capability specification that remains independent of any product, so a description of a planned eligibility-checking service that deliberately names no supplier or package is exactly that kind of element. Defining it this way keeps the requirement reusable while the choice of technology is still open and can change without rewriting the requirement itself.
+
+Q: A coastal management agency is integrating sensors and needs diagram artifacts for executive stakeholders. The Statement of Architecture Work is blocked by: viewpoint catalog is empty. Which response would survive an Architecture Compliance Review?
+S1: Proceed into Phase C Information Systems Architectures to define data and application architectures.
+S2: Create viewpoints for major stakeholder concern classes.
+S3: Establish capability, principles, and ADM tailoring in the Preliminary Phase before Phase A.
+S4: Create Segment Architecture for the acquired unit under enterprise principles.
+A: S2
+E: A viewpoint states the conventions for building views that answer a defined class of stakeholder concern, so an empty viewpoint catalogue is fixed by defining viewpoints for the major concern classes the work must satisfy.
+
+Q: A metro bike-share network is unifying apps and must communicate with a stakeholder Communications Plan. The Statement of Architecture Work is blocked by: Stakeholder Management stops after the kickoff workshop. Which response would survive an Architecture Compliance Review?
+S1: Govern implementations through Architecture Contracts and formal compliance reviews.
+S2: Ensure architecture work and implementations stay aligned to principles, standards, and stakeholder needs.
+S3: Continue stakeholder identification and engagement planning throughout the ADM.
+S4: Pursue integrated information access that remains secure and supports process improvement.
+A: S3
+E: Stakeholder Management is continuous: identification and engagement planning run across every phase rather than stopping after the kickoff, because concerns and influence shift as the work proceeds. Keeping it running is what prevents the engagement losing the people it depends on.
+
+Q: Per the architecture standard, which option best states the incorrect use associated with a Solution Building Block after ABBs exist?
+S1: Publishing organization-specific designs as if they were industry-generic reference models.
+S2: Using a simple list when the stakeholder actually needs relationship visibility between element types.
+S3: Calling a highly customized organization system a Foundation Architecture.
+S4: Selecting SBBs without ABBs that define the capability those products must satisfy.
+A: S4
+E:  Architecture Building Blocks specify the capability that must be met, and Solution Building Blocks are the products chosen to realize it, so selecting products before the capability is defined inverts the intended order
+
+Q: A public housing authority is consolidating tenancy systems and needs stakeholder concerns captured early. Current blocker: agile teams reject architecture checkpoints. What should sponsors approve as the immediate architecture action?
+S1: Negotiate lightweight iterative ADM touchpoints aligned to sprints.
+S2: Operate one continuous Requirements Management process across phases.
+S3: Finalize Architecture Contracts before Implementation Governance.
+S4: Enforce standards through governance and Architecture Contracts.
+A: S1
+E: The method is adaptable, so aligning it with agile delivery by agreeing lightweight iterative touchpoints alongside sprints lets architecture guidance stay current without imposing heavy checkpoints. That reconciliation is what overcomes resistance to architecture review.
+
+Q: A sports league is building a fan data platform and needs matrix and catalog artifacts for stakeholder communication. The engagement risk register now includes: views lack viewpoint definitions. How should leadership respond while the Statement of Architecture Work remains active?
+S1: Monitor business and technology change and assess impacts in Phase H.
+S2: Define viewpoints before constructing stakeholder views.
+S3: Recapture stakeholder concerns as interests that views must address.
+S4: Update stakeholder management as concerns and scope change.
+A: S2
+E: A viewpoint sets the conventions and the audience for a kind of view, so a view that lacks a viewpoint definition cannot be constructed consistently; the viewpoints must be defined first and the views built to them. That ordering is how the architecture ensures each view answers a specific stakeholder concern.
+
+Q: A grocery cooperative is adopting cloud ERP and needs interoperability requirements before application portfolio decisions. Compliance pressure centers on this gap: relationship between apps and tech is undocumented. What should the practice do to reinstate Standard architecture control?
+S1: Write the Compliance Assessment deliverable after each review.
+S2: Restore shared principles and standards across federated architectures.
+S3: Produce an Application/Technology Matrix artifact.
+S4: Re-center prioritization on business capabilities and architecture value.
+A: S3
+E: The Application/Technology Matrix is the catalog artifact that records which applications depend on which technology, so producing it documents the missing relationship between the two layers. That mapping is what lets portfolio decisions be made with the dependencies visible
+
+Q: A public broadcaster archive is migrating media assets and must classify Foundation versus Industry Architectures. The Statement of Architecture Work is blocked by: customer journey work disconnected from Phase B. What is the most appropriate TOGAF-aligned response?
+S1: Perform gap analysis to identify what must be added, changed, or retired.
+S2: Align iterative ADM cycles with sprint-based delivery so guidance stays current.
+S3: Assess the change through Phase H Architecture Change Management and update affected architecture.
+S4: Link customer journeys and value streams into Business Architecture models.
+A: S4
+E: Customer journeys and value streams are business-level concerns, so they belong inside the Business Architecture models that Phase B develops; linking them there reconnects the journey work to the method. That keeps the business description complete instead of isolated.
+
+Q: After finishing the business, information systems, and technology layers, an agricultural equipment cooperative wants them gathered into one reference for the next stage. Which artifact does that?
+S1: The architecture definition document, which consolidates the design outputs.
+S2: The statement of architecture work, which authorises the engagement.
+S3: A compliance assessment, which records a project's conformance.
+S4: A work package, which groups the changes needed to reach one plateau.
+A: S1
+E: The architecture definition document consolidates the design outputs, so it gathers the business, information systems, and technology descriptions into one reference for later work. Using a single document keeps the design coherent as planning begins. 
+
+
+Q: Identify the primary input focus that the TOGAF Standard assigns to moving from Phase B into Phase C?
+S1: Identified gaps between baseline and target architectures across relevant domains.
+S2: Business capabilities, processes, and organization structures that information systems must support.
+S3: Emerging constraints, stakeholder concerns, and phase outputs that create new requirements.
+S4: Organizational context, sponsorship, and the need for a tailored architecture framework.
+A: S2
+E: Please find out
+
+Q: A business architect is cataloguing the discrete parts of an enterprise that carry out work and hold accountability. Which item best describes an organization unit?
+S1: A recognized part of the enterprise with a defined role and accountable scope.
+S2: A temporary project team assembled for one delivery milestone and then dissolved.
+S3: A single employee whose personal objectives shape how the firm operates.
+S4: A vendor product that the enterprise licenses to run part of its operations.
+A: S1
+E: An organization unit is a recognized part of the enterprise that has a defined role and an accountable scope within the wider structure. Treating units this way lets the map distinguish enduring organizational parts from transient delivery groupings.
+
+Q: A modelling team lists a competitor's launch, a change in tax law, and an internal cost target as forces that could shape what the firm decides. Which motivation element covers these?
+S1: The rules that constrain how day-to-day work is carried out.
+S2: The influences that can shape both ends and means.
+S3: The assets and partnerships on which the firm depends.
+S4: The desired results the enterprise has committed to achieve.
+A: S2
+E: Influences are the internal and external factors that can shape both the desired ends and the chosen means, so a rival's launch, a tax change, and a cost target all qualify. 
+
+Q: Two segment teams at a logistics group both claim their part of the business needs the next tranche of investment. One argues from headcount pressure and the other from a board slide. The enterprise wants the money allocated on evidence about where business performance falls short of what the strategy demands. Which technique settles the argument?
+S1: Organization mapping, which shows which business units own or contribute to each of the contested capabilities.
+S2: Value stream mapping, which exposes where work moves backwards between stages and inflates cycle time and cost.
+S3: Capability-based planning, which prioritises change and funding by the gap between current and target performance.
+S4: Capability decomposition, which splits each contested capability into children so the scope becomes comparable.
+A: S3
+E: Capability-based planning, which prioritises change and funding by the gap between current and target performance. It replaces advocacy with evidence by scoring capabilities against the performance the strategy requires, so investment follows the widest strategically significant gap. 
+
+Q: An architecture team is developing a TOGAF business scenario for a retail client. While building the scenario, the team records the regulations the client must follow, the fixed dates and budgets, and the operational limits that already constrain the business. Which element of the business scenario are these records part of?
+S1: The business goals that describe the value the client wants from the change.
+S2: The participants and their roles within the business scenario.
+S3: The findings that are packaged for sponsors and the Architecture Board.
+S4: The constraints that restrict how the business problem may be solved.
+A: S4
+E: constraints capture the limits within which a solution must operate, such as legal obligations, fixed dates and budgets, and existing operational restrictions.
+
+
+Q: An enterprise has completed its Architecture Vision and now needs to develop the business perspective of the target architecture: the business capabilities, organization structure, and value streams that will support the vision. Within which ADM phase does this business architecture work take place?
+S1: Phase A, because the Architecture Vision already contains the detailed business model.
+S2: Phase B, which develops the Business Architecture from the vision established in Phase A.
+S3: Phase C, because the information systems describe the business processes in detail.
+S4: Phase E, because opportunities and solutions define the business capabilities to fund.
+A: S2
+E: Phase B (Business Architecture) develops the business perspective, including capabilities, organization, and value streams, building on the Architecture Vision produced in Phase A. Option A is incorrect because Phase A produces the high-level vision, not the detailed business model. Option C is incorrect because Phase C develops the Information Systems Architectures, not the business architecture. Option D is incorrect because Phase E identifies opportunities and solutions after the business architecture has been defined.
+
+Q: While modelling the target Business Architecture for a bank, the team has collected a mixed list of statements. Some are hard boundaries the bank cannot choose to breach, such as a regulator's retention period; others express what the bank would prefer to do wherever it has a free choice. The team wants to record both groups correctly. How should they be treated?
+S1: Record the hard boundaries as constraints on the design and keep the preferences as principles that guide choices.
+S2: Record both as business drivers, since each one explains why the target Business Architecture has to change.
+S3: Record the hard boundaries as risks, because breaching a retention period would expose the bank to enforcement.
+S4: Record both as architecture principles, since anything that shapes a design decision belongs in one statement set.
+A: S1
+E: Record the hard boundaries as constraints on the design and keep the preferences as principles that guide choices. A constraint limits what the architecture may do and is not negotiable, whereas a principle states a preferred way of deciding when several designs remain permissible; conflating them either makes principles look unbreakable or makes law look optional. Option D loses that distinction entirely. 
+
+Q: A courier firm's canvas lists depots, a routing platform, and trained drivers as things it cannot operate without. Which block names these?
+S1: The published prices charged for each class of domestic delivery service.
+S2: The customer groups that generate demand for parcel movement across regions.
+S3: The assets a business needs to create and deliver value to its market.
+S4: The partners that supply fuel and scheduled vehicle maintenance service.
+A: S3
+E: Key resources are the assets a business needs to create and deliver value, so depots, the routing platform, and trained drivers all qualify.
+
+Q: A pension administrator is eliciting requirements with business scenarios before Phase B. Workshop notes highlight that business capabilities are agreed but applications and data structures are not modeled. What is the governance follow-up in enterprise architecture terms?
+S1: Identify all stakeholders with interests in the architecture and plan engagement for their concerns.
+S2: Model business capabilities, processes, and organization structure in baseline and target states.
+S3: Use Library materials as optional complementary guidance rather than replacing the core Standard.
+S4: Proceed into Phase C Information Systems Architectures to define data and application architectures.
+A: S4
+E: Once business capabilities are agreed but the information and application layers remain unmodeled, the team should proceed into Phase C Information Systems Architectures and define the data and application architectures, because that phase owns those concerns. Optional advisory material, stakeholder engagement planning, or restating the business models do not fill that layer gap.
+
+
+Q: An architecture team is developing a TOGAF business scenario for a claims-handling improvement. Stakeholders keep expressing the goal as 'make claims faster,' which cannot be verified. Which element of the business scenario must the team define so the outcome can be measured?
+S1: Desired outcomes expressed as measurable, verifiable results for success
+S2: The fixed dates, budgets, and regulations that constrain the current state
+S3: The business and technology environment in which the claims process operates
+S4: The actors and their human roles within the claims-handling process
+A: S1
+E: A business scenario must express desired outcomes as measurable, verifiable results, often SMART (specific, measurable, actionable, realistic, and time-bound), so success can be tested. 
+
+Q: An architecture team is writing a business scenario for a customer-onboarding improvement, and stakeholders keep expressing the goal as 'make onboarding better.' To ensure the scenario yields verifiable requirements, what must the desired outcome be?
+S1: A detailed data model of the current onboarding process before any target is described.
+S2: SMART, so the outcome is specific, measurable, actionable, realistic, and time-bound.
+S3: A signed agreement from every stakeholder approving the current onboarding process.
+S4: A list of the technology vendors that will be shortlisted to deliver the improvement.
+A: S2
+E: please check the answer.
+

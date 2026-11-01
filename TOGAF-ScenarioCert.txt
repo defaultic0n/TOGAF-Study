@@ -1,0 +1,643 @@
+Source: https://scenariocert.com/exams/togaf-10/the-context-within-which-an-enterprise-architecture-practitioner-must-operate
+
+Q: The context within which an Enterprise Architecture practitioner must operate
+Arlen Group is a holding company with four operating divisions: energy, shipping, property and retail. Each division already has a small architecture team with its own methods and repository. The new Group CIO wants a single Enterprise Architecture Capability that can steer group-wide investments without slowing the divisions down, and asks the Group Chief Architect to start the Preliminary Phase. The divisional CIOs fear that their teams will be absorbed.
+What should the Group Chief Architect establish first in the Preliminary Phase?
+
+A: A single central architecture team, by merging the four divisional teams, before any scope or governance is discussed.
+Choosing the organizational structure before agreeing scope and governance prejudges the outcome and confirms the divisional CIOs' fears. The TOGAF Standard allows federated models where they fit.
+B: A group standard tool for the Architecture Repository, so that all four divisions store their content in one place.
+Tool selection is a later step in the Preliminary Phase and depends on the agreed scope, organizational model and framework. Choosing a tool first does not resolve who does what.
+C: The scope of the enterprises affected and an organizational model for Enterprise Architecture that defines the roles of the group and divisional teams and their governance relationships.
+The Preliminary Phase starts by scoping the enterprise organizations affected and confirming governance and support frameworks, then defines the architecture team and organization. A federated model with clear group and divisional responsibilities addresses both the CIO's goal and the divisions' concerns.
+D: A Group Target Business Architecture developed in Phase B for each division, to show the divisions what group-wide alignment means.
+Developing Target Architectures is ADM cycle work that needs an established capability, an approved scope and a Statement of Architecture Work. It does not belong in the Preliminary Phase.
+
+Answer: C
+Explaination: The Preliminary Phase steps begin with scoping the enterprise organizations impacted and confirming governance and support frameworks, followed by defining and establishing the Enterprise Architecture team and organization, identifying principles, tailoring the framework and implementing tools (TOGAF Standard, ADM, Preliminary Phase; EA Capability and Governance, Establishing an Architecture Capability). In a federated enterprise the key decision is how group and divisional architecture functions relate, which is part of the organizational model for Enterprise Architecture. The scenario's tension between central steering and divisional autonomy is the constraint that makes this the first priority. The distractors jump to structure, tools or architecture content before the scope and model are agreed.
+
+
+Q: Pemberton Port Authority is ending its Preliminary Phase. The governance office has asked the lead architect for a checklist of the work products the phase should hand over before the first ADM cycle begins. A junior architect has drafted the checklist and included several items that belong to other phases.
+Which item on the checklist is an output of the Preliminary Phase?
+A: Statement of Architecture Work for the first engagement.
+The Statement of Architecture Work is produced and approved in Phase A, in response to a Request for Architecture Work.
+B: Architecture Contract with the first delivery team.
+Architecture Contracts are agreed during Implementation Governance in Phase G.
+C: Organizational Model for Enterprise Architecture.
+The Organizational Model for Enterprise Architecture is a Preliminary Phase output, alongside the Tailored Architecture Framework, architecture principles and the initial Architecture Repository.
+D: Implementation and Migration Plan.
+The Implementation and Migration Plan is drafted in Phase E and finalized in Phase F.
+ANSWER: C
+Why: The Preliminary Phase prepares the organization for architecture work, and its outputs include the Organizational Model for Enterprise Architecture, the Tailored Architecture Framework (including architecture principles), the initial Architecture Repository and a Request for Architecture Work (TOGAF Standard, ADM, Preliminary Phase). The distractors are real ADM outputs from Phases A, E, F and G. Knowing which outputs belong to which phase helps an architect see whether the capability is ready before an engagement starts.
+
+
+Q: Hollis Bank is starting an ADM cycle for a new digital banking proposition. The executive committee has already agreed the target operating model at a high level, and the sponsor insists that the new proposition must not inherit the manual workarounds and product silos of today's branch processes. The current landscape includes more than 200 applications from several acquisitions, and the Architecture Board still needs to see what must change to reach the target.
+How should the architect structure the architecture development iterations?
+A: Use a baseline-first approach: fully document all 200 applications and current processes before considering the target.
+The TOGAF Standard describes baseline-first iteration as suitable when the target solution is not clearly understood or agreed, using the baseline assessment to find problem areas. Here the target is already agreed at a high level, and starting from today's processes risks carrying current practice into the target.
+B: Use a target-first approach: develop the Target Architecture first, then describe the baseline in enough detail to support gap analysis and migration planning.
+The TOGAF Standard describes target-first iteration as suitable when a target state is agreed at a high level and the enterprise wishes to avoid proliferating current business practice into the target model. The target is elaborated in detail and then mapped back to the baseline to identify the change activity.
+C: Skip the Baseline Architecture altogether because the target is a new proposition.
+Target-first still maps the target back to the baseline. Without any baseline the Architecture Board cannot see what must change, and gap analysis and migration planning lose their foundation.
+D: Run a Transition Planning iteration first, covering Phases E and F, to define work packages before any architecture is developed.
+Transition Planning iterations depend on the architectures developed in Phases B to D. Planning migration before any architecture exists reverses the dependency.
+Answer: B 
+Why: The TOGAF Standard describes two styles of architecture development iteration and when each fits (TOGAF Standard, Applying the ADM, Applying Iteration to the ADM). Baseline-first starts from an assessment of the current landscape to identify problems and opportunities, and suits a situation where the target is not clearly understood or agreed. Target-first elaborates the target in detail and then maps it back to the baseline to identify change, and suits a target agreed at a high level where the enterprise wants to avoid carrying current practice into the new model. The decisive facts are the agreed high-level operating model and the sponsor's demand not to inherit today's workarounds, while the Board's need to see the changes means the baseline is still described as far as gap analysis requires. A common trap is to pick baseline-first simply because the current estate is large; the TOGAF criterion is how well the target is understood and agreed.
+
+Q: Tamsin Insurance's board has approved enterprise principles, including "Customer Data Belongs to the Customer", which commits the company to let customers see and export all data held about them. In the Preliminary Phase, the IT architecture team drafts a data principle stating that customer data is internal to the company and may be released only to regulators. The draft is submitted to the Architecture Board for approval.
+What should the Architecture Board require?
+A: Approve the draft, because architecture principles take precedence over enterprise principles for IT decisions.
+The TOGAF Standard places architecture principles beneath enterprise principles. They elaborate and apply enterprise principles; they do not override them.
+B: Grant the IT team a dispensation from the enterprise principle so that both can stand.
+Dispensations are time-limited exceptions for specific solutions. They are not a way to create a standing architecture principle that contradicts an enterprise principle.
+C: Keep both principles and let each project choose which one to follow.
+Two contradictory principles provide no guidance and invite inconsistent decisions, failing the consistency criterion for good principles.
+D: Revise the draft so that it is consistent with and derived from the enterprise principle, with a rationale that refers to it.
+Architecture principles should be informed by, and consistent with, enterprise principles. Linking the rationale to the higher principle shows that relationship.
+Answer: D
+Why: The TOGAF Standard describes a hierarchy in which enterprise principles inform architecture principles, which in turn guide solution decisions; architecture principles must be consistent with the enterprise principles they elaborate (TOGAF Standard, ADM Techniques, Architecture Principles). The scenario's draft directly contradicts a board-approved enterprise principle, so it cannot be approved as written. The distractors misuse dispensations, invert the hierarchy, or accept contradictory guidance.
+
+Q: How to apply the stakeholder management technique
+At Benham Telecom, the architect's stakeholder map for a network billing engagement lists each stakeholder group and its power/interest quadrant, and nothing else. When the team starts Phase B, nobody can say which catalogs, matrices or diagrams each group expects, and two weeks are lost producing artifacts no one asked for.
+What should the architect add to the stakeholder map?
+A: A RACI chart assigning each stakeholder to the project's delivery tasks.
+A RACI chart is a project management tool for tasks. It does not tell the architecture team what each stakeholder needs to see.
+B: Each stakeholder's job grade and reporting line, to show their seniority.
+Seniority may inform power, but it does not describe concerns or deliverables, which is what the team was missing.
+C: A list of the Architecture Contracts each stakeholder will sign.
+Architecture Contracts are Phase G agreements. They do not guide what architecture content to produce in Phases B to D.
+D: For each stakeholder group, its key concerns and the catalogs, matrices and diagrams that address them.
+The stakeholder map in the TOGAF Standard records, for each stakeholder group, its involvement and key concerns, its class and the artifacts relevant to it, so that the map drives the content produced.
+Answer: D
+Why: The stakeholder management technique ends by tailoring engagement deliverables: the stakeholder map records each group's concerns, class and the relevant catalogs, matrices and diagrams (TOGAF Standard, ADM Techniques, Stakeholder Management). A map with only quadrants tells the team how much to engage each group but not what to produce. The deciding fact is the wasted work on unrequested artifacts. The distractors add project or contractual information that does not connect stakeholders to architecture content.
+
+
+Q: Marlow Credit Union completed Phase A of a lending platform engagement with an approved Statement of Architecture Work, a stakeholder map and a Communications Plan. Midway through Phase B, the Chief Operating Officer who championed the work leaves and is replaced by an executive from a competitor who has publicly favoured buying a packaged lending suite rather than the planned integration approach.
+What should the architect do next?
+A: Revisit the stakeholder analysis for the new COO, update the stakeholder map and Communications Plan, and engage her early on her concerns and the options being considered.
+Stakeholder management is continuous. A new high-power stakeholder with different views must be analyzed and engaged before the architecture progresses further.
+B: Continue with the existing Communications Plan, because it was approved in Phase A.
+Approval does not freeze the plan. Ignoring a change in a key stakeholder's position risks the architecture being rejected later.
+C: Restart the engagement from the Preliminary Phase to re-establish the Architecture Capability.
+The Architecture Capability is unaffected by one executive change. Restarting the Preliminary Phase is out of proportion to the problem.
+D: Raise a change request in Phase H to record the new COO's preference for a packaged suite.
+Phase H manages change to an implemented architecture baseline. A new stakeholder's preference during Phase B is a stakeholder engagement matter, and any resulting requirement goes through Requirements Management.
+Answer: A
+Why: The TOGAF Standard treats stakeholder analysis as starting in Phase A and being revisited throughout the ADM as stakeholders and their positions change (TOGAF Standard, ADM Techniques, Stakeholder Management). A replacement COO is a high-power stakeholder whose position has moved, so the map and the Communications Plan must be updated and engagement planned to address her concerns. The distractors either treat the plan as fixed or reach for heavyweight mechanisms such as restarting the capability or Phase H.
+
+Q: Kinross Airports is in Phase D of an architecture for a new passenger check-in platform. The operations director's main concern is what happens to check-in if one of the two data centres fails. The architect has produced structural diagrams of the platform's components, but none of the viewpoints the team normally uses shows failure behaviour or recovery. The Architecture Repository holds a library of viewpoints that other teams have defined.
+What should the architect do?
+A: Record the concern as out of scope, because the standard viewpoints the team uses do not cover it.
+Concerns of key stakeholders must be addressed. A gap in the team's usual viewpoints is a reason to find or define one, not to drop the concern.
+B :Add availability notes to every existing structural diagram and send the full set to the operations director.
+A structural viewpoint is not designed to show failure and recovery behaviour. Annotating many diagrams leaves the director to assemble the answer.
+C: Send the operations director the Technology Standards catalog showing the approved data centre products.
+The catalog lists approved technology. It does not show how check-in behaves when a data centre fails.
+D: Look for a suitable viewpoint in the repository's viewpoint library and, if none fits, define one for resilience and recovery, produce the view, and add the viewpoint to the library for reuse.
+Viewpoints are reusable and stored in the Architecture Repository. When none addresses a concern, the architect defines one, which then serves future engagements.
+Answer: D
+Why: The TOGAF Standard holds that each view must conform to a viewpoint that frames the concerns of its stakeholders, and that viewpoints can be reused from a library or newly defined when the concerns require it (TOGAF Standard, Architecture Content, Architectural Artifacts). The deciding fact is that the team's usual viewpoints are structural, while the director's concern is behaviour under failure. Defining or reusing an appropriate viewpoint, and storing it in the repository, addresses the concern and builds the capability. The distractors drop the concern, overload the stakeholder, or answer a different question.
+
+
+Q: Aldermoor Chemicals is in Phase A of a global procurement architecture. Stakeholders include plant managers in nine countries, the group procurement board, IT application owners and an external auditor. The architect is writing the Communications Plan and a colleague suggests keeping it simple.
+What should the Communications Plan specify?
+A: A single monthly newsletter sent to every stakeholder so that all groups receive the same message.
+Different stakeholder groups have different concerns and needs. One message for all ignores the stakeholder analysis that the plan is built on.
+B: Communication with the Key Players only, since other groups cannot affect the outcome.
+Keep Satisfied, Keep Informed and even Minimal Effort stakeholders still need planned treatment. The external auditor and plant managers would be left out.
+C: For each stakeholder group, the information they need, the communication mechanisms to use, and the timing of communications aligned to engagement milestones.
+A Communications Plan identifies stakeholders, their communication needs, mechanisms such as meetings, newsletters and repositories, and a timetable tied to the engagement.
+D: That all architecture content will be published in the Architecture Repository, where stakeholders can find what they need.
+The repository is a useful mechanism, but publishing alone is not planned communication. Stakeholders who do not know what to look for will miss what matters to them.
+Answer: C
+Why: The Communications Plan, an output of Phase A, sets out how the architecture team will communicate with stakeholders: who receives what, through which mechanisms and when (TOGAF Standard, ADM, Phase A; ADM Techniques, Stakeholder Management). It is built from the stakeholder analysis, so it differs by stakeholder group. The distractors simplify the plan in ways that ignore the classification of stakeholders.
+
+Q: How to implement the Architecture Vision phase including its applicable techniques
+Larchfield University has identified the main risks of moving student records to a new platform, assessed their initial level, and assigned a mitigation approach to each. The sponsor wants to be sure that the cost and effort of mitigation are agreed as part of the engagement rather than discovered later.
+Where should the architect place the risks and mitigation activities in Phase A?
+A: Include them in the Statement of Architecture Work so they are approved with the engagement scope and plan
+Phase A identifies business transformation risks and mitigation activities and includes them in the Statement of Architecture Work, so the sponsor approves them as part of the engagement.
+B: Record them only in the Compliance Assessments that the Architecture Board performs in Phase G
+Compliance Assessments review implementation projects in Phase G. They are too late to agree the cost of mitigating risks identified in Phase A.
+C: Hold them back until Phase F, when the Implementation and Migration Plan is costed
+Phase F refines and sequences mitigation within the plan, but the risks are first identified and agreed in Phase A.
+D: Add them to the architecture principles so all future projects must mitigate them
+Principles are general rules that guide decisions. Engagement-specific risks and their mitigation do not belong there.
+Answer: A
+Why: Phase A in the TOGAF Standard includes the step 'Identify the Business Transformation Risks and Mitigation Activities'. The architect identifies the risks associated with the Architecture Vision, assesses their initial level, assigns a mitigation strategy, and includes these considerations in the Statement of Architecture Work. That way the sponsor approves the mitigation effort together with scope and schedule, which is the scenario's stated need. The distractors use real TOGAF outputs that are either too late or the wrong kind of document.
+
+
+Q: Calder Freight's Statement of Architecture Work was approved for a European parcel network. Midway through Phase B, the sponsor asks the team to add the North American subsidiary, which has different regulations, systems and stakeholders. The approved document includes a change of scope procedure.
+What should the architect do?
+A: Add North America to the Phase B work and keep the existing plan and acceptance criteria
+Absorbing a major scope change without assessment leaves schedule, deliverables and acceptance criteria inconsistent with the work being done.
+B: Raise a change request through Architecture Change Management in Phase H
+Phase H manages change to implemented architectures through the change management process. A scope change to an engagement in progress follows that engagement's own procedure.
+C: Restart the Preliminary Phase to redefine the organization's Architecture Capability
+The Architecture Capability is not in question. The change concerns the scope of one engagement.
+D: Apply the change of scope procedure: assess the impact on scope, stakeholders, plan and deliverables, revisit the Architecture Vision as needed, and obtain approval of an updated Statement of Architecture Work
+The change of scope procedure in the Statement of Architecture Work exists for this case. A large addition with new stakeholders and regulations calls for an updated vision and a re-approved agreement.
+Answer: D
+Why: The TOGAF Standard includes specific change of scope procedures in the Statement of Architecture Work so that changes during the engagement are handled in an agreed way. Adding a subsidiary with its own regulations, systems and stakeholders changes scope, stakeholders and possibly the vision, so the architect assesses the impact, revisits Phase A outputs as needed, and gets the updated Statement of Architecture Work approved before continuing. The ADM's iterative nature supports returning to Phase A when scope changes substantially. The distractors either ignore the procedure, use Phase H change management for a scope change, or reset the whole Architecture Capability.
+
+
+Q: Brightwater Utilities has agreed the scope of an engagement to replace its customer billing landscape. The CFO and the Head of Customer Service each ask the architect to explain, in their own terms, what the target state will deliver for them and how success will be measured. The engagement is still in Phase A.
+Which Phase A activity addresses this request?
+A: Develop the Architecture Requirements Specification with quantified service levels
+The Architecture Requirements Specification is built during Phases B to D. It records measurable requirements for implementers, not stakeholder value propositions.
+B: Run a compliance review of the current billing system against the target
+Compliance reviews are part of Implementation Governance in Phase G. They check projects against an architecture that already exists.
+C: Perform a business transformation readiness assessment for each department
+Readiness assessment shows whether departments can absorb the change. It does not explain the value of the target state or define success measures.
+D: Define the Target Architecture value propositions and KPIs for each stakeholder group
+Phase A includes a step to define the value propositions and Key Performance Indicators of the target. It states the value for each stakeholder and how it will be measured.
+Answer: D
+Why: Phase A in the TOGAF Standard, 10th Edition includes the step 'Define the Target Architecture Value Propositions and KPIs'. In this step the architect develops the business case, states the value proposition for each stakeholder grouping, assesses the business risk, and defines the performance metrics and measures that will be built into the work. The CFO and Head of Customer Service are asking for exactly this: value in their terms and how success is measured. The other options are real TOGAF activities placed in the wrong phase or used for a different purpose.
+
+
+Q: Ellsworth Airports is developing a business scenario in Phase A for automated baggage tracking. The first draft says the objective is 'improve baggage handling' and lists only the baggage system as an actor. The business line managers have not been involved yet.
+Which three changes should the architect make to the business scenario? Each correct answer presents part of the solution.
+A: Restate the objectives so they are specific, measurable, actionable, realistic and time-bound
+The business scenario technique requires SMART objectives, so the vague 'improve baggage handling' must be made measurable and time-bound.
+B: Identify the human actors, such as handlers and passengers, as well as the computer actors, and define their roles and responsibilities
+A business scenario names both human and computer actors and their roles, which reveals requirements a single system actor hides.
+C: Involve business line management and the people who will use the solution in developing and reviewing the scenario
+Business scenarios are developed with business users and line management, not by architects alone, so the requirements reflect the real business need.
+D: Select the specific baggage tracking products in the scenario so that the requirements are realistic
+Business scenarios describe the business problem and requirements, not product choices. Products are selected much later, during implementation planning.
+E: Replace the Statement of Architecture Work with the finished business scenario
+A business scenario is a technique for discovering requirements and supporting the vision. It does not replace the Statement of Architecture Work.
+Answer: A, B, C
+Why: The business scenario technique, which Phase A refers to and the TOGAF Series Guide on Business Scenarios describes, identifies the problem, the business and technical environment, the objectives, the human and computer actors, and their roles and responsibilities, and then checks fitness for purpose and refines the scenario. Objectives are expected to be SMART, and the scenario is developed in collaboration with business users and line management. The draft in the scenario fails on all three counts. The distractors introduce product selection too early or confuse the technique with the Phase A agreement document.
+
+
+Q: Gorsefield Retail's Target Data Architecture consolidates customer data from three baseline databases into one customer data store. The migration team needs to see which baseline sources feed the target and what transformations happen on the way, so that it can plan data cleansing.
+Which Phase C artifact should the architect produce?
+A: A data entity/business function matrix
+This matrix relates data entities to the business functions that use them. It does not show data moving from baseline to target.
+B: A data migration diagram
+The data migration diagram shows the flow of data from baseline sources to target, including the transformations applied, which is what the migration team needs.
+C: An application/technology matrix
+This Phase D matrix maps applications to technology components. It does not describe data migration.
+D: A business footprint diagram
+A Business Footprint diagram is a Business Architecture artifact that links business goals, organization units, functions and services to the technical components that deliver them. It is not a migration view.
+Answer: B
+Why: The Data Architecture in Phase C of the TOGAF Standard includes the data migration diagram, which shows the flow of data from source to target applications and data stores and the transformations along the way. It helps plan cleansing, quality checks and the order of migration. The scenario asks for exactly that baseline-to-target view. The distractors are real artifacts that relate data, applications or goals to something else.
+
+
+Q: Kestrel Logistics is completing gap analysis in Phase C. The Application Architecture gap matrix lists Baseline building blocks as rows and Target building blocks as columns, with a final 'New' row on the Baseline axis and a final 'Eliminated' column on the Target axis. The baseline 'Fax Order Intake' application has no matching Target column and is marked in the Eliminated column. The 'Partner API Gateway' appears only in the New row.
+Which two conclusions should the architect draw from the matrix? Each correct answer presents part of the solution.
+A: Fax Order Intake must be checked to confirm whether it was intentionally eliminated or accidentally omitted from the Target Architecture
+A baseline building block missing from the target is a gap that must be reviewed. If its function is still needed, the omission must be corrected in the target.
+B: The Partner API Gateway is a gap that must be filled by developing or procuring the building block
+Items in the New row are target building blocks with no baseline counterpart. They represent capability that must be built or bought.
+C: Every cell marked 'Included' means the building block must be rebuilt for the target
+'Included' means the building block carries forward from baseline to target. It is not a gap and does not imply rebuilding.
+D: Fax Order Intake should be deleted from the Architecture Repository now that the matrix shows it as eliminated
+The repository keeps baseline descriptions; elimination is a planned change carried into the roadmap, not an immediate deletion of the record.
+E: The gaps should be left unrecorded until Phase E consolidates them
+Each of Phases B, C and D performs and records its own gap analysis. Phase E consolidates the gaps that those phases have already identified.
+Answer: A, B
+Why: The Gap Analysis technique (ADM Techniques, Chapter 5) uses a matrix with Baseline building blocks on the vertical axis and Target building blocks on the horizontal axis, a final row labeled New and a final column labeled Eliminated. A new item in the target is a gap to be filled by development or procurement. An item eliminated from the baseline must be checked: if the elimination was deliberate it is recorded as such, and if it was accidental the target must be corrected. The distractors misread 'Included', treat the repository as a list of current systems only, or push gap recording to Phase E.
+
+
+Q: Larkspur Retail is in Phase C. The integration team must understand which applications exchange information with which others, and how, before the Target Application Architecture can be agreed. The architect is choosing artifacts from the Architecture Content Framework.
+Which two artifacts should the architect produce? Each correct answer presents part of the solution.
+A: An application interaction matrix
+The application interaction matrix shows which applications communicate with which others, giving a complete view of dependencies.
+B: An application communication diagram
+The application communication diagram depicts the applications and the information flows and interfaces between them.
+C: A platform decomposition diagram
+The platform decomposition diagram is a Phase D artifact that breaks the technology platform into components. It does not show application exchanges.
+D: A business capability map
+A capability map shows business capabilities in Phase B. It does not show interfaces between applications.
+E: A data lifecycle diagram
+A data lifecycle diagram shows the states a data entity passes through. It does not show which applications exchange information.
+Answer: A, B
+Why: The Application Architecture in Phase C of the TOGAF Standard uses the application interaction matrix to record the communication relationships between applications and the application communication diagram to depict those applications, their interfaces and the information that flows between them. Together they give the integration team the dependency view the scenario asks for. The distractors are real artifacts from Phase B, Phase D and the Data Architecture that answer other questions.
+
+
+Q: Corriston Energy has finished gap analysis in Phase D for a grid analytics platform. Phases B and C each produced their own candidate roadmap components. The sponsor asks the architect to hand over a single, dated roadmap at the end of Phase D so that procurement can start, but several technology gaps depend on business and application changes that have not yet been sequenced together.
+What should the architect do?
+A: Define the Technology Architecture candidate roadmap components from the Phase D gaps, then pass them with the Phase B and C components to Phase E for consolidation into the Architecture Roadmap, and explain this sequence to the sponsor
+Each of Phases B, C and D produces candidate roadmap components. Phase E consolidates them into an Architecture Roadmap with dependencies resolved, which is needed because the technology gaps depend on business and application changes.
+B: Produce the Implementation and Migration Plan at the end of Phase D so procurement has dates
+The Implementation and Migration Plan is finalized in Phase F after work packages and Transition Architectures are defined. Producing it in Phase D skips the consolidation and dependency analysis.
+C: Define work packages for the technology gaps in Phase D and let the business and application teams define their own later
+Work packages are identified in Phase E across all domains. Defining technology packages in isolation ignores the cross-domain dependencies in the scenario.
+D: Skip candidate roadmap components in Phase D because the roadmap is created only in Phase E
+Phase D includes a step to define candidate roadmap components. Phase E relies on these inputs from every domain to build the consolidated roadmap.
+Answer: A
+Why: The TOGAF Standard, 10th Edition has each architecture domain phase (Step 8 of Phases B, C and D, Define Candidate Roadmap Components) define candidate roadmap components: an initial, high-level view of the work needed to move from baseline to target in that domain. Phase E then consolidates the gaps and candidate components from Phases B, C and D, resolves dependencies, groups work into work packages and Transition Architectures, and produces the Architecture Roadmap; Phase F turns this into the Implementation and Migration Plan. The scenario's decisive fact is that technology gaps depend on unsequenced business and application changes, which is exactly what Phase E consolidation resolves. The distractors either jump ahead to Phase E or F outputs or drop the Phase D step altogether.
+
+
+Q: How to implement the ADM Phases E, F, and G to implement an architecture, together with the applicable techniques
+Marrick County is in Phase E of an architecture that links its social-services case system with three partner agencies. Today the agencies email spreadsheets to each other. The Target Architecture requires that case records sent by one agency are processed automatically by the receiving system using a shared data model, without staff re-keying them. Stakeholders disagree on how much integration is really needed.
+How should the architect express and agree the interoperability needed for each exchange?
+A: Use the Interoperability Requirements technique to state the required degree of interoperability for each information exchange, such as seamless sharing of data, and record it in an interoperability matrix agreed with the stakeholders.
+The technique defines degrees of interoperability, from unstructured data exchange through structured exchange and seamless sharing of data to seamless sharing of information, so each exchange can be stated and agreed precisely.
+B: Run a Business Transformation Readiness Assessment for each agency and use the readiness scores as the interoperability requirements.
+A readiness assessment evaluates an organisation's ability to undergo change. It does not specify how systems must exchange data.
+C: Add the partner agencies to the power/interest grid and let the agency with the highest power decide the integration level.
+Stakeholder mapping decides how to engage stakeholders. It is not a method for defining interoperability, and letting one stakeholder decide skips the requirements agreement.
+D: Leave the integration level for each implementation project to decide in Phase G and capture the decision in its Architecture Contract.
+Interoperability requirements are consolidated and reconciled in Phase E so that work packages and Transition Architectures can be planned. Deferring them to Phase G leaves the migration plan without a basis.
+Answer: A
+Why: The TOGAF Standard (ADM Techniques, Interoperability Requirements) describes how to define interoperability as degrees, ranging from unstructured data exchange (Degree 1), structured data exchange (Degree 2), seamless sharing of data (Degree 3) to seamless sharing of information (Degree 4). Phase E includes a step to consolidate and reconcile interoperability requirements, because conflicting expectations here change which work packages are needed. The scenario's need for automatic processing with a shared data model and the stakeholder disagreement both point to stating a degree per exchange and agreeing it. The distractors are real techniques used for the wrong purpose or at the wrong time.
+
+
+Q: Langstone Retail's Head of Stores sponsors the store-systems architecture. Before funding implementation, she wants a formal agreement stating what the architecture will deliver to the stores business, the quality expected, and how the architecture function will ensure that delivered solutions remain fit for purpose. A separate agreement with the systems integrator is already in place.
+What should the architect put in place for the Head of Stores?
+A: A Communications Plan describing how stores staff will be told about the new systems.
+A Communications Plan schedules stakeholder communication. It does not set out deliverables, quality or fitness for purpose.
+B: A dispensation that allows the stores business to fund implementation outside the normal governance process.
+A dispensation permits a project to deviate from the architecture. It is not a sponsor agreement.
+C: An Architecture Contract between the architecting function and the business users.
+The TOGAF Standard describes Architecture Contracts between the architecting function and business users, alongside contracts with development partners.
+D: A Compliance Assessment signed by the Head of Stores.
+A Compliance Assessment records the result of a compliance review of a project. It is not an agreement on what the architecture will deliver.
+Answer: C
+Why: Phase G (TOGAF Standard, ADM, Phase G: Implementation Governance) relies on Architecture Contracts, which are joint agreements on the deliverables, quality and fitness for purpose of an architecture. The TOGAF Standard (EA Capability and Governance, Architecture Contracts) describes contracts between the architecture function and development partners and between the architecting function and business users. The integrator already has its contract, so the sponsor's request is met by the business-user contract. The distractors are real governance work products that serve other purposes.
+
+
+Q: Elstow Energy's architect is in Phase E with 35 gaps from Phases B to D. Several gaps could be closed by the same solution, some solutions depend on others, and the steering committee wants to see how gaps, potential solutions and dependencies relate before work packages are formed.
+Which technique should the architect use?
+A: The Consolidated Gaps, Solutions, and Dependencies Matrix.
+This matrix lists the gaps from the domain architectures with their potential solutions and dependencies, and is the basis for creating work packages.
+B: The Architecture Definition Increments Table.
+This table lists the projects and their incremental deliverables across Transition Architectures. It is used after work packages and transitions are defined.
+C: A stakeholder map matrix.
+Stakeholder maps support engagement planning and do not relate gaps to solutions.
+D: The Business Transformation Readiness Assessment.
+This assessment evaluates the organisation's readiness to undergo change. It does not consolidate gaps or solutions.
+Answer: A
+Why: Phase E (TOGAF Standard, ADM, Phase E: Opportunities and Solutions) consolidates the gap analysis results from Phases B to D. The TOGAF Standard (ADM Techniques, Migration Planning Techniques) describes the Consolidated Gaps, Solutions, and Dependencies Matrix, which groups gaps across domains, records potential solutions and identifies dependencies. It is the basis for identifying and grouping work packages. The steering committee wants exactly this view before work packages are formed, so later techniques such as the Architecture Definition Increments Table are premature.
+
+
+Q: Dunmore Logistics is in Phase E. Phase B recorded that dispatchers must see live vehicle positions inside the order system, but Phase D recorded that the vehicle telematics platform can only export files every hour. The two requirements were captured by different teams and have never been compared.
+What should the architect do?
+A: Consolidate and reconcile the interoperability requirements from Phases B to D, resolve the conflict with stakeholders, and reflect the agreed requirement in the work packages.
+Phase E includes a step to consolidate and reconcile interoperability requirements so that conflicts like this are resolved before migration planning.
+B: Defer the conflict to the Phase G compliance review of the telematics project.
+A compliance review checks a project against an agreed architecture. Here the architecture itself contains conflicting requirements.
+C: Raise a re-architecting Change Request in Phase H.
+The architecture has not been implemented, so Phase H change classification does not apply.
+D: Accept the Phase D constraint and remove the Phase B requirement from the Architecture Requirements Specification without consulting stakeholders.
+Removing a business requirement unilaterally bypasses Requirements Management and stakeholder agreement.
+Answer: A
+Why: Phase E (TOGAF Standard, ADM, Phase E: Opportunities and Solutions) includes a step to consolidate and reconcile interoperability requirements. Interoperability requirements are captured in several earlier phases, business interoperability in Phase B and technical interoperability in Phase D, and the TOGAF Standard's Interoperability Requirements technique stresses that they must be reconciled before work packages and Transition Architectures are finalised. The conflict between live positions and hourly files is exactly the kind of inconsistency this step resolves. The distractors push the decision to the wrong phase or skip stakeholder agreement.
+
+
+Q: How to implement Architecture Change Management
+Ferncliff Telecom's Architecture Board has reviewed a Phase H change analysis and agreed that a new regulatory regime for network resilience requires significant changes across business, data and technology architectures. The board asks the architect how to start the work formally.
+What should the architect do next?
+A: Update the Requirements Repository and let each domain architect revise their own section of the existing Architecture Definition Document.
+Editing documents domain by domain without a new cycle bypasses scoping, stakeholder engagement and approval for a significant change.
+B: Start the new work at Phase G by running compliance reviews against the new regulation.
+Compliance reviews check projects against an agreed architecture. No architecture for the new regulation exists yet.
+C: Issue Change Requests directly to the implementation projects and update their Architecture Contracts.
+Change Requests to projects suit changes the current architecture can absorb. A significant change across three domains needs architecture development first.
+D: Prepare a Request for Architecture Work so that a new ADM cycle can be initiated to address the change.
+When Phase H concludes that a change requires re-architecting, the output is a Request for Architecture Work that starts a new cycle of the ADM.
+Answer: D
+Why: Phase H (TOGAF Standard, ADM, Phase H: Architecture Change Management) ends with activating the process to implement change. When the change requires re-architecting, Phase H produces a Request for Architecture Work, which is the formal input that initiates a new ADM cycle. Because the Architecture Board has already agreed that the change is significant and cross-domain, the decisive step is to start a new cycle formally rather than patch projects or documents. The distractors use real change mechanisms that are suited to smaller changes.
+
+
+Q: Sable Energy operates a target field-service architecture. The mobile workforce team, the only stakeholder group affected, asks to keep using an older offline-sync component for one more year because the replacement drains device batteries. The Architecture Board agrees that the deviation is low risk and can be allowed under a dispensation with a review date. No principle, building block definition or business capability changes. A board member asks whether this should start a new ADM cycle.
+What should the architect advise?
+A: Raise a Request for Architecture Work so that the mobile workforce team can redefine the field-service principles.
+A Request for Architecture Work starts a new architecture engagement. No principle is changing, so there is nothing for a new engagement to redefine.
+B: Start a new ADM cycle, because any deviation from the Target Architecture invalidates the architecture.
+Deviations that can be governed under a dispensation do not invalidate the architecture. Restarting the ADM for this would be disproportionate.
+C: Handle it through change management rather than a new ADM cycle, because the change affects one stakeholder group and can be allowed under a dispensation.
+The Phase H guidance is that changes affecting only one stakeholder, or that can be allowed under a dispensation, are more likely candidates for change management than for re-entry to the ADM.
+D: Return to Phase E to define a new Transition Architecture that includes the older component.
+Defining a new Transition Architecture is migration planning for a new target. It is not needed to approve a bounded, time-limited deviation.
+Answer: C
+Why: Phase H (TOGAF Standard, ADM, Phase H: Architecture Change Management) offers a rule of thumb for the decision between change management and a new ADM cycle. A change that impacts two or more stakeholders is likely to require architecture redesign and re-entry to the ADM. A change that impacts only one stakeholder, or that can be allowed under a dispensation, is more likely to be a candidate for change management. The scenario gives both signals: a single stakeholder group and an agreed dispensation with a review date. The distractors all send a small, governed deviation back into architecture development.
+
+
+Q: Redwick Bank has just completed implementation of its target lending architecture and closed Phase G. The Architecture Board wants a reliable way to know when business or technology changes mean the architecture should be changed or a new ADM cycle started.
+What should the architect set up at the start of Phase H?
+A: A new Statement of Architecture Work for the next lending architecture.
+A Statement of Architecture Work is created in Phase A once a new engagement is approved. No new engagement has been justified yet.
+B: A fresh gap analysis between the new baseline and a future target.
+Gap analysis is done in Phases B to D of a new cycle. Phase H first needs to detect whether change is needed.
+C: A value realisation process and monitoring of technology and business changes, feeding change analysis to the Architecture Board.
+Phase H steps include establishing the value realisation process, deploying monitoring tools and providing analysis for architecture change management.
+D: Architecture Contracts with every business unit that uses the lending platform.
+Architecture Contracts govern implementation in Phase G. They do not detect future changes to the business or technology environment.
+Answer: C
+Why: Phase H (TOGAF Standard, ADM, Phase H: Architecture Change Management) begins with establishing the value realisation process and deploying monitoring tools, so that the enterprise can track whether the architecture delivers its intended value and spot technology and business changes. The architect then provides analysis to the Architecture Board, which decides whether a change goes through change management or triggers a new ADM cycle. The distractors are activities from Phases A to D and G that presuppose a decision Phase H has not yet made.
+
+
+Q: Morven Health's architect is triaging five change requests received in Phase H against the implemented target architecture: (1) retire a second reporting tool that duplicates the approved analytics platform; (2) merge two identical patient-address services into one; (3) add a patient mobile app channel that uses existing services; (4) move from a hospital-centred to a community-care operating model; (5) introduce a national data-sharing capability affecting clinicians, finance and regulators.
+Which two change requests are simplification changes? Each correct answer presents part of the solution.
+A: Request 1, retiring the duplicate reporting tool.
+Removing a duplicate tool reduces redundancy without changing the architecture's structure, which is a simplification change.
+B: Request 2, merging the two identical patient-address services.
+Consolidating identical services removes duplication, which is a simplification change that change management can normally handle.
+C: Request 3, adding the mobile app channel.
+A new channel adds capability on top of existing services, which makes it an incremental change rather than a simplification.
+D: Request 4, moving to a community-care operating model.
+A new operating model changes the fundamentals of the architecture, which makes it a re-architecting change.
+E: Request 5, introducing the national data-sharing capability.
+A new capability affecting several stakeholder groups is likely to need re-architecting, not simplification.
+Answer: A, B 
+Why: Phase H (TOGAF Standard, ADM, Phase H: Architecture Change Management) classifies changes as simplification changes, which can normally be handled through change management techniques; incremental changes, which may be handled through change management or partial re-architecting; and re-architecting changes, which require the architecture to go through the ADM cycle again. Requests 1 and 2 remove redundancy, request 3 adds a channel incrementally, and requests 4 and 5 alter the operating model or affect multiple stakeholder groups. Classifying correctly decides which governance route each request takes.
+
+
+Q: How to manage architecture requirements
+Fenwick Retail is in Phase D. A new regulation requires that customer payment data be stored only in-country, which changes a requirement already used to define the Phase C Data Architecture and the Phase B business service for online checkout. The Phase D team wants to apply the change only to the Technology Architecture and carry on.
+Which two actions should the architect take under the Requirements Management process? Each correct answer presents part of the solution.
+A: Apply the change only to the Technology Architecture, because the current phase owns all requirement changes.
+A requirement that affects earlier phases cannot be resolved by changing only the current phase. That leaves the Data Architecture and business service inconsistent with the requirement.
+B: Hold the changed requirement until Phase H, because requirement changes are handled only after implementation.
+Requirements Management operates in every phase. A regulatory change discovered during Phase D must be assessed now, not deferred to after implementation.
+C: Restart the engagement from the Preliminary Phase so that the Architecture Capability can be redefined.
+The Preliminary Phase establishes the Architecture Capability. A changed regulatory requirement does not call the capability into question.
+D: Assess the impact of the changed requirement on the current phase and on previous ADM phases, and decide whether to revisit Phases B and C or defer the change.
+Requirements Management includes assessing the impact of changed requirements on current and previous ADM phases, typically documented in a Requirements Impact Assessment.
+E: Record the changed requirement and its priority in the Requirements Repository after confirming stakeholder agreement.
+Changed requirements and their priorities are recorded in the Requirements Repository with stakeholder buy-in so that all phases work from the same baseline.
+Answer: D, E
+Why: The TOGAF Standard (ADM, Architecture Requirements Management) defines steps for identifying changed requirements, recording priorities, and assessing the impact of changed requirements on current and previous ADM phases. The output is usually a Requirements Impact Assessment, which helps the team decide whether to revisit earlier phases or defer the change to a later cycle. Changes and their priorities are recorded in the Requirements Repository with stakeholder agreement. The scenario's trap is local fixing: the in-country rule touches the Data Architecture and a business service, so it must be assessed across phases, not just applied in Phase D.
+
+
+Q: At Tidewell Shipping, Phase B has produced 60 business requirements from interviews and business scenarios. The requirements currently sit in workshop notes spread across several team members' folders. The architect must make them a stable reference for the rest of the cycle.
+What should the architect do under the Requirements Management process?
+A: Wait until Phase F to collect and prioritise the requirements, when the work packages are known.
+Requirements must be baselined as they are identified. Waiting until Phase F leaves Phases C and D without an agreed reference.
+B: Copy the requirements into the Architecture Vision and treat the vision as the requirements baseline.
+The Architecture Vision is a high-level description produced in Phase A. It is not the store for detailed requirements.
+C: Send the requirements to the implementation projects so that they can start estimating.
+Implementation projects are mobilised after Phase F. Sending unbaselined requirements early creates rework.
+D: Baseline the requirements by determining their priorities, confirming stakeholder agreement, and recording them in the Requirements Repository.
+Baselining requirements, with priorities and stakeholder buy-in recorded in the Requirements Repository, is a step of the Requirements Management process.
+Answer: D
+Why: The TOGAF Standard (ADM, Architecture Requirements Management) describes the Requirements Management steps that run alongside the ADM phases. Once requirements are identified in a phase, they are baselined: their priorities are determined, stakeholder agreement is confirmed, and they are recorded in the Requirements Repository. Later steps monitor the baseline and assess any changes. Scattered workshop notes provide no single, agreed reference, which is the problem baselining solves.
+
+
+Q: Gannet Airlines is defining a shared flight-status service that five applications will consume. During Phase C, the application owners agree on the service's operations, response time, availability and support hours. The architect wants these agreements to bind the teams that later build and consume the service.
+Where should the architect record these agreements?
+A: In the Implementation Factor Assessment and Deduction Matrix.
+That matrix records factors that affect implementation and the deductions made from them. It is not where service contracts are specified.
+B: In the Architecture Vision, as a value proposition for the five application owners.
+The Architecture Vision describes the high-level target and its value. Detailed service agreements are far too specific for it.
+C: As an application service contract in the Architecture Requirements Specification.
+Application service contracts, together with business service contracts, are typical content of the Architecture Requirements Specification and define measurable service commitments.
+D: In the Communications Plan, so that each application owner is informed of the agreement.
+The Communications Plan schedules stakeholder communication. Recording the agreement there does not make it a requirement implementation must meet.
+Answer: C
+Why: The TOGAF Standard (Architecture Content, Architecture Deliverables) lists business service contracts and application service contracts among the typical contents of the Architecture Requirements Specification. Because the specification provides the quantitative statements that implementation projects must meet to comply with the architecture, recording the flight-status agreements there makes them binding on later projects and Architecture Contracts. The distractors are real deliverables and techniques that serve vision, communication and planning rather than measurable requirements.
+
+
+Q: Ottery Mutual's architect is finalising the Architecture Requirements Specification for a member-portal programme. Implementation projects must work within a fixed regulatory deadline and an approved list of hosting providers, and the plan assumes that a partner's identity API will be available by Q2. Project managers need to see these conditions alongside the measurable requirements.
+Where should the architect record the deadline, the hosting restriction and the identity API dependency?
+A: In the constraints and assumptions sections of the Architecture Requirements Specification.
+Constraints and assumptions are typical contents of the Architecture Requirements Specification, alongside the measurable requirements that implementation must meet.
+B: In the Architecture Principles, as general rules that guide all future architecture work.
+Principles are enduring general rules and guidelines. A specific deadline and a dated dependency are not principles.
+C: In the Architecture Roadmap, as work packages.
+Work packages describe change to be delivered. Constraints and assumptions are conditions on that delivery, not work packages.
+D: In the Communications Plan, so that stakeholders are informed of them.
+The Communications Plan schedules communication with stakeholders. It is not where implementation conditions are specified.
+Answer: A
+Why: The TOGAF Standard (Architecture Content, Architecture Deliverables) lists constraints and assumptions among the typical contents of the Architecture Requirements Specification, together with success measures, architecture requirements, service contracts, implementation guidelines, specifications and standards, interoperability requirements and IT service management requirements. Recording the regulatory deadline and hosting restriction as constraints, and the identity API availability as an assumption, keeps them next to the requirements that projects must meet, and makes the assumption visible as a risk to monitor.
+
+
+Q: How to use The Open Group Library
+Velora Group's architects are starting Phases C and D for a post-merger integration. They need two things from The Open Group Library: a taxonomy of generic platform services to structure the target Technology Architecture, and a reference model that helps them design how information can flow between applications across the separate business units and their silos.
+Which two reference models should the architects use? Each correct answer presents part of the solution.
+A: The Integrated Information Infrastructure Reference Model (III-RM)
+The III-RM addresses how applications and information infrastructure can be arranged so that information flows across organizational boundaries.
+B: The TOGAF content metamodel
+The content metamodel defines the entities and relationships used to describe any architecture; it is not a reference model of platform services or information flow.
+C: The TOGAF Series Guide on Value Streams
+Value streams describe how the business delivers value to stakeholders; they do not provide a platform service taxonomy or an integration model.
+D: The Architecture Skills Framework
+The Architecture Skills Framework describes roles and skills for architecture practitioners and does not model technology or information flow.
+E: The TOGAF Technical Reference Model (TRM)
+The TRM provides a taxonomy of generic platform services and a model of the application platform, which is suited to structuring a Technology Architecture.
+Answer: A, E
+Why: In the TOGAF Standard, 10th Edition, the Technical Reference Model and the Integrated Information Infrastructure Reference Model are published as TOGAF Series Guides in The Open Group Library rather than in the Fundamental Content. In the Architecture Continuum the TRM is a Foundation Architecture and the III-RM is a Common Systems Architecture (TOGAF Series Guides: The TOGAF Technical Reference Model; The TOGAF Integrated Information Infrastructure Reference Model). The TRM gives a taxonomy of platform services for structuring Technology Architecture, and the III-RM focuses on enabling information flow across boundaries, which fits a post-merger integration across silos. The distractors are real TOGAF assets that describe architecture content, business value or people rather than these two concerns.
+
+
+Q: Norvik Payments operates under a financial regulator that has criticized the company for treating security as a late design review. The Chief Architect wants published guidance on how to address security and risk concerns systematically in every ADM phase, from architecture principles in the Preliminary Phase through to implementation governance, as part of the enterprise architecture rather than as a separate exercise.
+Which document from The Open Group Library should the Chief Architect adopt as the primary guide?
+A: The TOGAF Series Guide on Business Scenarios
+Business scenarios help elicit business requirements and could surface security needs, but they do not provide a method for integrating security across all phases.
+B: The TOGAF Series Guide on integrating risk and security within a TOGAF enterprise architecture
+This guide addresses how security and risk concerns are brought into each ADM phase and into architecture governance, which is what the regulator's criticism calls for.
+C: The TOGAF Series Guide on Information Mapping
+Information mapping describes business information concepts; it may help classify sensitive information but is not a guide to security across the ADM.
+D: The TOGAF Technical Reference Model
+The TRM provides a taxonomy of platform services, which may include security services, but it does not explain how to address security and risk across the ADM.
+Answer: B
+Why: The TOGAF Standard, 10th Edition places topic-specific guidance in TOGAF Series Guides that extend the Fundamental Content. For security, the Library includes the TOGAF Series Guide: Integrating Risk and Security within a TOGAF Enterprise Architecture so that security is handled through principles, requirements, building blocks and governance in each ADM phase. The scenario's constraint is that security must be built into every phase rather than reviewed late, which points directly to that guide. The distractors are useful Library documents that touch only one part of the problem.
+
+
+
+Q: Altavia Logistics is starting Phase B. Its business leaders describe the company only in terms of departments and projects, and the architects want a stable, organization-independent view of what the business does, structured as a hierarchical map that can later be cross-mapped to value streams, processes and applications. They want published guidance from The Open Group Library on how to define and map these elements.
+Which document from The Open Group Library should the architects use first?
+A: The TOGAF Series Guide on Information Mapping
+Information mapping addresses the information concepts the business uses; it does not describe how to build a capability map.
+B: The TOGAF Series Guide on Business Capabilities
+This guide explains how to define business capabilities, build a capability map, and cross-map capabilities to other business architecture elements, which is the stated need.
+C: The TOGAF Series Guide on Value Streams
+The Value Streams guide addresses how value is delivered to stakeholders in stages; it complements, but does not primarily cover, building a hierarchical capability map.
+D: The TOGAF Technical Reference Model
+The Technical Reference Model is a foundation reference model of platform services for Technology Architecture, not business capability definition.
+Answer: B
+Why: The TOGAF Standard, 10th Edition separates the Fundamental Content from the Series Guides in The Open Group Library, which give detailed guidance on specific topics. For Phase B business architecture, the Series Guides on Business Capabilities, Value Streams, Information Mapping and Organization Mapping each cover one business architecture element (TOGAF Series Guide: Business Capabilities). The deciding detail is that the architects want an organization-independent, hierarchical map of what the business does, which is a capability map. The distractors are real Library documents chosen for the wrong concern: value streams show how value is delivered, information maps show the information the business needs, and the TRM is a technology reference model.
+
+
+Q: The architecture team at Sundrell Software works inside an organization that already runs all delivery in two-week sprints. The architects want specific guidance on how to organize ADM work itself into sprints, including how to maintain an architecture backlog, size architecture work for a sprint, and deliver architecture outputs incrementally alongside the delivery teams.
+Which document from The Open Group Library is the most appropriate starting point?
+A: The TOGAF Series Guide on Business Scenarios
+Business scenarios help discover and document business requirements; they do not explain how to run ADM work in sprints.
+B: The TOGAF Series Guide on applying the TOGAF ADM using Agile sprints
+This guide focuses on executing ADM work in sprints, including backlogs, sprint planning and incremental delivery of architecture outputs, which matches the team's need.
+C: The TOGAF Technical Reference Model
+The Technical Reference Model is a technology reference model for platform services and offers no guidance on agile ways of working.
+D: The TOGAF Series Guide on Business Capabilities
+The Business Capabilities guide addresses defining and mapping capabilities; it does not cover sprint-based architecture delivery.
+Answer: B
+Why: The TOGAF Standard, 10th Edition keeps its Fundamental Content stable and places detailed how-to guidance in TOGAF Series Guides within The Open Group Library. For agile organizations, the Library includes guidance on enterprise agility in general and a guide specifically on applying the ADM using Agile sprints (TOGAF Series Guide: Applying the TOGAF ADM using Agile Sprints). The scenario asks for sprint-level mechanics such as backlog management and sprint sizing, so the sprint guide is the most specific match. The distractors are real Library documents chosen for an unrelated concern.
+
+
+
+Q: Thornbury Utilities is delivering a field workforce scheduling capability through capability-based planning. The first capability increment was planned for Transition Architecture 1. The scheduling software and device rollout finished on time, but the revised dispatch process and crew training belong to a separate HR project that is six months late. The programme board is about to report the increment as complete because the system is live.
+What should the architect advise?
+A: Treat the increment as not yet delivered, re-plan the process and training work into the same Transition Architecture, and measure the increment's business value only when all its dimensions are in place.
+Capability-based planning coordinates all dimensions of an increment so that business value is realized and measured at a Transition Architecture; the increment is incomplete until they all land.
+B: Report the increment as complete, because the tools dimension was the costliest part.
+A capability increment delivers value only when its dimensions are in place together; a live system without trained crews and new processes does not yet provide the capability.
+C: Move the process and training work into the next ADM cycle as a new change request.
+Deferring the remaining dimensions to a new cycle hides the shortfall and breaks the link between the increment and its planned value.
+D: Split the capability into a technology capability and an HR capability so each can be reported separately.
+Splitting the capability along organizational lines contradicts the cross-organizational intent of capability-based planning and makes value measurement meaningless.
+Answer: A
+Why: The TOGAF Standard describes capability-based planning (TOGAF Series Guide: Business Capability Planning) as delivering capability increments that combine dimensions such as people, process, material or tools, and information, often across several projects owned by different parts of the organization. Increments are aligned to Transition Architectures so that each one provides discernible, measurable business value. The scenario's trap is project-centric reporting: one project finishing does not mean the capability exists. The architect should keep the increment open, coordinate the lagging projects into the same transition, and report value only when the whole increment is delivered.
+
+
+Q: Ashby Retail is using capability-based planning to deliver an omnichannel order fulfilment capability in three capability increments over 18 months. The programme manager asks the architects which ADM construct the increments should be aligned to when the Implementation and Migration Plan is built in Phases E and F.
+Which ADM construct should the capability increments be aligned to?
+A: Business scenarios
+Business scenarios help identify and understand business requirements, mostly in Phase A; they are not the structure for staging delivery.
+B: The Communications Plan
+The Communications Plan schedules stakeholder communication; it does not describe the intermediate architecture states in which value is delivered.
+C: Transition Architectures
+Capability increments are aligned to Transition Architectures, which describe the enterprise at intermediate states and are realized through work packages in the Implementation and Migration Plan.
+D: Architecture Contracts
+Architecture Contracts are agreements between development partners and sponsors used in Phase G governance; they do not define intermediate capability states.
+Answer: C
+Why: The TOGAF Standard links capability-based planning (TOGAF Series Guide: Business Capability Planning) to migration planning in Phases E and F. Each capability increment is delivered through one or more work packages and is aligned to a Transition Architecture, so that the enterprise reaches a defined state in which the increment's business value can be realized and measured. The other options are real ADM outputs, but they serve governance, requirements discovery or communication rather than staging capability delivery.
+
+
+Q: In Phase C, Marlow Freight's architects have three alternatives for the target Application Architecture of its customs declarations system: extend the current package, replace it with a software-as-a-service product, or build a set of new services. Stakeholders from finance, operations and compliance have different priorities, and the Architecture Board wants a defensible selection.
+Which two actions should the architects take as part of trade-off analysis? Each correct answer presents part of the solution.
+A: Defer the selection to the delivery team in Phase G so that they can choose during implementation.
+The target architecture must be selected before migration planning and implementation governance; Phase G governs against an agreed architecture.
+B: Choose the alternative favoured by the most senior stakeholder and record the others as rejected.
+Deciding by seniority bypasses the evaluation and leaves no defensible rationale for the board.
+C: Agree evaluation criteria with the stakeholders, drawing on requirements, architecture principles, cost and risk.
+Agreed criteria make the comparison transparent and ensure each stakeholder group's concerns are represented in the evaluation.
+D: Document how each alternative affects the stakeholders' concerns, and record the selected alternative and the rationale.
+Recording impacts and rationale lets the Architecture Board and later teams understand why the alternative was chosen and what was traded away.
+E: Eliminate any alternative that requires new building blocks, because reuse is always preferred.
+Reuse is one criterion among several; excluding alternatives on that basis alone pre-empts the analysis.
+Answer: C. D
+Why: The TOGAF Standard encourages architects to develop and compare alternative architectures (ADM Techniques, Architecture Alternatives and Trade-Offs) in Phases B to D. Trade-off analysis needs criteria that stakeholders accept, typically derived from requirements, principles, cost, risk and value, and it must document how each alternative affects stakeholder concerns so that the final choice and its rationale are explicit. The board asked for a defensible selection, which is exactly what agreed criteria and a recorded rationale provide. Shortcuts by reuse, seniority or deferral each remove that defensibility.
+
+
+
+Q: Architects at Dovecote Insurance are defining a Customer Notification building block that sends policy reminders by email, SMS and app message. Several applications will use it, and the team expects to change the messaging vendor within three years.
+Which characteristic will most make Customer Notification a good building block?
+A: It includes the code of every consuming application so that changes are released together.
+Bundling consumers into the building block removes its boundary and makes it harder, not easier, to reuse or replace.
+B: It is specified only in terms of the current vendor's product version.
+Tying the definition to one product version makes replacement expensive; product detail belongs to a Solution Building Block that fulfils a more general specification.
+C: It is documented only as a diagram so that it is easy for executives to read.
+A diagram is one artifact describing the building block; a building block needs a specification of functions and interfaces, not just a picture.
+D: It has a clearly defined interface and can be replaced by another implementation that meets the same specification.
+Good building blocks have defined boundaries and published interfaces, can interoperate with other building blocks, and can be replaced without affecting their consumers.
+Answer: D
+Why: The TOGAF Standard (Architecture Content, Building Blocks) describes a building block as a package of functionality defined to meet business needs, with published interfaces, which may interoperate with other building blocks and can be assembled, reused and replaced. The expected vendor change is the deciding constraint: a building block whose interface is stable and specified independently of the product can be re-implemented without disturbing its consumers. The distractors either erase the boundary, couple the specification to a product, or confuse a building block with an artifact that depicts it.
+
+
+Q: Using architecture levels to organize the Architecture Landscape
+Larkspur Insurance's subsidiary in Canada has developed a claims-handling architecture that the group's two other subsidiaries also need. The group architect is starting Phase B for one of those subsidiaries and wants to accelerate the work while avoiding the mistake of copying another subsidiary's architecture without assessing fit.
+How should the group architect use the Enterprise Continuum and the Architecture Repository?
+A: Search the Architecture Repository for applicable assets, starting with the most specific, assess the Canadian architecture against the subsidiary's requirements, adapt it, and generalize the common parts into a reusable asset for the group.
+The Enterprise Continuum supports reuse by classifying assets by generality; the architect reuses the most specific relevant asset after assessing fit and contributes common elements back for other subsidiaries.
+B: Begin with the Foundation Architecture and specialize it step by step to a new Organization-Specific Architecture, ignoring existing subsidiary work to avoid bias.
+Starting from the most generic level and ignoring a closely related existing architecture throws away the reuse the Enterprise Continuum is designed to enable.
+C: Adopt the Canadian architecture unchanged as the Target Architecture, because it is already approved.
+Approval for one subsidiary does not establish fit for another; reuse still requires assessing the asset against the new scope, requirements and constraints.
+D: Store the Canadian architecture in the Solutions Landscape so that the subsidiary can deploy the same products.
+The Solutions Landscape holds solution-level deployments; placing an architecture there confuses architecture and solutions and skips Phase B assessment.
+Answer: A
+Why: The TOGAF Standard describes the Enterprise Continuum (TOGAF Standard, Introduction and Core Concepts, Enterprise Continuum and Architecture Repository) as a way to classify architecture and solution assets from generic to organization-specific so they can be found and reused, and the Architecture Repository as where they are stored. In Phases B to D, architects look for relevant existing assets, prefer the most specific applicable one, assess and adapt it to the current requirements, and feed improvements or generalized content back into the repository. The scenario explicitly warns against copying without assessment, while ignoring the existing asset would waste it. The deciding idea is reuse with assessment and contribution back.
+
+
+Q: At Calder Group, a central enterprise architecture team and the payments division team are each developing target architectures that cover payment processing. Their targets conflict on interfaces and timelines, and both claim authority over the same building blocks. The Architecture Board asks the lead architect to restructure the Architecture Landscape so the conflict does not recur, while still allowing both teams to work in parallel.
+What should the lead architect recommend?
+A: Merge both efforts into a single enterprise-wide architecture owned by the central team.
+A single monolithic architecture removes the conflict but sacrifices the parallel working the board wants and is hard to keep current at enterprise scale.
+B: Let each team keep its own target and reconcile differences through compliance reviews in Phase G.
+Deferring reconciliation to implementation governance lets conflicting targets drive projects; the conflict should be prevented in how the landscape is partitioned.
+C: Partition the landscape only by time, assigning the central team the baseline and the payments team the target.
+Time is one partitioning characteristic, but splitting baseline and target between teams does not resolve overlapping subject-matter scope and adds hand-off risk.
+D: Define architecture partitions with distinct scope by subject matter, level of detail and time period, assign each partition an owner, and require the payments Segment Architecture to conform to the enterprise Strategic Architecture.
+Partitioning gives each architecture a clear, non-overlapping scope and owner, and the hierarchy of levels ensures more detailed architectures conform to the broader ones, so teams can work in parallel without conflict.
+Answer: D
+Why: The TOGAF Standard guidance on partitioning the Architecture Landscape (TOGAF Standard, Applying the ADM Across the Architecture Landscape, and Architecture Partitioning) explains that a large enterprise cannot be described by one architecture, so the landscape is divided into partitions characterized by subject matter (breadth), viewpoint, level of detail (depth), time and maturity or volatility. Each partition should have a clear scope and owner, and architectures at the Segment and Capability levels must be consistent with the Strategic Architecture above them. The Architecture Content Framework and the Enterprise Continuum are then used to integrate the partitions. The deciding constraints are overlapping scope and the need for parallel work, which only clear partitions with ownership and conformance resolve.
+
+
+
+Q: The Architecture Board at Glenhurst University has approved an API design standard, including versioning and authentication rules, that every new integration must follow. Project architects must check their designs against it during Architecture Compliance reviews. The repository manager asks where the approved standard should be stored.
+Where in the Architecture Repository should the approved standard be stored?
+A: In the Architecture Requirements Repository
+The Architecture Requirements Repository holds requirements agreed for specific architectures, not enterprise-wide standards that apply to all projects.
+B: In the Standards Library
+The Standards Library holds the standards, such as legal, industry and organizational standards, with which new architectures and deployed services must comply.
+C: In the Reference Library
+The Reference Library holds guidelines, templates, patterns and reference models used to accelerate work; mandatory standards belong in the Standards Library.
+D: In the Governance Log
+The Governance Log records decisions, compliance assessments and dispensations; it would hold the approval decision and the review outcomes, not the standard itself.
+Answer: B
+Why: The TOGAF Standard (TOGAF Standard, Architecture Repository) separates the repository into areas with different purposes. The Standards Library captures the standards with which architectures must comply; the Reference Library holds reusable guidance; the Governance Log records governance activity; and the Architecture Requirements Repository holds requirements. Because the API rules are mandatory and are checked in compliance reviews, they are a standard. The board's approval decision and later compliance results would be recorded in the Governance Log, which is why that distractor is tempting.
+
+
+Q: Brennick Health Group is setting up its Architecture Landscape with a Strategic Architecture for the group, Segment Architectures for hospitals and community care, and Capability Architectures for individual projects. New architects are confused about how the levels relate to each other and to the ADM, and the Head of Architecture is writing guidance for them.
+Which two statements should the guidance include? Each correct answer presents a complete statement.
+A: Each architecture level requires its own separate Architecture Repository.
+The levels organize content within one Architecture Landscape; a single repository holds architectures at all levels and links them.
+B: Segment Architectures are limited to the Technology Architecture domain.
+A Segment Architecture can cover all architecture domains for its area of the enterprise; levels describe breadth and depth, not domain.
+C: The ADM can be applied at each level, and the architecture at a higher level provides direction and constraints for work at the levels below it.
+The TOGAF Standard describes iterating the ADM at different levels, with higher-level architectures setting context, direction and constraints for more detailed ones.
+D: A Strategic Architecture typically covers a longer time horizon and has less detail than a Capability Architecture.
+Strategic Architecture gives a long-term, summary view across the enterprise, while Capability Architecture is detailed and focused on delivering a specific increment in a shorter period.
+E: Capability Architectures must all be completed before work on the Strategic Architecture can start.
+Direction flows from the Strategic level downward; waiting for all project-level detail would leave projects without strategic direction.
+Answer: C, D
+Why: The TOGAF Standard (Applying the ADM, Applying Iteration to the ADM and Applying the ADM Across the Architecture Landscape) describes how the Architecture Landscape is organized into Strategic, Segment and Capability Architectures that differ in breadth, depth and time horizon. The ADM can be run at each level, and higher-level architectures provide the direction and constraints that more detailed architectures must conform to. All levels live in the same Architecture Landscape in the Architecture Repository, and each level can span the business, data, application and technology domains. The distractors invert the direction of governance or confuse levels with repositories or domains.
+
+
+Q: Ferrow Shipping is preparing a disaster recovery plan as part of Phase D. The infrastructure lead needs to see which physical locations, such as the two data centers and four port offices, host which technology environments and which applications run in each, so that the impact of losing a site can be assessed.
+Which artifact should the architects produce?
+A: The Application/Technology matrix
+This matrix maps applications to the technology components that support them, but it does not show the physical locations that host them.
+B: The Environments and Locations diagram
+The Environments and Locations diagram depicts which locations host which applications and technology environments, which is what a site-loss impact assessment needs.
+C: The Data Lifecycle diagram
+The Data Lifecycle diagram shows how a data entity changes state over time, which is unrelated to site hosting.
+D: The Technology Standards catalog
+The Technology Standards catalog lists the approved technology standards; it says nothing about where components are deployed.
+Answer: B
+Why: The TOGAF Standard Architecture Content Framework (Architecture Content, Catalogs, Matrices, and Diagrams) lists Phase D artifacts that address technology stakeholders' concerns. The Environments and Locations diagram shows the locations where applications and technology are hosted and the environments at each, which directly supports assessing the effect of losing a site. The Application/Technology matrix is the tempting distractor because it relates applications to technology, but it omits location. Choosing an artifact means matching it to the stakeholder's concern, here a location-based view.
+
+
+Q: The Chief Operating Officer of Meridian Foods has asked for a single picture, for an executive steering meeting, that shows how the company's business goals and organizational units link to the business functions and services that deliver them and to the technical components that support those services. The architecture team already has the underlying catalogs.
+Which artifact best meets this request?
+A: The Business Interaction matrix
+The Business Interaction matrix shows dependencies and communication between organizations and actors, not the trace from goals to technical components.
+B: The Platform Decomposition diagram
+The Platform Decomposition diagram breaks down the technology platform that supports applications; it is aimed at technology stakeholders, not executive goal alignment.
+C: The Business Footprint diagram
+The Business Footprint diagram describes links between business goals, organizational units, business functions and services, and maps them to the technical components that deliver capability.
+D: The Organization/Actor catalog
+A catalog lists one kind of building block, here organizational units and actors; it does not show links from goals through functions to technology.
+Answer: B
+Why: In the TOGAF Standard Architecture Content Framework (Architecture Content, Catalogs, Matrices, and Diagrams), diagrams present building blocks in a rich, visual form for stakeholder communication, while catalogs and matrices are the structured reference data behind them. The Business Footprint diagram is designed for executive audiences: it traces business goals and organizational units to the functions and services that deliver them and to the supporting technical components. The request for a single picture for executives is the deciding constraint. Each distractor is a real artifact that answers a narrower concern.
+
+
+Q: An internal auditor at Sablewood Pharma asks the architecture team for a complete list of all business applications in use, with each application's owner, lifecycle status and supporting vendor. The auditor does not need to see interfaces or relationships to other architecture elements.
+Which artifact best meets the auditor's request?
+A: The Application Use-Case diagram
+This diagram shows how applications are used by actors in business processes, not an inventory with ownership and lifecycle data.
+B: The Application/Function matrix
+This matrix relates applications to the business functions they support; the auditor asked for a list with attributes, not a relationship view.
+C: The Application Communication diagram
+This diagram shows communication and interfaces between applications, which the auditor explicitly does not need.
+D: The Application Portfolio catalog
+A catalog is a list of building blocks of one type with their attributes; the Application Portfolio catalog lists applications and their properties.
+Answer: D
+Why: The TOGAF Standard Architecture Content Framework (Architecture Content, Catalogs, Matrices, and Diagrams) defines catalogs as lists of building blocks of a specific type, matrices as relationships between building blocks, and diagrams as graphical presentations. The auditor wants an inventory of one entity type with attributes and nothing else, which is the definition of a catalog. In Phase C, the Application Portfolio catalog provides that inventory. The distractors all show relationships or usage instead.
+
+
+Q: Elmstead Credit Union has a two-person architecture team. For its first ADM cycle the team lead proposes producing every catalog, matrix and diagram the TOGAF Standard lists for Phases B, C and D, so that nothing is missed. The CIO objects that this will take a year, and suggests instead publishing only diagrams on the intranet with no formal review. The Statement of Architecture Work requires an Architecture Definition Document approved by the Architecture Board.
+Which approach best applies the Architecture Content Framework?
+A: Select only the artifacts that address the stakeholders' concerns in scope, and package them into the Architecture Definition Document required by the Statement of Architecture Work for board approval.
+Artifacts are chosen to address stakeholder concerns, and deliverables are the formally reviewed work products, so a tailored set of artifacts inside the required deliverable satisfies both the scope and the governance need.
+B: Publish only diagrams on the intranet and skip the Architecture Definition Document.
+Dropping the deliverable removes the formal review and sign-off that the Statement of Architecture Work requires.
+C: Replace the content framework with ArchiMate models, because ArchiMate defines its own deliverables.
+ArchiMate is a modeling language that can be used to create TOGAF artifacts; it does not define the contractual deliverables required by the Statement of Architecture Work.
+D: Produce every artifact listed for Phases B to D, because the content framework is a mandatory checklist.
+The Architecture Content Framework is meant to be tailored; producing every artifact regardless of stakeholder concern wastes effort and is not required.
+Answer: A
+Why: The TOGAF Standard (Architecture Content, Architecture Content Framework) presents the content framework, including its suggested catalogs, matrices and diagrams, as something an organization tailors to its needs. Artifacts should be selected according to the stakeholder concerns being addressed, and deliverables are the contractually specified outputs that are formally reviewed and signed off. The Statement of Architecture Work fixes the required deliverable, so the team should tailor which artifacts it produces while still delivering and gaining approval for the Architecture Definition Document. Both the exhaustive and the no-review proposals misread the relationship between artifacts and deliverables.
+

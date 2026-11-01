@@ -1,0 +1,863 @@
+Source: https://www.youtube.com/watch?v=8wiDNTJRtrs
+Title: TOGAF Foundation Exam Questions: Real Prep for OGEA-101
+by: CertiMaan
+
+Q: Which one of the following the TOGAF Standard defines as a representation of a system from the perspective of a related set of concerns?
+S1: Stakeholder
+S2: Concern
+S3: (Architecture) View
+S4: (Architecture) Viewpoint
+S4: Architecture Principle
+A: S3
+E: View is the actual, Viewpoint is the representation <-- do recheck
+
+Q: Which one of the following best complees the sentence: In the TOGAF Standard, the Enterprise Continuum aids communicaiton..
+S1: ..... within the enterprise
+S2: ..... between enterprises
+S3: ..... with vendor organizations
+S4: ..... by providing a consistent language to understand the difference between architectures
+S5: All of the above
+A: S5
+E: do check
+
+Q: Which of the following is a technique recommended by the TOGAF Standard to identify, understand and document the business needs?
+S1: Architecture Principles
+S2: Gap Analysis
+S3: Business Scenarios
+S4: Information Mapping
+S5: SWOT Analysis
+A: S3
+E: do check
+
+Q: Who's concerns are considered when creating a new (Architecture) Viewpoint?
+S1: Enterprise Architect
+S2: System-of-Interest
+S3: Stakeholder
+S4: Sponsor
+S5: All of the above
+A: S3
+E: 
+
+Q: Which phase of the TOGAF Architecture Development Method (ADM) ensures that all relevant architecture requirements are available for use by each ADM phase?
+S1: Preliminary Phase
+S2: Phase H: Architecture Change Management
+S3: Phase E: Opportunities and Solutions
+S4: REquirement Management
+A: S4
+E:
+
+Q: Why are building blocks essential in the context of TOGAS's architectural artifacts?
+S1: They provide a set of software tools for architects
+S2: They represent specific architectural components, aiding in the design and implementation of the architecture
+S3: They serve as a visual representation of the architcture
+S4: They ensure that the architecture is presented in a way that addresses specific concerns
+A: S2
+E: 
+
+Q: In the context of the Architecture Requirements Management phase, what is the primary role fo the "Requirements Impact Assessment"?
+S1: To determine the source of new requirements
+S2: To evaluate how new requirements affect ongoing architecture work
+S3: To prioritize the requirements based on business needs
+S4: To access the feasibility of new requirements
+A: S2
+E: 
+
+Q: In the Architecture Capability Framework, which component provides a structured method for storing and leveraging architecture-related assets?
+S1: Architecture Landscape
+S2: Architecutre Governance
+S3: Architecture Repository
+S4: Enterprise Continuum
+A: S3
+E:
+
+Q: The TOGAF Standard include which of the following reference models?
+S1: GRM and MSA
+S2: UML and BPMN
+S3: OSI and TCP/IP
+S4: OODA and PDCA
+A: S1
+E: 
+
+Source: https://www.youtube.com/watch?v=5trlrV7dcoY
+TITLE: 
+TOGAF 10 Foundation Exam 2026: Top Study Questions & Answers
+by: onlineexamprep
+
+Q: Which class of architectural information held within the Architecture Repository would contain adopted reference models?
+S1: Architecture Metamodel
+S2: Architecure Capability
+S3: Standards Information Base
+S4: Referene Library
+A: S4
+E: 
+
+
+Q: Which one of the following statements best describes the TOGAF Standards?
+S1: The TOGAF Standard is a tool for developing Technology ARchitecures only
+S2: The TOGAF Standard is a framework and method of architecture development
+S3: The TOGAF Standard is an architecture pattern
+S4: The TOGAF Standard is a method of IT Governance
+A: S2
+E: 
+
+Q: Which one of the following best describes why you need a framework for Enterprise Architecutre?
+S1: Architecture design is complex
+S2: Using a framework can speed up the process
+S3: Using a framework ensures more complete coverage
+S4: A framework provides a set of tools and a common vocabulary
+S5: all of these
+A: S5
+E: 
+
+Q: Which of the following is not one of the main constituent parts of the TOGAF Standard?
+S1: The Architecture Development Method
+S2: The Enterprise Continuum & Tools
+S3: The TOGAF Technical Reference Model
+S4: The TOGAF Architecure Capability Framework
+A: S3
+E: 
+
+Q: Which one of the types of architecture below is not commonly accepted as part of the Enterprise Architecture addressed by the TOGAF Standard?
+S1: Business Architecture
+S2: Data Architecture
+S3: Application Architecture
+S4: Technology Architecture
+S5: Pattern Architecture
+A: S5
+E: 
+
+Q: Which part of the TOGAF document provides a number of architecture development phases, together with narratives for each phase?
+S1: Part I: Introduction
+S2: Part II: Architecture Development Method (ADM)
+S3: Part III: ADM Guidelines and Techniques
+S4: Part IV: Architecture Content Framework
+S5: Part V: Enterprise Continuum and Tools
+A: S2
+E: 
+
+Q: Whic of the TOGAF Architecture Development Method phases is the initial phase of an Architecture Development Cycle?
+S1: Preliminary Phase
+S2: Phase A
+S3: Phase B
+S4: Phase c
+S5: Phase D
+A: S2
+E: Phase A - Architecture Vision is the initial phase of a cycle. Note that the preliminary phase is a preparatory phase
+
+Q: Which of the TOGAF Architecture Development Method phases provides oversight of the implementation?
+S1: Phase D
+S2: Phase E
+S3: Phase F
+S4: Phase G
+S5: Phase H
+A: S4
+E:
+
+Q:Which of the TOGAF Architecture Development Method phases includes the creation and approval of the Architecture Vision document?
+S1: Preliminary Phase
+S2: Phase A
+S3: Phase B
+S4: Phase C
+S5: Phase D
+A: S2
+E:
+
+Q: Which of the following is not a phase of the ADM?
+S1: Preliminary Phase
+S2: Phase C - Requirement Architecture
+S3: Phase F - Migration Planning
+S4: Phase D - Technology Architecture
+S5: Phase G - Implementation Governance
+A: S2
+E: Phase C is Information Systems architecture. There is no requirement architecture but there is Requirements management phase
+
+
+Q: Which of the following is defined as a work product that describes an aspect of an architect?
+S1: An artifact
+S2: A building block
+S3: A catalog
+S4: A deliverable
+A: S1
+E: An artifact is a work product that describes an aspect of an architecture
+
+Q: Complete the sentence: The Enterprise Continuum provides _____
+S1: An architecture framework
+S2: A database of open industry standards
+S3: Guidelines for developing a technical reference model
+S4: Methods for classifying artifacts
+S5: Techniques for developing architectures
+A: S4
+E: Enterprise Continuum provides methods for classifying artifacts
+
+Q: Which component of the Architecture Repository provides guidelines, templates, and patterns that can be used to create new architectures?
+S1: The Architecture Metamodel
+S2: The Architecture Capability
+S3: The Architecture Landscape
+S4: The Reference Library
+S5: The Governance Log
+A: S4
+E: The refernce library provides guidelines, templates and patterns that can be used to create new architectures
+
+Q: Which one of the following is an architecture of generic services and functions?
+S1: Applicaiton Architecture
+S2: Foundation Architecture
+S3: Segment Architecture
+S4: Solution Architecture
+A: S2
+E:
+
+Q: Which one of the following describes a statement of difference between two states?
+S1: Baseline
+S2: Constraint
+S3: Deliverable
+S4: Gap
+S5: Viewpoint
+A: S5
+E: Gap is used in the context of gap analysis, where it is used to identify difference between Baseline and Target Architectures
+
+Q: Which one of the following is defined as a categorization mechanism for classifying architecture and solutions artifacts?
+S1: Architecture Principle
+S2: Architecture Repository
+S3: Enterprise Continuum
+S4: Foundation Architecture
+A: S3
+E: 
+
+Q: Which one of the following best defines an entity having an interest in a system?
+S1: Architect
+S2: Sponsor
+S3: Stakeholder
+A: S3
+E:
+
+Q: Which one of the following is defined as formal descroption of the enterprise, providing an executive-level long-term view for direction setting?
+S1: Baseline Architecture
+S2: Business Architecture
+S3: Foundation Architecture
+S4: Segment Architecture
+S5: Strategic Architecture
+A: S5 
+E: please check
+
+
+Q: Which one of the following is defined as describing the state of an architecture at an architecuturally significant point in time during the progression from the Baseline to the Target Architecture?
+S1: Capability Architecture
+S2: Foundation Architection
+S3: Segment Architecture
+S4: Solution Architecture
+S5: Transition Architecture
+A: S5
+E: 
+
+Q: Complete the sentence: Phase H ______
+S1: Prepares the organization for successful TOGAF architecture projects
+S2: Develops Baseline and Target Architectures and analyzes the gabs
+S3: Prepares and issues Architecture Contracts
+S4: Ensures that the architecture responds to the needs of the enterprise 
+S5: All of these
+A: S4
+E: Phase H - Architecture Change Management ensures that the architecture response to the needs to the enterprise
+
+Q: Which of the following is the final step in development of the four architecture domains?
+S1: Conduct formal stakeholder review
+S2: Create Architecture Definition Document
+S3: Perform Gap Analysis
+S4: Select reference models, viewpoints and tools
+A: S2
+E: Create Architecture Definition Document. Steps 9 is create architecture definition document
+
+Q: Which of teh following version numbers is used by the TOGAF standard as a convention to denote a high-level outline of an architecture?
+S1: Version 0
+S2: Version 0.1
+S3: Version 0.5
+S4: Version 1.0
+A: S2
+E: Version 0.1 indicates that a high-level outline of the architecture is in place. Typically this version is produced in the Architecture Vision phase
+
+Q: Which one of the following does not complete the sentence: When executing the ADM, the architect is not only developing a snapshot of the enterprise, but is also populating the _______
+S1: Architecture Repository
+S2: Architecture Capability Framework
+S3: Enterprise Continuum
+S4: Foundation Architecture
+A: S2
+E: Architecture Capability Framework - the architecutre capability framework is a set of best practices and guidelines and not a model that is populated as such
+
+Q: Which of the following statements does not describe the phases of the ADM?
+S1: They are cyclical
+S2: They are iterative
+S3: Each phase refines the scope
+S4: Each phase is mandatory
+A: S4
+E: Each phase is mandatory. Phase are not mandatory. The ADM is recommended to be tailored, which may include omitting phases
+
+Q: Which one of the following best describes a reason to adapt the ADM and take a fedrated approach?
+S1: The maturity of the architecture discipline within the enterprise
+S2: The use of the ADM in conjuction with another enterprise framework
+S3: The ADM is being used by a lead contractor in an outsourcing situation
+S4: The enterprise is very large and complex
+A: S4
+E: The enterprose is very large and complex. Large and complex enterprises usually cannot be successfully treated as a single entity and a federated approach is recommended
+
+
+Q: Which of the following are the major information areas managed by a governance repository?
+S1: Foundation Architectures, Industry Architecure, Organization-Specific Architectures
+S2: Standards Information Base, Architecture Landscape, Governance Log
+S3: Reference Data, Process Status, Audit Information
+S4: Application Architecture, Business Architecture, Data Architecture
+A: S3
+E: Refernce Data, Process Status, Audit Information are the recommended information areas managed by a governance repository.
+
+Q: Which of these is not considered a dimension to consider when setting the scope of the architecture activity?
+S1: Architecture Domains
+S2: Breadth
+S3: Depth
+S4: Data Architecture
+S5: Time period
+A: S4
+E: Data Architecture is not a dimension in itself
+
+Q:  Which of the following statements does not apply to the Enterprise Continuum?
+S1: It is a repository of all known architecture assets and artifacts in the IT industry
+S2: It is a view of the Architecture Repository
+S3: It provides methods for classifiying architecture and solution assets
+S4: It is an important aid to communication for architects on both the buy and supplyside
+S5: It is an aid to organization of re-usable and solution assets
+A: S1
+E: It is a repository of all known architeture assets and artifacts in the IT industry. The Enterprise Continuum is a virtual repository of all assets produced during application of the ADM.
+
+Q: Which of the following in the Enterprise Continuum is an example of an internal architecture of solution artifact that is available for re-use?
+S1: Deliverables from previous architecture work
+S2: Industry reference models and patterns
+S3: The TOGAF TRM
+S4: The ARTS data model
+A: S1
+E: Deliverables from previous architecture work
+
+
+Q: Which of the following best completes the next sentence: The Enterprise Continuum aids communication ______________
+S1: Within enterprises
+S2: With vendor organizations
+S3: By providing a consistent language to communicate the difference between architectures
+S4: All of these
+A: S4
+E:
+
+
+Q: Which of the following are considered to be the constituent parts of the Enterprise Continuum?
+S1: Standards Information Base, Governance Log
+S2: TOGAF TRM, III-RM
+S3: Architecture Continuum, Solutions Continuum
+S4: Business Architecture, Application Architecture
+A: S3
+E: 
+
+Q:  The TOGAF Integrated Information Infrastructure Refernce Model (III-RM) can be classified in the Architecture Continuum as a(n) ________
+S1: Common Systems Architecture
+S2: Industry Architecture
+S3: Enterprise Architecture
+S4: Foundation Architecture
+A: S1
+E: The III-RM is a Common Systems Architecture
+
+
+Q: The TOGAF Integrated Information Infrastructure Reference Model (III-RM) can be classified in the Architecture Continuum as a(n) ______
+S1: Common System Architecture
+S2: Industry Architecture
+S3: Enterprise Architecture
+S4: Foundation Architecture
+A: S1
+E: Common system architecture is the III-RM is a common system architecture
+
+Q: Which of the following responses does not complete the nex sentence? The Solutions Continuum __________________
+S1: Provides a way to understand the implementation of assets defined in the Architecture Continuum
+S2: Addresses the commonalitities and difference among the products, systems, and services of an implemented system
+S3: Can be considered to have at each level at set of building blocks that represent a solution to the business requirements at that level
+S4: Contains a number of re-usable Architecture Building Blocks
+S5: Has a relationship to the Architecture Continuum that includes guidance direction and support
+A: S4
+E: ABBs are part of the Architecture Continuum
+
+Q: Which one of the following reference building blocks is not part of the Solution Continuum?
+S1: Systems libraries
+S2: Organization-specific Solutions
+S3: Foundation solutions
+S4: Common system solution
+S5: Industry solution
+A: S1
+E: 
+
+Q: Which of the following is considered a model for a physical instance of the Enterprise Continuum?
+S1: The Architecture Repository
+S2: The III-RM
+S3: The Standards Information Base
+S4: The TOGAF TRM
+A: S1
+E: 
+
+
+Q: Which level of the Architecture Lanscape containt the most detail?
+S1: Capability Architecture
+S2: Segment Architecture
+S3: Strategic Architecture
+A: S1
+E: 
+
+Q: Which of the following descibes a purpose of a Standards Information Base?
+S1: To provide a method for architecture development
+S2: To provide a basis for architecture governance
+S3: To provide a record of governance activity
+S4: To show an architectural view of building blocks
+A: S2
+E: 
+
+
+Q: Which of the ADM phases includdes the development of Application and Data Architectures?
+S1: Phase A
+S2: Phase B
+S3: Phase C
+S4: Phase D
+S5: Phase E
+A: S3
+E: 
+
+Q: Which of the ADM phases includes the objective of establishing the organizational model for Enterprise Architecture?
+S1: Preliminary
+S2: Phase A
+S3: Phase B
+S4: Phase D
+S5: Phase E
+A: S1
+E: 
+
+Q: Which one of the following is an objective of Phase A?
+S1: To review the stakeholders, their requirements and priorities
+S2: To develop a high-level vision of the business value to be delivered
+S3: To generate and gain consensus of an outline Implementation and Migration Strategy
+S4: To formulate recommendations for each implementation project
+A: S2
+E: Develop a high-level aspirational vision of the capabilities and business value to be delivered as a result of the proposed Enterprise Architecture
+
+Q: According to the TOGAF standard, all of the following are part of the approach to the Preliminary Phase, except ____
+S1: Creating the Architecture Vision
+S2: Defining the enterprise
+S3: Defining the framework to be used
+S4: Evaluating the Enterprise Architecure maturity
+A: S1
+E: Vision occures in Phase A
+
+Q: Which one of the following is a recommended way to evaluate the Enterprise Architecture maturity?
+S1: Architecture Principles
+S2: Business Scenarios
+S3: Capability Maturity Models
+S4: Risk Management
+A: S3
+E: 
+
+Q: Which of the ADM phases commences with receipt of a Request for Architecture Work from the sponsor?
+S1: Preliminary
+S2: Phase A
+S3: Phase E
+S4: Phase G
+S5: Phase H
+A: S2
+E: Phase A (Architecture Vision), commences with receipt of the Request for ARchitecture Work
+
+Q: Which of the following is a technique that can be used to discover and document business requirements in Phase A?
+S1: Business Scenarios
+S2: Business Transformation Readiness Assessment
+S3: Gap Analysis
+S4: Stakeholder Management
+A: S1
+E: 
+
+
+Q: Which architecture domain is the first architecture activity undertaken in the ADM cycle?
+S1: Application
+S2: Business
+S3: Data
+S4: Technology
+A: S2
+E: Business Architecture is undertaken first so as to demonstrate the business value of subsequent architecture work to key stakeholders
+
+Q: Which one of the following is considered a relevant resource for Phase B available from the Architecture Repository?
+S1: The ARTS data model
+S2: Business rules, job descriptions
+S3: The III-RM
+S4: The TOGAF Technical Reference Model
+A: S2
+E: 
+
+Q: Which one of the following is a potential resource in Phase C and is a reference model focusing on application-level components and services?
+S1: The ARTS data model
+S2: Business rules, job descriptions
+S3: The III-RM
+S4: The TOGAF Technical Reference Model
+A: S3
+E: 
+
+Q: In which ADM phase is an outline Implementation and Migration Strategy generated?
+S1: Phase E
+S2: Phase F
+S3: Phase G
+S4: Phase H
+A: S1
+E: Phase E(Opportunities and Solutions) generates the outline Implementation and Migration Strategy.
+
+Q: In which ADM phase are the Transition Architecture defined in Phase E confirmed with the stakeholders?
+S1: Phase F
+S2: Phase F
+S3: Phase G
+S4: Phase H
+A: S2
+E: Phase F - Migration Planning
+
+
+Q: In whcih ADM phase is an Architecture Contract developed to cover the overall implementation and deployment process?
+S1: Phase E
+S2: Phase F
+S3: Phase G
+S4: Phase H
+A: S3
+E: Phase G - Implementation Governance
+
+Q: Which one of the following is an objective of Phase H - Architecture Change Management?
+S1: Finalize the Architecture Roadmap
+S2: Manage architecture requiremens identified during execution of the ADM cycle
+S3: Perform Architecture Governance functions for the solution
+S4: Operate the Architecture Governance Framework
+A: S4
+E: Operate the Architecture Governance Framework - Ensure the Architecture Governance Framework is executed 
+
+Q: Which one of the following is a change that can always be handled by change management techniques?
+S1: Incremental change
+S2: Re-architecting change
+S3: Regulatory change
+S4: Simplification change
+A: S4
+E:
+
+Q: The process of managing architectur requirements applies to ______
+S1: All ADM phases
+S2: The Preliminary Phase
+S3: Phase A - Architecture Vision
+S4: The Requirement Management Phase
+A: S1
+E: Architecture requirements are managed across all phases of the ADM
+
+
+Q: Which one of the following statements about Architecture Principles is not true?
+S1: They are a set of general rules for the architecture being developed
+S2: They are intended to be enduring and seldom emended
+S3: They are an initial output from the Preliminary Phase
+S4: They are used in the Requirements Management phase to dispose of, address, and prioritize requirements
+A: S4
+E: Requirements Management handles the flow of requirements
+
+Q: Which part of the TOGAF template for defining Architecture Principles should highlight the business benefits of adhering to the principles?
+S1: Implications
+S2: Name
+S3: Rationale
+S4: Statement
+A: S3
+E: 
+
+Q: A good business scenario should be "SMART". What does the letter "S" stand for?
+S1: Solution-oriented
+S2: Specific
+S3: Strategic
+S4: Stakeholder-oriented
+A: S2
+E:
+
+Q: Where is the business scenarios technique expected to be most used in the ADM cycle?
+S1: Preliminary Phase
+S2: Phase A - Architecture Vision
+S3: Phase F - Migration Planning
+S4: Phase H - Architecture Change Management
+A: S2
+E: 
+
+
+Q: A gap analysis reveals that an Architecture Building Block that was present int he Baseline Architecture is missing in the Target Architecture. Which of the following does not apply?
+S1: A review should occur
+S2: If the building block was correctly eliminated, it should be added to the Target Architecture in the next iteration
+S3: If the building block was correctly eliminated, it should be marked as such in the "Eliminated" cell
+S4: If the buidling block was incorrectly eliminated, it should be reinstated to the architecture design in the next iteration
+S5: If the buidling block was incorrectly eliminated, it should be recorded as an accidental omission
+A: S2
+E: If correctly eliminated you would not add it back to the target
+
+Q: The TOGAF standard defines interoperability as "The ability to share information and services" Which of the following categories utilizes a common look-and-feel approach through a common portal-like solution to interact with the users?
+S1: Application interoperability
+S2: Information  interoperability
+S3: Presentation interoperability
+S4: Technical interoperability
+A: S3
+E:
+
+Q: Which of the following best describes the Business Transformation Readiness Assessment technique?
+S1: A technique to define the degree to which information and services are to be shared
+S2: A technique used to identify and understand the business requirements an architecture must address
+S3: A technique used to develop general rules and guidelines for the architecture being developed
+S4: A technique used to understand the readiness of an organization to accept change
+A: S4
+E:
+
+Q: Which of the following best describes the meaning of "Resinudal Level of Risk" in risk management?
+S1: The categorization prior to determining risks
+S2: The categorization after implementing migrating actions
+S3: The categorization after the initial risk assessment
+S4: The categorization after risk identification
+A: S2
+E: Residual Level of Risk is the residual risk after mitigation actions have been taken
+
+Q: Which of the following best describes the Capability-Based Planning technique?
+S1: A technique used to plan the degree to which information and services are to be shared
+S2: A technique used to validate an architecture
+S3: A technique used for business planning that focuses on business outcomes
+S4: A technique used to develop general rules and guidelines for the architecture being developed
+A: S3
+E: 
+
+Q: Which of the following statements about Archicture Governance is not correct?
+S1: It is the practise and orientation by which Enterprise Architecture and other architectures are managed and controlled
+S2: The Chief Architect manages the Architecture Governance activity
+S3: An Architecture Governance Framework support it
+S4: It is a set of owned responsibilities that ensure the integrity and effectiveness of the organization's architecture
+A: S2
+E: It is the Architecture Board that manages the activity
+
+Q: The following are included in Architecture Governance, except
+S1: Implementing a system of controls over expenditure within the enterprise
+S2: Implementing a system of controls over the creation and monitoring of all architecture components and activities
+S3: Establishing processes that support effective management of the Architecture Governance process
+S4: Developing practices that ensure accountability of stakeholders
+A: S1
+E: Expenditure control is not included in Architecture Governance
+
+Q: Which of the following maps to the characteristic "transparency"?
+S1: All decisions taken, processes used, and their implementation will not be alloweded to create unfair advantage to any one particular party
+S2: Each contractual party is required to act responsiblity to the organization and its shareholders
+S3: All actions implemented and their decision support will be available for inspection by authorized organizations and provider parties
+S4: All involved parties will have a commitment to adhere to procedures, processes and authority structures establhised by the organization
+S5: All processes, decision-making, an mechanisms used will be estableished so as to minimize or avoid potential conflicts of interest
+A: S3
+E: 
+
+Q: Conceptually, the structure of an Architecture Governance Framework consists of process, content, and context (stored in the repository). Which one of the following is not included in content
+S1: Compliance
+S2: SLAs and OLAs
+S3: Regulatory requirements
+S4: Architectures
+A: S1
+E: Compliance is part of the process
+
+Q: All of the following are key Architecture Governance processes, except
+S1: Compliance
+S2: Dispensation
+S3: Moniroting and reporting
+S4: Budgetary control
+S5: Business control
+A: S4
+E: 
+
+Q: Why is Architecture Governance beneficial?
+S1: It links IT processes, resources, and information to ogranizational strategies and objectives
+S2: It integrates and institutionalizes IT best practices
+S3: It enables the organization to take full advantage of its information, infrastructure, and hardware/software assets
+S4: It protects the underlying digital assets of the organization
+S5: All of theses
+A: S5
+E: 
+
+Q: Which one of the following is not the responsibility of an Architecture Board?
+S1: Resourcing of architecture projects
+S2: Decision-making with regard to changes to the architectures
+S3: Enforcement of Architecture Compliance
+S4: Monitoring of Architecture Contracts
+A: S1
+E: 
+
+Q: Which one of the following best describes an Architecture Contract?
+S1: An agreement between the development partners and stakeholders on the acceptable risks and mitigating actions for an architecture
+S2: An agreement between development partners and sponsors on the deliverables, quality, and fitnerss-for-purpose of an architecture
+S3: An agreement between the lead architect and the development prartners on the enforcement of Architecture Compliance for an architecture
+S4: An agreement between development partners and sponsors on how best to monitor implementation of the architecture
+A: S2
+E: 
+
+Q: The TOGAF standard defines a set of terms to describe Architecture Compliance. Which one of the following applies to the case where an implementation has no features in common with the architecture specification?
+S1: Compliant
+S2: Conformant
+S3: Irrelevant
+S4: Non-conformant
+A: S3
+E: if an implementation has no features in common with the architecture specification, it is termed irrelevant
+
+Q: In an Architecture Compliance Review, who is responsible for accepting and signing off on the review?
+S1: Architecture Board
+S2: Architecture Review Co-ordinator
+S3: Lead Enterprise Architect
+S4: Project Leader
+A: S1
+E: The architecture board signs off on the compliance review
+
+Q: When using ADM to establish an Architecture Capability, which phase would define the infrastructure requirements to support the practice?
+S1: Application Architecture
+S2: Business Architecture
+S3: Data Architecture
+S4: Technology Architecture
+A: S4
+E:
+
+Q: Which of the following terms does the TOGAF standard use to describe people who have key roles in, or concerns about, a system?
+S1: Architect
+S2: Customer
+S3: Sponsor
+S4: Stakeholder
+A: S4
+E:
+
+Q: Which of the following statements is not correct?
+S1: An architecture view can be thought of as a template for an architecture viewpoint
+S2: An architecture viewpoint defines the perspective from which an architecture view is taken
+S3: An architecture viewpoint defines how to construct and use an architecture view
+S4: An architecture view is what a stakeholder sees
+S5: An architecture view might describe business process for an IT system
+A: S1
+E: An architecture viewpoit is considered a template for an architecture view
+
+Q: Which of the following statement is not correct?
+S1: A concern might include performance and reliability
+S2: A concern is an areas of interest
+S3: Concerns are key interests of the stakeholders
+S4: Concern and requirement are synonymous
+A: S4
+E: They are no synonymous as concerns are used to derive requirements
+
+Q: Which of the following staements describing relationships between stakeholders, concerns, views, and viewpoints is correct?
+S1: A concern is important to only one stakeholder
+S2: A stakeholder identifies one or more concerns
+S3: A viewpoint covers one concern
+S4: A viewpoint consists of one or more views
+A: S2
+E: 
+
+Q: Which of the following statements does not apply to a building block?
+S1: It is a package of functionality that meets business needs
+S2: It has published interfaces to access functionality
+S3: It may interoperate with other building blocks
+S4: It has a specification that is tightly coupled to its implementation
+A: S4
+E: Building blocks should have a loose coupling to implementation to allow for multiple implementations are re-implementation
+
+Q: Which of the following applies to an Architecture Building Block?
+S1: It defines the functionality to be implemented
+S2: It defines the implementation
+S3: It defines what products and components will implement the functionality
+S4: It is product or vendor-aware
+A: S1
+E: ABBs defined functionality, not implementation
+
+Q: Which of the following ADM phases is where SBBs first appear in the ADM cycle?
+S1: Phase A
+S2: Phase B
+S3: Phase D
+S4: Phase E
+S5: Phase G
+A: S4
+E: 
+
+Q: Which of the following best describes the role of architecture deliverables?
+S1: They are defined so as to avoid tailoring the TOGAF framework
+S2: They are defined as a starting point for tailoring the TOGAF framework
+S3: They are used to measure the progress made in architecture development
+S4: They are used to report to the stakeholders
+A: S2
+E: The TOGAF framework should be tailored for used
+
+Q: Which of the following acts as a holding area for all architecture-related projects whithin the enterprise?
+S1: Architecture Building Block
+S2: Architecture Repository
+S3: ARchitecture Roadmap
+S4: Architecture Vision
+A: S2
+E: 
+
+Q: Which of the following documents acts as the deliverable container for the Business, Data, Applicaiton and Technology architectural artifacts?
+S1: Architecture Contract
+S2: Architecture Definition Document
+S3: Architecture Requirement Specification
+S4: Architecture Roadmap
+S5: Architecture Vision
+A: S2
+E: 
+
+Q: Which of the following documents is produced early in the project lifecycle and contains a summary view of the end architecture project?
+S1: Architecture Contract
+S2: Architecture Definition Document
+S3: Architecture Requirements Specification
+S4: Architecture Roadmap
+S5: Architecture Vision
+A: S5
+E:
+
+Q: Which of the following documents is produced in Phase A as a response to the Request for Architecture Work?
+S1: Architecture Contract
+S2: Architecture Definition Document
+S3: Requirements Impact Statement
+S4: Statement of Architecture Work
+A: S4
+E: 
+
+Q: Which of the following is not a characteristic of the TOGAF Foundation Architecture?
+S1: it reflets general building blocks
+S2: It defines open standards for building blocks implementation
+S3: It provides open systems standards
+S4: It provides guidelines for testing collections of systems
+S5: It reflects general computing requirements
+A: S4
+E: Testing guidelines are not included
+
+Q: Which of the following best describes the purpose of the TRM?
+S1: To provide a framework for IT governance
+S2: To provide a visual model, terminology, and coherent description of components and structure of an information system
+S3: To provide a method for architecture develpment
+S4: To provide a system engineering viewpoint on a possible solution
+A: S2
+E: The TRM is a visual model and taxonomy
+
+Q: Where is TOGAF Technical Reference Model positioned in terms of the Enterpsie Continuum?
+S1: The left-hand side of the Architecture Continuum
+S2: The right-hand side of the Architecture Continuum
+S3: The left-hand side of the Solution Continuum
+S4: The right-hand side of the Solution Continuum
+A: S1
+E: The TOGAF Technical Reference Model is at the left-hand side, the most generic, of the Architecture Continuum
+
+Q: Which of the following architecture domain does the III-RM describe?
+S1: Business
+S2: Data
+S3: Application
+S4: Technology
+A: S3
+E: The III-RM is an Applicaton Architecture reference model
+
+Q: How is the III-RM classified in terms of the Enterprise Continuum?
+S1: Industry Solution
+S2: Foundation Architecture
+S3: Common Systems Architecture
+S4: Common Systems Solution
+A: S3
+E: The III-RM is classified as a common systems architecture
+
+Q: Which of the following was a key driver for the development of the III-RM?
+S1: Boundaryless Information Flow
+S2: Clinger-Cohen
+S3: PRINCE2
+S4: Sarbanes-Oxley
+A: S1
+E: Boundaryless Information Flow problem space led to development of the III-RM
+
+
+

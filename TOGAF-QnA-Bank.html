@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>TOGAF Quiz — Question Bank</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+:root{
+  --navy:#080E1A;--navy2:#0D1526;--navy3:#152035;--navy4:#1C2D48;
+  --teal:#2DD4BF;--teal2:rgba(45,212,191,0.2);--teal3:rgba(45,212,191,0.1);
+  --gold:#F0B429;--gold2:rgba(240,180,41,0.15);
+  --green:#4ADE80;--green2:rgba(74,222,128,0.12);
+  --coral:#FB7185;--coral2:rgba(251,113,133,0.12);
+  --blue:#60A5FA;--blue2:rgba(96,165,250,0.12);
+  --slate:#94A3B8;--slate2:#64748B;--slate3:#334155;
+  --white:#F8FAFC;--white2:#E2E8F0;
+}
+html,body{min-height:100%;background:var(--navy);font-family:'DM Sans',sans-serif;color:var(--white);overscroll-behavior:none}
+a{color:var(--teal);text-decoration:none}
+
+/* ─── NAV ─────────────────────────────────── */
+.nav{display:flex;align-items:center;gap:12px;padding:14px 20px;background:var(--navy2);border-bottom:1px solid rgba(255,255,255,.06);position:sticky;top:0;z-index:100}
+.nav-back{width:36px;height:36px;border-radius:50%;background:var(--navy3);border:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--slate);flex-shrink:0}
+.nav-back svg{width:16px;height:16px}
+.nav-title{font-family:'Playfair Display',serif;font-size:16px;font-weight:600;color:var(--white);flex:1}
+.nav-sub{font-size:11px;color:var(--slate2)}
+.nav-count{font-size:12px;color:var(--slate2);background:var(--navy3);padding:4px 10px;border-radius:20px;border:1px solid rgba(255,255,255,.07)}
+
+/* ─── SCREENS ─────────────────────────────── */
+.screen{display:none;padding:24px 20px 48px;max-width:640px;margin:0 auto}
+.screen.active{display:block}
+
+/* ─── SETUP SCREEN ───────────────────────── */
+.hero{text-align:center;padding:32px 0 28px}
+.hero-label{font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--teal);margin-bottom:12px}
+.hero-title{font-family:'Playfair Display',serif;font-size:clamp(28px,7vw,42px);font-weight:700;color:var(--white);line-height:1.1;margin-bottom:12px}
+.hero-rule{width:40px;height:3px;background:var(--teal);border-radius:2px;margin:0 auto 16px}
+.hero-desc{font-size:14px;color:var(--slate);line-height:1.7;max-width:340px;margin:0 auto}
+.stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:20px 0 28px}
+.stat{background:var(--navy3);border-radius:10px;padding:14px 10px;text-align:center;border:1px solid rgba(255,255,255,.05)}
+.stat-num{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--teal);line-height:1}
+.stat-lbl{font-size:11px;color:var(--slate);margin-top:4px;line-height:1.3}
+.section-title{font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--slate2);margin-bottom:12px}
+.mode-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:24px}
+.mode-card{background:var(--navy3);border-radius:10px;padding:14px 16px;border:2px solid transparent;cursor:pointer;transition:border-color .2s,background .2s}
+.mode-card:hover{background:var(--navy4)}
+.mode-card.selected{border-color:var(--teal);background:var(--teal3)}
+.mode-num{font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:var(--teal);line-height:1;margin-bottom:4px}
+.mode-lbl{font-size:13px;font-weight:500;color:var(--white2)}
+.mode-desc{font-size:11px;color:var(--slate);margin-top:2px}
+.mode-card.selected .mode-lbl{color:var(--white)}
+.start-btn{width:100%;padding:16px;border-radius:12px;background:var(--teal);color:var(--navy);font-size:16px;font-weight:700;border:none;cursor:pointer;font-family:'DM Sans',sans-serif;display:flex;align-items:center;justify-content:center;gap:8px}
+.start-btn:disabled{opacity:.4;cursor:not-allowed}
+.error-box{background:var(--coral2);border:1px solid rgba(251,113,133,.3);border-radius:10px;padding:14px 16px;margin-bottom:20px;font-size:13px;color:var(--coral);line-height:1.6;display:none}
+.error-box.show{display:block}
+
+/* ─── QUIZ SCREEN ────────────────────────── */
+.qprogress{margin-bottom:20px}
+.qprogress-bar{height:4px;background:var(--navy3);border-radius:2px;margin-bottom:8px;overflow:hidden}
+.qprogress-fill{height:100%;background:var(--teal);border-radius:2px;transition:width .4s}
+.qprogress-text{display:flex;justify-content:space-between;font-size:12px;color:var(--slate2)}
+.qtimer{font-size:13px;font-weight:600;color:var(--teal)}
+.qtimer.warn{color:var(--gold)}
+.qtimer.danger{color:var(--coral)}
+.q-num{font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--teal);margin-bottom:10px}
+.q-text{font-size:16px;font-weight:500;color:var(--white);line-height:1.6;margin-bottom:22px}
+.options{display:flex;flex-direction:column;gap:9px;margin-bottom:20px}
+.option{display:flex;gap:12px;align-items:flex-start;padding:13px 15px;background:var(--navy3);border-radius:10px;border:2px solid transparent;cursor:pointer;transition:border-color .2s,background .2s;text-align:left;width:100%}
+.option:hover:not(:disabled){background:var(--navy4);border-color:rgba(45,212,191,.2)}
+.option.selected{border-color:var(--teal);background:var(--teal3)}
+.option.correct{border-color:var(--green);background:var(--green2);pointer-events:none}
+.option.wrong{border-color:var(--coral);background:var(--coral2);pointer-events:none}
+.option.dim{opacity:.4;pointer-events:none}
+.option:disabled{pointer-events:none}
+.opt-badge{width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.07);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0;color:var(--slate);font-family:'DM Sans',sans-serif;margin-top:1px}
+.option.selected .opt-badge{background:var(--teal);color:var(--navy)}
+.option.correct .opt-badge{background:var(--green);color:var(--navy)}
+.option.wrong .opt-badge{background:var(--coral);color:var(--white)}
+.opt-text{font-size:14px;color:var(--white2);line-height:1.5;flex:1}
+.option.correct .opt-text,.option.wrong .opt-text{color:var(--white)}
+.explanation{background:var(--gold2);border:1px solid rgba(240,180,41,.2);border-radius:10px;padding:13px 15px;margin-bottom:20px;display:none}
+.explanation.show{display:block}
+.explanation-lbl{font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+.explanation-text{font-size:13px;color:rgba(240,180,41,.9);line-height:1.6}
+.q-actions{display:flex;gap:10px}
+.q-btn{flex:1;padding:13px;border-radius:10px;font-size:14px;font-weight:600;border:none;cursor:pointer;font-family:'DM Sans',sans-serif;display:flex;align-items:center;justify-content:center;gap:6px}
+.q-btn.primary{background:var(--teal);color:var(--navy)}
+.q-btn.secondary{background:var(--navy3);color:var(--slate);border:1px solid rgba(255,255,255,.08)}
+.q-btn:disabled{opacity:.3;cursor:not-allowed}
+.feedback-tag{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:600;padding:5px 12px;border-radius:20px;margin-bottom:14px}
+.feedback-tag.correct{background:var(--green2);color:var(--green)}
+.feedback-tag.wrong{background:var(--coral2);color:var(--coral)}
+
+/* ─── RESULTS SCREEN ─────────────────────── */
+.result-hero{text-align:center;padding:28px 0 24px}
+.result-score{font-family:'Playfair Display',serif;font-size:72px;font-weight:700;line-height:1;margin-bottom:4px}
+.result-score.pass{color:var(--teal)}
+.result-score.fail{color:var(--coral)}
+.result-label{font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:8px}
+.result-label.pass{color:var(--teal)}
+.result-label.fail{color:var(--coral)}
+.result-sub{font-size:14px;color:var(--slate);line-height:1.6;max-width:300px;margin:0 auto 24px}
+.result-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:28px}
+.rs{background:var(--navy3);border-radius:8px;padding:10px 8px;text-align:center;border:1px solid rgba(255,255,255,.04)}
+.rs-num{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;line-height:1}
+.rs-lbl{font-size:10px;color:var(--slate);margin-top:3px;line-height:1.3}
+.rs-num.g{color:var(--green)}.rs-num.r{color:var(--coral)}.rs-num.t{color:var(--teal)}.rs-num.s{color:var(--gold)}
+.result-actions{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+.result-btn{width:100%;padding:14px;border-radius:10px;font-size:15px;font-weight:600;border:none;cursor:pointer;font-family:'DM Sans',sans-serif;display:flex;align-items:center;justify-content:center;gap:8px}
+.result-btn.primary{background:var(--teal);color:var(--navy)}
+.result-btn.outline{background:transparent;color:var(--slate);border:1px solid var(--slate3)}
+.review-header{font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--slate2);margin-bottom:14px}
+.review-card{background:var(--navy3);border-radius:10px;overflow:hidden;margin-bottom:10px;border:1px solid rgba(255,255,255,.04)}
+.review-card-head{display:flex;gap:10px;align-items:flex-start;padding:12px 14px;cursor:pointer}
+.rc-icon{width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.rc-icon.c{background:var(--green)}.rc-icon.w{background:var(--coral)}.rc-icon.s{background:var(--gold)}
+.rc-icon svg{width:11px;height:11px;stroke:var(--navy);stroke-width:2.5}
+.rc-q{font-size:13px;color:var(--white2);line-height:1.5;flex:1}
+.rc-chevron{color:var(--slate2);flex-shrink:0;transition:transform .2s;margin-top:4px}
+.rc-chevron svg{width:14px;height:14px}
+.review-card.open .rc-chevron{transform:rotate(180deg)}
+.review-body{display:none;padding:0 14px 13px;border-top:1px solid rgba(255,255,255,.04);margin-top:0}
+.review-card.open .review-body{display:block}
+.rb-row{display:flex;gap:8px;align-items:flex-start;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.03)}
+.rb-row:last-child{border-bottom:none}
+.rb-badge{font-size:10px;font-weight:700;padding:2px 7px;border-radius:8px;flex-shrink:0;margin-top:2px;min-width:28px;text-align:center}
+.rb-badge.c{background:var(--green2);color:var(--green)}.rb-badge.w{background:var(--coral2);color:var(--coral)}.rb-badge.n{background:rgba(255,255,255,.06);color:var(--slate)}
+.rb-text{font-size:12px;color:var(--slate);line-height:1.5}
+.rb-text.selected-correct{color:var(--green)}.rb-text.selected-wrong{color:var(--coral)}.rb-text.missed{color:var(--teal)}
+.rb-exp{margin-top:8px;padding:9px 11px;background:var(--gold2);border-radius:7px;font-size:12px;color:rgba(240,180,41,.9);line-height:1.5;border:1px solid rgba(240,180,41,.15)}
+.rb-exp-lbl{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--gold);margin-bottom:4px}
+
+/* ─── LOADING ─────────────────────────────── */
+.loading{text-align:center;padding:60px 20px;color:var(--slate)}
+.loading-spinner{width:32px;height:32px;border:3px solid var(--navy3);border-top-color:var(--teal);border-radius:50%;animation:spin 1s linear infinite;margin:0 auto 16px}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ─── SKIPPED ─────────────────────────────── */
+.skip-note{display:flex;gap:8px;align-items:center;padding:8px 12px;background:rgba(240,180,41,.08);border-radius:8px;border:1px solid rgba(240,180,41,.15);margin-bottom:10px;font-size:12px;color:rgba(240,180,41,.8)}
+
+@media(max-width:400px){.mode-grid{grid-template-columns:1fr 1fr}.mode-num{font-size:22px}}
+
+/* ─── ADDITIONS: bank selector, multi-select, notes ─── */
+.bank-list{display:flex;flex-direction:column;gap:8px;margin-bottom:14px}
+.bank-card{display:flex;align-items:center;gap:12px;background:var(--navy3);border-radius:10px;padding:12px 14px;border:2px solid transparent;cursor:pointer;transition:border-color .2s,background .2s;text-align:left;width:100%;font-family:'DM Sans',sans-serif;color:inherit}
+.bank-card:hover{background:var(--navy4)}
+.bank-card.selected{border-color:var(--teal);background:var(--teal3)}
+.bank-card.err{opacity:.6}
+.bank-main{flex:1;min-width:0}
+.bank-name{font-size:14px;font-weight:600;color:var(--white)}
+.bank-desc{font-size:11px;color:var(--slate);margin-top:2px;line-height:1.4}
+.bank-count{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--teal);min-width:44px;text-align:right}
+.bank-count.small{font-size:12px;font-family:'DM Sans',sans-serif;font-weight:600;color:var(--coral)}
+.bank-count.loading-dot{font-size:12px;font-family:'DM Sans',sans-serif;color:var(--slate2);font-weight:400}
+.bank-warn{font-size:10px;color:var(--gold);margin-top:3px}
+.file-btn{width:100%;padding:11px;border-radius:10px;font-size:13px;font-weight:600;background:transparent;color:var(--slate);border:1px dashed var(--slate3);cursor:pointer;font-family:'DM Sans',sans-serif;margin-bottom:24px}
+.file-btn:hover{color:var(--teal);border-color:var(--teal)}
+.q-topic{display:inline-block;font-size:11px;color:var(--gold);background:var(--gold2);padding:3px 10px;border-radius:12px;margin-bottom:12px;line-height:1.4}
+.q-text{white-space:pre-line}
+.multi-hint{display:inline-block;font-size:12px;font-weight:600;color:var(--blue);background:var(--blue2);padding:4px 11px;border-radius:12px;margin:-8px 0 16px}
+.opt-body{flex:1;min-width:0}
+.opt-note{display:none;font-size:12px;color:var(--slate);margin-top:7px;padding-top:7px;border-top:1px dashed rgba(255,255,255,.1);line-height:1.55}
+.options.revealed .opt-note{display:block}
+.options.revealed .option.dim{opacity:.65}
+.option.multi .opt-badge{border-radius:7px}
+.rb-note{font-size:11px;color:var(--slate2);margin-top:3px;line-height:1.45}
+.q-btn[hidden]{display:none}
+.nav-back[hidden]{display:none}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<div class="nav" id="nav">
+  <button class="nav-back" id="nav-back" onclick="navBack()" title="Back" hidden>
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 3L5 8l5 5"/></svg>
+  </button>
+  <div style="flex:1;min-width:0">
+    <div class="nav-title">TOGAF Practice Quiz</div>
+    <div class="nav-sub" id="nav-sub">Choose a question bank</div>
+  </div>
+  <div class="nav-count" id="nav-count" style="display:none"></div>
+</div>
+
+<!-- ─── SCREEN: SETUP ─── -->
+<div class="screen active" id="screen-setup">
+  <div class="hero">
+    <div class="hero-label">TOGAF Foundation</div>
+    <h1 class="hero-title">Practice Quiz</h1>
+    <div class="hero-rule"></div>
+    <p class="hero-desc">Pick a question bank, then choose how many randomised questions to take.</p>
+  </div>
+
+  <div class="error-box" id="error-box"></div>
+
+  <p class="section-title">Choose question bank</p>
+  <div class="bank-list" id="bank-list"></div>
+  <button class="file-btn" onclick="document.getElementById('file-input').click()">Load question file(s) from my computer…</button>
+  <input type="file" id="file-input" accept=".txt,text/plain" multiple hidden onchange="onFilesPicked(this.files)">
+
+  <div id="setup-content">
+    <div class="stats-row">
+      <div class="stat"><div class="stat-num" id="stat-total">—</div><div class="stat-lbl">Questions in bank</div></div>
+      <div class="stat"><div class="stat-num" id="stat-best">—</div><div class="stat-lbl">Best score</div></div>
+      <div class="stat"><div class="stat-num" id="stat-runs">—</div><div class="stat-lbl">Quizzes taken</div></div>
+    </div>
+
+    <p class="section-title">Choose number of questions</p>
+    <div class="mode-grid" id="mode-grid">
+      <div class="mode-card selected" data-n="10" onclick="selectMode(this)">
+        <div class="mode-num">10</div>
+        <div class="mode-lbl">Quick drill</div>
+        <div class="mode-desc">~10 minutes</div>
+      </div>
+      <div class="mode-card" data-n="20" onclick="selectMode(this)">
+        <div class="mode-num">20</div>
+        <div class="mode-lbl">Half exam</div>
+        <div class="mode-desc">~20 minutes</div>
+      </div>
+      <div class="mode-card" data-n="40" onclick="selectMode(this)">
+        <div class="mode-num">40</div>
+        <div class="mode-lbl">Full exam</div>
+        <div class="mode-desc">60 min · 55% pass</div>
+      </div>
+      <div class="mode-card" data-n="all" onclick="selectMode(this)">
+        <div class="mode-num" id="mode-all-num">All</div>
+        <div class="mode-lbl">Entire bank</div>
+        <div class="mode-desc">Maximum coverage</div>
+      </div>
+    </div>
+
+    <button class="start-btn" id="start-btn" onclick="startQuiz()" disabled>
+      <svg viewBox="0 0 18 18" fill="currentColor" width="18" height="18"><path d="M4 3l11 6-11 6V3z"/></svg>
+      Start Quiz
+    </button>
+  </div>
+</div>
+
+<!-- ─── SCREEN: QUIZ ─── -->
+<div class="screen" id="screen-quiz">
+  <div class="qprogress">
+    <div class="qprogress-bar"><div class="qprogress-fill" id="q-progress-fill"></div></div>
+    <div class="qprogress-text">
+      <span id="q-progress-text">Question 1 of 10</span>
+      <span class="qtimer" id="q-timer"></span>
+    </div>
+  </div>
+
+  <div class="q-num" id="q-num">Question 1</div>
+  <div class="q-topic" id="q-topic" style="display:none"></div>
+  <div class="q-text" id="q-text"></div>
+  <div class="multi-hint" id="q-hint" style="display:none"></div>
+  <div class="options" id="options-wrap"></div>
+
+  <div class="explanation" id="explanation">
+    <div class="explanation-lbl">Explanation</div>
+    <div class="explanation-text" id="explanation-text"></div>
+  </div>
+
+  <div id="feedback-area"></div>
+
+  <div class="q-actions">
+    <button class="q-btn secondary" id="btn-skip" onclick="skipQuestion()">Skip</button>
+    <button class="q-btn primary" id="btn-check" onclick="checkMulti()" hidden disabled>Check answer</button>
+    <button class="q-btn primary" id="btn-next" onclick="nextQuestion()" disabled>Next</button>
+  </div>
+</div>
+
+<!-- ─── SCREEN: RESULTS ─── -->
+<div class="screen" id="screen-results">
+  <div class="result-hero">
+    <div class="result-score" id="res-score"></div>
+    <div class="result-label" id="res-label"></div>
+    <p class="result-sub" id="res-sub"></p>
+    <div class="result-stats">
+      <div class="rs"><div class="rs-num g" id="rs-correct">—</div><div class="rs-lbl">Correct</div></div>
+      <div class="rs"><div class="rs-num r" id="rs-wrong">—</div><div class="rs-lbl">Wrong</div></div>
+      <div class="rs"><div class="rs-num s" id="rs-skipped">—</div><div class="rs-lbl">Skipped</div></div>
+      <div class="rs"><div class="rs-num t" id="rs-time">—</div><div class="rs-lbl">Time</div></div>
+    </div>
+    <div class="result-actions">
+      <button class="result-btn primary" onclick="retakeQuiz()">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M2 8a6 6 0 1 1 1.5 4"/><path d="M2 12V8h4"/></svg>
+        Retake (new random set)
+      </button>
+      <button class="result-btn outline" onclick="showSetup()">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M2 4h12M2 8h8M2 12h10"/></svg>
+        Change bank / question count
+      </button>
+    </div>
+  </div>
+
+  <div class="review-header">Question Review</div>
+  <div id="review-list"></div>
+</div>
+
+<script>
+// ─── CONFIG ──────────────────────────────────────────────────────────────
+const PASS_MARK = 0.55;
+const STATS_KEY = 'togaf_qna_bank_stats';
+const LAST_BANK_KEY = 'togaf_qna_last_bank';
+const BANKS = [
+  { id:'scribd',    name:'Scribd',              file:'Togaf-Scribd-cleanQnA.txt',   desc:'Large single-answer bank (Question N / Option / Answer format)' },
+  { id:'dump',      name:'Exam Dump',           file:'TOGAF-EXAM-DUMP.txt',         desc:'Core foundation questions with explanations (Q / S1.. / A / E)' },
+  { id:'scenario',  name:'ScenarioCert',        file:'TOGAF-ScenarioCert.txt',      desc:'Scenario-based, some multi-select, rationale for every option' },
+  { id:'certimaan', name:'CertiMaan (YouTube)', file:'TOGAF-Youtube-CertiMaan.txt', desc:'Foundation-style questions transcribed from video' },
+  { id:'certstud',  name:'CertStud',            file:'Togaf-CertStud.txt',          desc:'Short scenario questions with explanations' }
+];
+BANKS.forEach(b => { b.status = 'loading'; b.questions = []; b.info = null; b.error = ''; });
+const MIX = { id:'mix', name:'Mixed — all loaded banks', desc:'Combines every loaded bank (duplicates removed)', status:'error', questions:[], info:null };
+
+// ─── STATE ───────────────────────────────────────────────────────────────
+let currentBank = null;
+let allQuestions = [];
+let quizQuestions = [];
+let currentIdx = 0;
+let answers = [];           // {selected: [keys], correct, skipped}
+let selectedMode = 10;
+let startTime = 0;
+let timerInterval = null;
+let answered = false;
+
+// ─── PARSER (handles all supported formats) ──────────────────────────────
+// Supported:
+//  1) Q: / S1: S2: ... / A: S2 / E: text                      (Exam Dump, CertiMaan, CertStud)
+//  2) Question N: / Option: / A: B: C: D: / Answer: B          (Scribd)
+//  3) Q: (scenario lines) / A: text + rationale line ... / Answer: A, B / Why: text   (ScenarioCert)
+// Source:/Title:/by: lines are ignored. Entries whose answer can't be resolved (TBD, typos) are skipped.
+function parseBank(text) {
+  const lines = text.replace(/^﻿/, '').split(/\r?\n/);
+  const questions = [];
+  const seen = new Set();
+  const stats = { skipped: 0, duplicates: 0 };
+  const NOTE = /^(do (re)?check|please (check( the answer)?|find out))\.?$/i;
+  let cur = null;
+
+  function finish() {
+    if (!cur) return;
+    const c = cur; cur = null;
+    if (c.opts.length < 2) { stats.skipped++; return; }
+
+    // question text: Q line + any body lines; a short heading-like Q line becomes a topic tag
+    let qline = c.q, topic = null;
+    const body = c.body;
+    if (body.length && qline.length < 90 && !/[.?:!]$/.test(qline)) { topic = qline; qline = ''; }
+    const qtext = [qline, ...body].filter(Boolean).join('\n');
+
+    // options get unique keys (so duplicate labels such as two "S4" stay separate options)
+    const options = c.opts.map((o, i) => ({ key: 'k' + i, label: o.label, text: o.text.trim(), note: o.note.join(' ').trim() }));
+    const byLabel = {};
+    options.forEach(o => { if (!(o.label in byLabel)) byLabel[o.label] = o.key; });
+
+    // resolve answer(s)
+    const raw = (c.ans || '').trim();
+    let keys = null;
+    if (raw) {
+      const toks = raw.split(/\s*[,&]\s*/).map(t => t.trim().toUpperCase()).filter(Boolean);
+      if (toks.length && toks.every(t => /^(S\d+|[A-H])$/.test(t))) {
+        keys = toks.map(t => byLabel[t]);
+        if (keys.some(k => !k)) keys = null;
+      } else {
+        const m = options.find(o => o.text.toLowerCase() === raw.toLowerCase());
+        if (m) keys = [m.key];
+      }
+    }
+    if (!keys || !keys.length) { stats.skipped++; return; }
+    keys = [...new Set(keys)];
+    if (keys.length >= options.length) { stats.skipped++; return; }
+
+    const sig = qtext.toLowerCase().replace(/\s+/g, ' ').trim();
+    if (!sig) { stats.skipped++; return; }
+    if (seen.has(sig)) { stats.duplicates++; return; }
+    seen.add(sig);
+
+    let explanation = c.exp.join(' ').replace(/\s*<--.*$/, '').trim();
+    if (NOTE.test(explanation)) explanation = '';
+
+    questions.push({ question: qtext, topic, options, answers: keys, multi: keys.length > 1, explanation });
+  }
+
+  for (const rawLine of lines) {
+    const line = rawLine.trim();
+    if (!line) continue;
+    let m;
+
+    if (/^(Source|Title|by)\s*:/i.test(line) || /^TITLE\s*:?$/i.test(line)) { finish(); continue; }
+
+    if ((m = line.match(/^Question\s+\d+\s*:\s*(.*)$/i)) || (m = line.match(/^Q\s*:\s*(.*)$/))) {
+      finish();
+      cur = { q: m[1].trim(), body: [], opts: [], ans: null, exp: [], phase: 'q', sMode: false };
+      continue;
+    }
+    if (!cur) continue;
+
+    if (cur.phase === 'q' && /^Options?\s*:?\s*$/i.test(line)) { cur.phase = 'opts'; continue; }
+
+    if ((m = line.match(/^Answers?\s*:\s*(.*)$/i))) { cur.ans = m[1]; cur.phase = 'ans'; continue; }
+    if ((m = line.match(/^(Why|Explanation|Rationale)\s*:\s*(.*)$/i))) { cur.exp.push(m[2]); cur.phase = 'exp'; continue; }
+
+    if ((m = line.match(/^S(\d+)\s*:\s*(.*)$/)) && cur.phase !== 'exp' && cur.phase !== 'ans') {
+      cur.sMode = true; cur.phase = 'opts';
+      cur.opts.push({ label: 'S' + m[1], text: m[2], note: [] });
+      continue;
+    }
+
+    if ((m = line.match(/^([A-H])\s*:\s*(.*)$/))) {
+      if (cur.sMode) {                       // S-style question: "A:" = answer, "E:" = explanation
+        if (m[1] === 'A' && cur.phase === 'opts') { cur.ans = m[2]; cur.phase = 'ans'; continue; }
+        if (m[1] === 'E' && (cur.phase === 'ans' || cur.phase === 'opts')) { cur.exp.push(m[2]); cur.phase = 'exp'; continue; }
+      } else if (cur.phase === 'q' || cur.phase === 'opts') {   // lettered options must run A, B, C ...
+        if (m[1] === String.fromCharCode(65 + cur.opts.length)) {
+          cur.opts.push({ label: m[1], text: m[2], note: [] });
+          cur.phase = 'opts';
+          continue;
+        }
+      }
+    }
+
+    // plain continuation line
+    if (cur.phase === 'q') cur.body.push(line);
+    else if (cur.phase === 'opts') { const o = cur.opts[cur.opts.length - 1]; if (o) o.note.push(line); }
+    else cur.exp.push(line);                 // after Answer: or inside an explanation
+  }
+  finish();
+  return { questions, stats };
+}
+
+// ─── LOADING ─────────────────────────────────────────────────────────────
+async function loadBank(bank) {
+  bank.status = 'loading';
+  try {
+    const resp = await fetch(bank.file + '?_=' + Date.now());
+    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    applyText(bank, await resp.text());
+  } catch (e) {
+    bank.status = 'error';
+    bank.error = e.message;
+  }
+  renderBanks();
+}
+
+function applyText(bank, text) {
+  const r = parseBank(text);
+  bank.questions = r.questions;
+  bank.info = r.stats;
+  bank.status = r.questions.length ? 'ok' : 'error';
+  bank.error = r.questions.length ? '' : 'No valid questions found in this file';
+}
+
+function rebuildMix() {
+  const seen = new Set(), out = [];
+  BANKS.forEach(b => {
+    if (b.status !== 'ok') return;
+    b.questions.forEach(q => {
+      const sig = q.question.toLowerCase().replace(/\s+/g, ' ').trim();
+      if (!seen.has(sig)) { seen.add(sig); out.push(q); }
+    });
+  });
+  MIX.questions = out;
+  MIX.status = out.length ? 'ok' : 'error';
+}
+
+function onFilesPicked(fileList) {
+  Array.from(fileList || []).forEach(f => {
+    const reader = new FileReader();
+    reader.onload = () => {
+      const lname = f.name.toLowerCase();
+      let bank = BANKS.find(b => b.file.toLowerCase() === lname);
+      if (!bank) {
+        bank = { id: 'custom-' + lname, name: f.name, file: f.name, desc: 'Loaded from your computer', status: 'loading', questions: [], info: null, error: '' };
+        BANKS.push(bank);
+      }
+      applyText(bank, String(reader.result));
+      if (bank.status === 'ok' && (!currentBank || currentBank.status !== 'ok')) currentBank = bank;
+      renderBanks();
+    };
+    reader.readAsText(f);
+  });
+  document.getElementById('file-input').value = '';
+}
+
+// ─── BANK UI ─────────────────────────────────────────────────────────────
+function renderBanks() {
+  rebuildMix();
+  ensureBank();
+  const list = document.getElementById('bank-list');
+  list.innerHTML = '';
+  [...BANKS, MIX].forEach(b => {
+    const el = document.createElement('button');
+    el.className = 'bank-card' + (currentBank && currentBank.id === b.id ? ' selected' : '') + (b.status === 'error' ? ' err' : '');
+    let right;
+    if (b.status === 'loading') right = '<div class="bank-count loading-dot">loading…</div>';
+    else if (b.status === 'error') right = '<div class="bank-count small">not loaded</div>';
+    else right = '<div class="bank-count">' + b.questions.length + '</div>';
+    let warn = '';
+    if (b.info && b.status === 'ok' && (b.info.skipped || b.info.duplicates)) {
+      const p = [];
+      if (b.info.skipped) p.push(b.info.skipped + ' skipped (no usable answer)');
+      if (b.info.duplicates) p.push(b.info.duplicates + ' duplicate' + (b.info.duplicates > 1 ? 's' : '') + ' removed');
+      warn = '<div class="bank-warn">' + p.join(' · ') + '</div>';
+    }
+    el.innerHTML = '<div class="bank-main"><div class="bank-name">' + escHtml(b.name) + '</div><div class="bank-desc">' + escHtml(b.desc) + '</div>' + warn + '</div>' + right;
+    el.onclick = () => chooseBank(b);
+    list.appendChild(el);
+  });
+  refreshSetup();
+}
+
+// keep a valid bank selected (last used, else first loaded)
+function ensureBank() {
+  if (currentBank && currentBank.status === 'ok') return;
+  let pick = null;
+  try {
+    const last = localStorage.getItem(LAST_BANK_KEY);
+    if (last) pick = last === 'mix' ? MIX : BANKS.find(b => b.id === last);
+  } catch (e) {}
+  if (!pick || pick.status !== 'ok') pick = BANKS.find(b => b.status === 'ok') || null;
+  currentBank = pick || (currentBank && currentBank.status === 'error' ? currentBank : null);
+}
+
+function chooseBank(b) {
+  currentBank = b;
+  try { localStorage.setItem(LAST_BANK_KEY, b.id); } catch (e) {}
+  renderBanks();
+}
+
+function refreshSetup() {
+  const eb = document.getElementById('error-box');
+  const anyLoading = BANKS.some(b => b.status === 'loading');
+  const failed = BANKS.filter(b => b.status === 'error');
+  if (failed.length && !anyLoading) {
+    eb.innerHTML = '<strong>Could not load: ' + failed.map(b => escHtml(b.file)).join(', ') + '</strong><br>' +
+      'Keep the .txt files in the same folder as this HTML and open it over HTTP (e.g. GitHub Pages or a local server) — ' +
+      'opening the HTML straight from disk blocks file loading in most browsers. ' +
+      'Or use <em>Load question file(s) from my computer</em> below and select the .txt files.';
+    eb.classList.add('show');
+  } else {
+    eb.classList.remove('show');
+  }
+
+  const ok = !!currentBank && currentBank.status === 'ok';
+  allQuestions = ok ? currentBank.questions : [];
+  document.getElementById('start-btn').disabled = !ok;
+  document.getElementById('stat-total').textContent = ok ? allQuestions.length : '—';
+  document.getElementById('mode-all-num').textContent = ok ? allQuestions.length : 'All';
+  if (document.getElementById('screen-setup').classList.contains('active')) {
+    document.getElementById('nav-sub').textContent = ok ? currentBank.name : 'Choose a question bank';
+  }
+  loadStats();
+
+  document.querySelectorAll('.mode-card').forEach(card => {
+    const n = card.dataset.n;
+    const tooBig = ok && n !== 'all' && parseInt(n) > allQuestions.length;
+    card.style.opacity = tooBig ? '0.3' : '';
+    card.style.pointerEvents = tooBig ? 'none' : '';
+  });
+  if (ok && typeof selectedMode === 'number' && selectedMode > allQuestions.length) selectModeByValue('all');
+}
+
+// ─── STATS (localStorage, per bank) ──────────────────────────────────────
+function readStats() {
+  try { return JSON.parse(localStorage.getItem(STATS_KEY) || '{}'); } catch (e) { return {}; }
+}
+function loadStats() {
+  const s = (currentBank && readStats()[currentBank.id]) || {};
+  document.getElementById('stat-best').textContent = s.best != null ? s.best + '%' : '—';
+  document.getElementById('stat-runs').textContent = s.runs || 0;
+}
+function saveStats(score) {
+  try {
+    const all = readStats();
+    const s = all[currentBank.id] || {};
+    s.runs = (s.runs || 0) + 1;
+    s.best = s.best != null ? Math.max(s.best, score) : score;
+    all[currentBank.id] = s;
+    localStorage.setItem(STATS_KEY, JSON.stringify(all));
+  } catch (e) {}
+}
+
+// ─── MODE SELECTION ──────────────────────────────────────────────────────
+function selectMode(card) {
+  document.querySelectorAll('.mode-card').forEach(c => c.classList.remove('selected'));
+  card.classList.add('selected');
+  selectedMode = card.dataset.n === 'all' ? 'all' : parseInt(card.dataset.n);
+}
+function selectModeByValue(val) {
+  const card = document.querySelector('.mode-card[data-n="' + val + '"]');
+  if (card) selectMode(card);
+}
+
+// ─── SHUFFLE / START ─────────────────────────────────────────────────────
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function startQuiz() {
+  if (!allQuestions.length) return;
+  const n = selectedMode === 'all' ? allQuestions.length : Math.min(selectedMode, allQuestions.length);
+  quizQuestions = shuffle(allQuestions).slice(0, n).map(q => ({ ...q, options: shuffle(q.options) }));
+  currentIdx = 0;
+  answers = Array(n).fill(null).map(() => ({ selected: [], correct: false, skipped: false }));
+  startTime = Date.now();
+  showScreen('quiz');
+  renderQuestion();
+  startTimer();
+  updateNavCount();
+}
+
+// ─── TIMER ───────────────────────────────────────────────────────────────
+function startTimer() { clearInterval(timerInterval); timerInterval = setInterval(updateTimer, 1000); updateTimer(); }
+function updateTimer() {
+  const el = document.getElementById('q-timer');
+  const elapsed = Math.floor((Date.now() - startTime) / 1000);
+  el.textContent = Math.floor(elapsed / 60) + ':' + (elapsed % 60).toString().padStart(2, '0');
+  const avgSec = elapsed / (currentIdx + 1);
+  el.className = 'qtimer' + (avgSec > 120 ? ' danger' : avgSec > 90 ? ' warn' : '');
+}
+function stopTimer() { clearInterval(timerInterval); }
+function getElapsedStr() {
+  const e = Math.floor((Date.now() - startTime) / 1000);
+  return Math.floor(e / 60) + 'm ' + (e % 60) + 's';
+}
+
+// ─── RENDER QUESTION ─────────────────────────────────────────────────────
+const LABELS = ['A','B','C','D','E','F','G','H'];
+
+function renderQuestion() {
+  answered = false;
+  const q = quizQuestions[currentIdx];
+  const total = quizQuestions.length;
+
+  document.getElementById('q-progress-fill').style.width = ((currentIdx / total) * 100) + '%';
+  document.getElementById('q-progress-text').textContent = 'Question ' + (currentIdx + 1) + ' of ' + total;
+  document.getElementById('q-num').textContent = 'Question ' + (currentIdx + 1);
+  document.getElementById('q-text').textContent = q.question;
+
+  const topic = document.getElementById('q-topic');
+  topic.style.display = q.topic ? '' : 'none';
+  topic.textContent = q.topic || '';
+
+  const hint = document.getElementById('q-hint');
+  hint.style.display = q.multi ? '' : 'none';
+  hint.textContent = q.multi ? 'Select ' + q.answers.length + ' answers' : '';
+
+  const wrap = document.getElementById('options-wrap');
+  wrap.innerHTML = '';
+  wrap.classList.remove('revealed');
+  q.options.forEach((opt, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'option' + (q.multi ? ' multi' : '');
+    btn.dataset.key = opt.key;
+    btn.innerHTML = '<div class="opt-badge">' + LABELS[i] + '</div><div class="opt-body"><div class="opt-text">' + escHtml(opt.text) + '</div>' +
+      (opt.note ? '<div class="opt-note">' + escHtml(opt.note) + '</div>' : '') + '</div>';
+    btn.onclick = () => q.multi ? toggleOption(btn) : evaluate([opt.key]);
+    wrap.appendChild(btn);
+  });
+
+  document.getElementById('explanation').classList.remove('show');
+  document.getElementById('feedback-area').innerHTML = '';
+  document.getElementById('btn-skip').disabled = false;
+
+  const check = document.getElementById('btn-check');
+  const next = document.getElementById('btn-next');
+  check.hidden = !q.multi; check.disabled = true;
+  next.hidden = !!q.multi; next.disabled = true;
+  next.innerHTML = currentIdx === total - 1
+    ? 'Finish <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M2.5 8.5l4 4 7-8"/></svg>'
+    : 'Next <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M6 3l5 5-5 5"/></svg>';
+
+  window.scrollTo(0, 0);
+}
+
+// ─── ANSWER ──────────────────────────────────────────────────────────────
+function toggleOption(btn) {
+  if (answered) return;
+  btn.classList.toggle('selected');
+  const q = quizQuestions[currentIdx];
+  const n = document.querySelectorAll('.option.selected').length;
+  document.getElementById('btn-check').disabled = n !== q.answers.length;
+}
+
+function checkMulti() {
+  if (answered) return;
+  evaluate(Array.from(document.querySelectorAll('.option.selected')).map(b => b.dataset.key));
+}
+
+function sameSet(a, b) { return a.length === b.length && a.every(x => b.includes(x)); }
+
+function revealExplanation(q) {
+  document.getElementById('options-wrap').classList.add('revealed');
+  if (q.explanation) {
+    document.getElementById('explanation-text').textContent = q.explanation;
+    document.getElementById('explanation').classList.add('show');
+  }
+}
+
+function showNextButton() {
+  document.getElementById('btn-check').hidden = true;
+  const next = document.getElementById('btn-next');
+  next.hidden = false; next.disabled = false;
+}
+
+function evaluate(selectedKeys) {
+  if (answered) return;
+  answered = true;
+  document.getElementById('btn-skip').disabled = true;
+
+  const q = quizQuestions[currentIdx];
+  const isCorrect = sameSet(selectedKeys, q.answers);
+  answers[currentIdx] = { selected: selectedKeys, correct: isCorrect, skipped: false };
+
+  document.querySelectorAll('.option').forEach(btn => {
+    const key = btn.dataset.key;
+    btn.classList.remove('selected');
+    if (q.answers.includes(key)) btn.classList.add('correct');
+    else if (selectedKeys.includes(key)) btn.classList.add('wrong');
+    else btn.classList.add('dim');
+  });
+
+  document.getElementById('feedback-area').innerHTML = isCorrect
+    ? '<div class="feedback-tag correct"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2.5" width="12" height="12"><path d="M2 7l4 4 6-7"/></svg>Correct!</div>'
+    : '<div class="feedback-tag wrong"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2.5" width="12" height="12"><path d="M3 3l8 8M11 3l-8 8"/></svg>Incorrect' + (q.multi ? ' — correct answers highlighted' : '') + '</div>';
+
+  revealExplanation(q);
+  showNextButton();
+  updateNavCount();
+}
+
+function skipQuestion() {
+  if (answered) return;
+  answered = true;
+  answers[currentIdx] = { selected: [], correct: false, skipped: true };
+  const q = quizQuestions[currentIdx];
+  document.querySelectorAll('.option').forEach(btn => {
+    btn.classList.remove('selected');
+    if (q.answers.includes(btn.dataset.key)) btn.classList.add('correct'); else btn.classList.add('dim');
+  });
+  revealExplanation(q);
+  document.getElementById('feedback-area').innerHTML = '<div class="skip-note"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M7 1v6m0 4v.5"/></svg>Skipped — correct answer' + (q.multi ? 's' : '') + ' highlighted</div>';
+  document.getElementById('btn-skip').disabled = true;
+  showNextButton();
+  updateNavCount();
+}
+
+function nextQuestion() {
+  if (currentIdx < quizQuestions.length - 1) { currentIdx++; renderQuestion(); }
+  else finishQuiz();
+}
+
+function updateNavCount() {
+  const el = document.getElementById('nav-count');
+  if (!quizQuestions.length) { el.style.display = 'none'; return; }
+  const done = answers.filter(a => a.selected.length > 0 || a.skipped).length;
+  el.textContent = done + ' / ' + quizQuestions.length;
+  el.style.display = '';
+}
+
+// ─── FINISH ──────────────────────────────────────────────────────────────
+function finishQuiz() {
+  stopTimer();
+  const elapsed = getElapsedStr();
+  const correct = answers.filter(a => a.correct).length;
+  const skipped = answers.filter(a => a.skipped).length;
+  const wrong = answers.filter(a => !a.correct && !a.skipped && a.selected.length > 0).length;
+  const total = quizQuestions.length;
+  const pct = Math.round((correct / total) * 100);
+  const pass = pct >= Math.round(PASS_MARK * 100);
+
+  saveStats(pct);
+
+  document.getElementById('res-score').textContent = pct + '%';
+  document.getElementById('res-score').className = 'result-score ' + (pass ? 'pass' : 'fail');
+  document.getElementById('res-label').textContent = pass ? '✓ PASS' : '✗ NOT YET';
+  document.getElementById('res-label').className = 'result-label ' + (pass ? 'pass' : 'fail');
+  document.getElementById('res-sub').textContent = pass
+    ? correct + ' of ' + total + " correct — you're on track for exam day!"
+    : correct + ' of ' + total + ' correct — need ' + Math.ceil(PASS_MARK * total) + ' to pass (' + Math.round(PASS_MARK * 100) + '%). Keep practising!';
+  document.getElementById('rs-correct').textContent = correct;
+  document.getElementById('rs-wrong').textContent = wrong;
+  document.getElementById('rs-skipped').textContent = skipped;
+  document.getElementById('rs-time').textContent = elapsed;
+
+  buildReview();
+  showScreen('results');
+  document.getElementById('nav-count').style.display = 'none';
+}
+
+// ─── REVIEW ──────────────────────────────────────────────────────────────
+function buildReview() {
+  const list = document.getElementById('review-list');
+  list.innerHTML = '';
+  quizQuestions.forEach((q, i) => {
+    const ans = answers[i];
+    const iconClass = ans.skipped ? 's' : (ans.correct ? 'c' : 'w');
+    const iconSvg = ans.skipped
+      ? '<svg viewBox="0 0 12 12" fill="none" stroke="var(--navy)" stroke-width="2.5"><path d="M6 2v4m0 3v.5"/></svg>'
+      : ans.correct
+        ? '<svg viewBox="0 0 12 12" fill="none" stroke="var(--navy)" stroke-width="2.5"><path d="M2 6l3 3 5-6"/></svg>'
+        : '<svg viewBox="0 0 12 12" fill="none" stroke="var(--navy)" stroke-width="2.5"><path d="M2 2l8 8M10 2l-8 8"/></svg>';
+
+    const card = document.createElement('div');
+    card.className = 'review-card';
+    card.innerHTML =
+      '<div class="review-card-head" onclick="toggleReview(this.parentElement)">' +
+        '<div class="rc-icon ' + iconClass + '">' + iconSvg + '</div>' +
+        '<div class="rc-q" style="white-space:pre-line">' + escHtml(q.question) + '</div>' +
+        '<div class="rc-chevron"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5l4 4 4-4"/></svg></div>' +
+      '</div>' +
+      '<div class="review-body">' +
+        q.options.map((opt, j) => {
+          const isKey = q.answers.includes(opt.key);
+          const isSel = ans.selected.includes(opt.key);
+          let badgeCls = 'n', textCls = '', prefix = '';
+          if (isKey && isSel) { badgeCls = 'c'; textCls = 'selected-correct'; prefix = '✓ '; }
+          else if (isKey) { badgeCls = 'c'; textCls = 'missed'; prefix = '✓ '; }
+          else if (isSel) { badgeCls = 'w'; textCls = 'selected-wrong'; prefix = '✗ '; }
+          return '<div class="rb-row"><span class="rb-badge ' + badgeCls + '">' + LABELS[j] + '</span>' +
+            '<span class="rb-text ' + textCls + '">' + prefix + escHtml(opt.text) +
+            (opt.note ? '<div class="rb-note">' + escHtml(opt.note) + '</div>' : '') + '</span></div>';
+        }).join('') +
+        (q.explanation ? '<div class="rb-exp"><div class="rb-exp-lbl">Explanation</div>' + escHtml(q.explanation) + '</div>' : '') +
+      '</div>';
+    list.appendChild(card);
+  });
+}
+function toggleReview(card) { card.classList.toggle('open'); }
+
+// ─── NAVIGATION ──────────────────────────────────────────────────────────
+function showScreen(name) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById('screen-' + name).classList.add('active');
+  const bn = currentBank ? currentBank.name : '';
+  document.getElementById('nav-sub').textContent =
+    name === 'quiz' ? bn + ' · ' + quizQuestions.length + ' questions' :
+    name === 'results' ? 'Results · ' + bn :
+    (currentBank && currentBank.status === 'ok' ? bn : 'Choose a question bank');
+  document.getElementById('nav-back').hidden = name === 'setup';
+  window.scrollTo(0, 0);
+}
+function showSetup() { stopTimer(); quizQuestions = []; updateNavCount(); showScreen('setup'); renderBanks(); }
+function retakeQuiz() { startQuiz(); }
+function navBack() { showSetup(); }
+
+// ─── HELPERS ─────────────────────────────────────────────────────────────
+function escHtml(str) {
+  return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// ─── BOOT ────────────────────────────────────────────────────────────────
+renderBanks();
+BANKS.slice().forEach(loadBank);
+</script>
+</body>
+</html>
