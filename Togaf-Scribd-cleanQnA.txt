@@ -5056,9 +5056,9 @@ D: The Implementation Team.
 Answer: B
 
 
-Question 562: The Architecture Vision (Phase
+Question 562: The Architecture Vision (Phase A: is successful when it secures:
 Option:
-A: is successful when it secures: A) The final implementation funding.
+A: The final implementation funding.
 B: Approval for the Architecture Requirements Specification.
 C: A documented consensus and commitment from sponsors and stakeholders.
 D: The detailed technology selection.
@@ -5068,7 +5068,7 @@ Answer: C
 Question 563: Architecture Principles are developed in the Preliminary Phase and confirmed in Phase A to provide enduring guidance for:
 Option:
 A: Day-to-day operations.
-B: Architectural design and decisionmaking.
+B: Architectural design and decision making.
 C: Financial auditing.
 D: Stakeholder identification.
 Answer: B
@@ -6903,15 +6903,6 @@ B: Preliminary, Vision, Governance.
 C: Baseline, Transition(s), Target.
 D: Business, Data, Application.
 Answer: C
-
-
-Question 767: The Reference Library in the Architecture Repository stores reusable assets such as:
-Option:
-A: Architecture Compliance logs.
-B: Industry reference models and templates.
-C: Detailed implementation schedules.
-D: Approved Architecture Contracts.
-Answer: B
 
 
 Question 768: The Architecture Metamodel is crucial for enabling the repository to support which key architecture concept?
