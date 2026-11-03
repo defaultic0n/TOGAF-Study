@@ -2186,7 +2186,7 @@ A: How to develop business capabilities.
 B: How to manage the architecture team.
 C: How to implement the ABBs using concrete Solution Building Blocks (SBBs).
 D: How to define architecture principles.
-Answer: C
+Answer: B
 
 
 Question 244: A Deliverable in the Architecture Content Framework is best described as a:
@@ -2980,7 +2980,7 @@ A: Technology Continuum.
 B: Solutions Continuum.
 C: Business Continuum.
 D: Governance Continuum.
-Answer: B
+Answer: C
 
 
 Question 332: The Architecture Continuum provides a model for:
@@ -7040,15 +7040,6 @@ D: Phase H.
 Answer: C
 
 
-Question 782: The Architecture Vision (Phase
-Option:
-A: source text is malformed; Option A continues the question wording.
-B: Sponsor commitment and buy-in.
-C: Hardware selection.
-D: Data modeling.
-Answer: B
-
-
 Question 783: The continuous nature of the Requirements Management process emphasizes the need for:
 Option:
 A: Sequential phase execution.
@@ -7759,15 +7750,6 @@ A: Phase G: Implementation Governance.
 B: Preliminary Phase or Architecture Change Management (Phase H).
 C: Phase C: Information Systems Architectures.
 D: Phase F: Migration Planning.
-Answer: B
-
-
-Question 862: The Architecture Vision (Phase
-Option:
-A: source text is malformed; Option A continues the question wording.
-B: A clear business opportunity or problem.
-C: The organizational chart.
-D: The data quality metrics.
 Answer: B
 
 
@@ -8743,9 +8725,8 @@ D: Phase H
 Answer: D
 
 
-Question 971: The Architecture Vision (Phase
-Option:
-A: A: must clearly demonstrate the business value expected from the architecture engagement to ensure: A) Technology selection.
+Question 971: The Architecture Vision (Phase A) must clearly demonstrate the business value expected from the architecture engagement to ensure: 
+A: Technology selection.
 B: Sponsor commitment.
 C: Data modeling.
 D: Compliance review.
@@ -8932,9 +8913,9 @@ D: External Regulator.
 Answer: B
 
 
-Question 992: The Architecture Vision (Phase
+Question 992: The Architecture Vision (Phase A) is primarily driven by:
 Option:
-A: A: is primarily driven by: A) Technical specifications.
+A: Technical specifications.
 B: Business goals, drivers, and constraints.
 C: Financial reports.
 D: Organizational politics.
@@ -8947,7 +8928,7 @@ A: Architecture Principles.
 B: Transition Architectures.
 C: Technology Standards.
 D: Architecture Contracts.
-Answer: B
+Answer: C
 
 
 Question 994: The Architecture Metamodel is the means by which the integrity and Traceability of the architecture information is managed within the:
