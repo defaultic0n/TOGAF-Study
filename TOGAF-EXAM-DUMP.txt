@@ -169,13 +169,6 @@ S4: Definition, Realization Transition, Vision
 A: S1
 E: Application, Business, Data, Technology is the common domains accepted by overall enterprise architecture
 
-Q: Which one of the following statements about the structure of the TOGAF 9 document is true?
-S1: Part I describes the TOGAF approach to Enterprise Architecture
-S2: Part II describes the definitions of terms used and the changes between versions of TOGAF
-S3: Part III describes requirements management and is considered to be the core of TOGAF
-S4: Part IV describes the ADM: a collection of guidelines and techniques used in TOGAF 9
-A: S1
-E: Part I provides a high-level introduction to the key concepts of Enterprise Architecture and in particular the TOGAF approach. It contains the definitions of terms used throughout the standard
 
 Q: According to TOGAF, which one of the following best describes an enterprise architecture?
 S1: An architecture of a commercial organization
@@ -194,14 +187,6 @@ S5: Deliverable are specified as contractual outputs from a project, whereas art
 A: S5
 E: Artifacts include document and models created throughout the process. Deliverables refer to formal and significant outputs that mark the completion of a phase.
 
-
-Q: According to the TOGAF Documentation Categorization Model, which category describes a technique that is reference by processes categorized as TOGAF Core and TOGAF Mandated?
-S1: TOGAF Guidelines and Techniques
-S2: TOGAF Recommended
-S3: TOGAF Supporting
-S4: TOGAF Extension
-A: TOGAF Recommended
-E: this question is no longer valid for TOGAF 9.2
 
 
 Q: Which one of the following lists the main components within the TOGAF Architecture Repository?
@@ -247,14 +232,6 @@ S4: Technology Architecture
 A: S4
 E: The Technology Architecture describes the logical software and hardware capabilities that are required to support the deployment of business, data, and application services; this includes IT infrastructure, middleware, networks, communications, processing, standards, etc.
 
-Q: Which section of the TOGAF document describes the processes, skills and roles to establish and operate an architecture function within an enterprise?
-S1: Part II: Architecture Development Method
-S2: Part III: ADM Guidelines and Techniques
-S3: Part IV: Architecture Content Framework
-S4: Part VI: TOGAF Reference Models
-S5: Part VII: Architecture Capability Framework
-A: S5
-E: TOGAF 9.2 has only six parts: PART I - Introduction, PART II - Architecture Development Method, PART III - ADM Guidelines & Techniques, PART IV - Architecture Content Framework, PART V - Enterprise Continuum & Tools, PART VI - Architecture Capability Framework. The correct answer is "Architecture Capability Framework". It should be Part VI - Architecture Capability Framework.
 
 Q: Which one of the following is NOT an element of an architecture framework?
 S1: A common vocabulary
@@ -274,26 +251,6 @@ S5: Standards Information Base
 A: S3
 E: The Enterprise Continuum is a way to classify architecture and solution artifacts as they evolve from generic Foundation Architectures to Organization-Specific Architectures. This continuum provides a method for classifying all the architecture and solution artifacts, both internal and external to the enterprise, that exist at different levels of abstraction.
 
-
-Q: Complete the sentence. To promote effective architectural activity within the enterprise, TOGAF 9 recommends the establishment of a(n)____
-S1: Enterprise Architecture Capability
-S2: IT Governing Board
-S3: Program Management Office
-S4: Quality Assurance department
-S5: Service Management department
-A: S1
-E: To be check.. some said For TOGAF 10 this has been renamed to the Architecture Board
-
-
-Q: According to the TOGAF Document Categorization Model, which category is for resources NOT referenced by content within the other categories?
-S1: TOGAF Core
-S2: TOGAF Extension
-S3: TOGAF Mandatory
-S4: TOGAF Recommended
-S5: TOGAF Supporting
-A: S5
-E: To be check.. some said is no not valid for TOGAF 9.2.. not sure for latest
-
 Q: Which phase of the ADM is used to finalize a set of transition architectures that will support implementation?
 S1: Phase D
 S2: Phase E
@@ -302,15 +259,6 @@ S4: Phase G
 S5: Phase H
 A: S3
 E: Phase F Builds the detailed roadmap and schedule, but uses Transition Architectures already defined in Phase E
-
-Q: Complete the sentence. TOGAF 9 Part III provides techniques, such as developing principles and gap analysis, to support tasks within the ____
-S1: Architecture Capability Framework
-S2: Architecture Continuum
-S3: Architecture Development Method
-S4: Architecture Landscape
-S5: Architecture Repository
-A: S3
-E: No explanation 
 
 Q: According to TOGAF, the recommended dimensions used to define the scope of an architecture include all the following, except:
 S1: Architecture Domains
@@ -567,16 +515,6 @@ E: *Phase A: Architecture Vision
    *2B: Develop the Target Business Architecture that describes how the enterprise needs to operate to achieve the business goals
    *3A: Develop a high-level aspirational vision of the capabilities and business value to be delivered as a result of the proposed Enterprise Architecture
    *4D: Identify candidate Architecture Roadmap components based upon gaps between the Baseline and Target Technology Architectures
-
-
-Q: Consider the diagram showing a classification model for Architecture Landscapes.
-   What are the items labelled A, B and C
-S1: A-Corporate Capability, B-Portfolio Capability, C-Project Capability
-S2: A-Strategy Architecture, B-Tactic Architecture, C-Operational Architecture
-S3: A-Architecture Vision, B-Business Architecture, C-Architecture Development
-S4: A-Capability Architecture, B-Segment Architecture, C-Enterprise Strategic Architecture
-A: S4
-E: --need to find--
 
 
 Q: Which ADM phase focusses on defining the problem to be solved, identifying the stakeholders, their concerns, and requirements?
