@@ -578,7 +578,7 @@ A: S2
 E: 
 
 
-Q: A gap analysis reveals that an Architecture Building Block that was present int he Baseline Architecture is missing in the Target Architecture. Which of the following does not apply?
+Q: A gap analysis reveals that an Architecture Building Block that was present in the Baseline Architecture is missing in the Target Architecture. Which of the following does not apply?
 S1: A review should occur
 S2: If the building block was correctly eliminated, it should be added to the Target Architecture in the next iteration
 S3: If the building block was correctly eliminated, it should be marked as such in the "Eliminated" cell
