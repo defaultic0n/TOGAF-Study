@@ -735,7 +735,7 @@ S4: Concern and requirement are synonymous
 A: S4
 E: They are no synonymous as concerns are used to derive requirements
 
-Q: Which of the following staements describing relationships between stakeholders, concerns, views, and viewpoints is correct?
+Q: Which of the following statements describing relationships between stakeholders, concerns, views, and viewpoints is correct?
 S1: A concern is important to only one stakeholder
 S2: A stakeholder identifies one or more concerns
 S3: A viewpoint covers one concern
