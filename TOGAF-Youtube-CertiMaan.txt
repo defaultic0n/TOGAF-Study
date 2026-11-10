@@ -504,7 +504,7 @@ A: S1
 E: Phase E(Opportunities and Solutions) generates the outline Implementation and Migration Strategy.
 
 Q: In which ADM phase are the Transition Architecture defined in Phase E confirmed with the stakeholders?
-S1: Phase F
+S1: Phase E
 S2: Phase F
 S3: Phase G
 S4: Phase H
