@@ -288,15 +288,15 @@ S2: They are iterative
 S3: Each phase refines the scope
 S4: Each phase is mandatory
 A: S4
-E: Each phase is mandatory. Phase are not mandatory. The ADM is recommended to be tailored, which may include omitting phases
+E: Phases are not mandatory. The ADM is recommended to be tailored, which may include omitting phases
 
-Q: Which one of the following best describes a reason to adapt the ADM and take a fedrated approach?
+Q: Which one of the following best describes a reason to adapt the ADM and take a federated approach?
 S1: The maturity of the architecture discipline within the enterprise
-S2: The use of the ADM in conjuction with another enterprise framework
+S2: The use of the ADM in conjunction with another enterprise framework
 S3: The ADM is being used by a lead contractor in an outsourcing situation
 S4: The enterprise is very large and complex
 A: S4
-E: The enterprose is very large and complex. Large and complex enterprises usually cannot be successfully treated as a single entity and a federated approach is recommended
+E: The enterprise is very large and complex. Large and complex enterprises usually cannot be successfully treated as a single entity and a federated approach is recommended
 
 
 Q: Which of the following are the major information areas managed by a governance repository?
