@@ -11,7 +11,7 @@ S4: Architecture Principle
 A: S3
 E: View is the actual, Viewpoint is the representation <-- do recheck
 
-Q: Which one of the following best complees the sentence: In the TOGAF Standard, the Enterprise Continuum aids communicaiton..
+Q: Which one of the following best completes the sentence: In the TOGAF Standard, the Enterprise Continuum aids communicaiton..
 S1: ..... within the enterprise
 S2: ..... between enterprises
 S3: ..... with vendor organizations
