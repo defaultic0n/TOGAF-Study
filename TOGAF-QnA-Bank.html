@@ -307,7 +307,9 @@ const BANKS = [
   { id:'dump',      name:'Exam Dump',           file:'TOGAF-EXAM-DUMP.txt',         desc:'Core foundation questions with explanations (Q / S1.. / A / E)' },
   { id:'scenario',  name:'ScenarioCert',        file:'TOGAF-ScenarioCert.txt',      desc:'Scenario-based, some multi-select, rationale for every option' },
   { id:'certimaan', name:'CertiMaan (YouTube)', file:'TOGAF-Youtube-CertiMaan.txt', desc:'Foundation-style questions transcribed from video' },
-  { id:'certstud',  name:'CertStud',            file:'Togaf-CertStud.txt',          desc:'Short scenario questions with explanations' }
+  { id:'certstud',  name:'CertStud',            file:'Togaf-CertStud.txt',          desc:'Short scenario questions with explanations' },
+  { id:'ogea101',   name:'OGEA-101 (DeepDumps)', file:'YouTube-deep-dump-ogea-101.txt', desc:'TOGAF Part 1 practice questions with explanations' },
+  { id:'ogea103',   name:'OGEA-103 (DeepDumps)', file:'YouTube-deep-dump-ogea-103.txt', desc:'TOGAF Combined Part 1 & 2 questions, including scenarios' }
 ];
 BANKS.forEach(b => { b.status = 'loading'; b.questions = []; b.info = null; b.error = ''; });
 const MIX = { id:'mix', name:'Mixed — all loaded banks', desc:'Combines every loaded bank (duplicates removed)', status:'error', questions:[], info:null };

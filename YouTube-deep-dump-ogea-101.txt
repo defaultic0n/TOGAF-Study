@@ -1,0 +1,290 @@
+Source: DeepDumps - The Open Group OGEA-101 (TOGAF Enterprise Architecture Part 1)
+
+Question 1: Which statement about Requirements Management is most correct?
+A: Requirements Management and stakeholder engagement are placed at the center of architecture development.
+B: Stakeholder requirements are captured once in Phase A and managed throughout the ADM cycle.
+C: Requirements Management is a step of all ADM Phases.
+D: The purpose of Requirements Management is to process change requests.
+Answer: A
+Explanation: Requirements Management is a continuous, central process that runs alongside stakeholder engagement across the whole ADM. It is not a single phase step, a one-off capture in Phase A, or limited to processing change requests.
+
+Question 2: Which of the following best describes the class of information known as the Reference Library within the Architecture Repository?
+A: A record of the governance activity across the enterprise
+B: Processes to support governance of the Architecture Repository
+C: Specifications to which architectures must conform
+D: Guidelines and templates used to create new architectures
+Answer: D
+Explanation: The Reference Library holds reusable guidelines, templates, patterns and reference models that help architects build new architectures. Mandatory specifications belong to the Standards Information Base, and the governance log records governance activity.
+
+Question 3: Which of the following describes how the Enterprise Continuum is used when developing an enterprise architecture?
+A: To describe how an architecture addresses stakeholder concerns
+B: To classify architecture and solution assets
+C: To identify and understand business requirements
+D: To coordinate with the other management frameworks in use
+Answer: B
+Explanation: The Enterprise Continuum classifies architecture and solution assets from generic foundations to organization-specific architectures, which supports reuse and consistency.
+
+Question 4: What is used to structure architectural information in an orderly way so that it can be processed to meet stakeholder needs?
+A: An EA Library
+B: A Content Metamodel
+C: A Stakeholder Map
+D: An Architecture Framework
+Answer: B
+Explanation: The Content Metamodel defines the types of architectural artifacts, their attributes and their relationships, giving the information a structure that can be processed for stakeholder needs. An EA Library stores artifacts but does not define their structure.
+
+Question 5: Which of the following is a responsibility of an Architecture Board?
+A: Conducting assessments of the maturity level of architecture discipline within the organization
+B: Creating the Statement of Architecture Work
+C: Allocating resources for architecture projects
+D: Establishing targets for re-use of components
+Answer: D
+Explanation: The Architecture Board sets strategic direction and measurable targets for the architecture practice, such as component re-use. Maturity assessments, creating the Statement of Architecture Work and allocating project resources sit with other roles.
+
+Question 6: Which of the following describes a purpose of Architecture Principles?
+A: To establish a common understanding of how to control the business in pursuit of strategic objectives
+B: To describe likely impacts resulting from successful deployment of the target architecture.
+C: To form a contract between sponsoring organization and the enterprise architects
+D: To provide a better understanding about the enterprise's culture and values
+Answer: D
+Explanation: Architecture principles are derived from and express the enterprise's values, priorities and operating philosophy. Impacts belong to benefit planning, and contracts belong to the Statement of Architecture Work or Architecture Contract.
+
+Question 7: Which of the following does the TOGAF standard describe as a package of functionality defined to meet business needs across an organization?
+A: A deliverable
+B: An application
+C: A solution architecture
+D: A building block
+Answer: D
+Explanation: A building block is a reusable package of functionality. Architecture Building Blocks define what is required and Solution Building Blocks define how it is implemented.
+
+Question 8: Complete the sentence. The TOGAF standard covers the development of four architecture domains, Business, Data, Technology and _______________________.
+A: Application
+B: Transition
+C: Segment
+D: Capability
+Answer: A
+Explanation: The four architecture domains are Business, Data, Application and Technology. Transition, Segment and Capability are not domains.
+
+Question 9: Complete the sentence. When considering agile development, Architecture to Support Project will identify what products the Enterprise needs, the boundary of the products, and what constraints a product owner has; this defines the Enterprise's _________.
+A: workflow management
+B: lifecycle economics
+C: backlog
+D: operations
+Answer: C
+Explanation: Identifying the products needed, their boundaries and the product owner's constraints defines the enterprise backlog.
+
+Question 10: Which of the following best describes the purpose of the Gap Analysis technique?
+A: To govern the architecture throughout its implementation process
+B: To develop a set of general rules and guidelines for the architecture
+C: To allocate resources for architecture projects
+D: To identify items omitted from the Target Architecture
+Answer: D
+Explanation: Gap Analysis compares the Baseline and Target Architectures to identify items that are missing or inadequate in the target.
+
+Question 11: Complete the following sentence: Presenting different ________________ and ______________ to stakeholders helps architects to extract hidden agendas, principles, and requirements that could impact the final Target Architecture.
+A: Architecture Views, Architecture Viewpoints
+B: Alternatives, Trade-offs
+C: Business Scenarios, Business Models
+D: Solutions, Applications
+Answer: B
+Explanation: Presenting alternatives and their trade-offs makes stakeholders reveal their priorities, constraints and hidden requirements.
+
+Question 12: Consider the following statements related to the TOGAF ADM.
+1. All ADM activities are carried out within an iterative cycle of continuous architecture definition and realization
+2. The Requirements Management phase is a continuous phase
+3. Output from an early phase must not be modified in a later phase
+4. The lifecycle of outputs must be managed through a versioning policy
+Which statements are correct?
+A: 1, 2 & 4
+B: 2, 3 & 4
+C: 1, 2 & 3
+D: 1, 3 & 4
+Answer: A
+Explanation: The ADM is iterative, Requirements Management is continuous, and outputs need a versioning policy. Statement 3 is incorrect because earlier outputs are refined as later phases reveal more detail.
+
+Question 13: Which of the following are the four purposes that typically frame the planning horizon, depth and breadth of an Architecture Project, and the contents of the EA Repository?
+A: Segment, Capability, Enterprise, and End-to-end Target Architecture
+B: General, Foundational, Subordinate, and Superior Architecture
+C: Strategy, Portfolio, Project, Solution Delivery
+D: Avant-Garde, Big-Bang, Discreet, and Cohesive
+Answer: C
+Explanation: The four purposes are Strategy, Portfolio, Project and Solution Delivery, each with a different planning horizon and level of detail.
+
+Question 14: Complete the sentence. The purpose of Enterprise Architecture is to ________.
+A: govern the stakeholders.
+B: control the bigger changes.
+C: guide effective change.
+D: take major improvement decisions.
+Answer: C
+Explanation: Enterprise Architecture provides the holistic direction and framework that makes change effective and aligned with business objectives. Governance, control and decision-making are supported by EA but are not its core purpose.
+
+Question 15: Which of the following best describes the need for the ADM process to be governed?
+A: To permit the architecture domains to be integrated
+B: To enable development of reference architectures
+C: To enable a fast response to market changes
+D: To verify that the method is being applied correctly
+Answer: D
+Explanation: ADM governance verifies that the method is applied correctly and consistently. Integration, reference architectures and faster response are outcomes that correct application makes possible.
+
+Question 16: Which of the following describes the practice by which the enterprise architecture is managed and controlled at an enterprise-wide level?
+A: Corporate governance
+B: IT governance
+C: Technology governance
+D: Architecture governance
+Answer: D
+Explanation: Architecture governance is the practice of managing and controlling the enterprise architecture at an enterprise-wide level, ensuring conformance with principles, standards and policies.
+
+Question 17: Which of the following best describes purpose of the Business Scenarios?
+A: To guide decision making throughout the enterprise
+B: To catch errors in a project architecture early
+C: To identify risk when implementing an architecture project
+D: To identify and understand requirements
+Answer: D
+Explanation: Business Scenarios describe a business problem or opportunity from the stakeholder's perspective, which surfaces and clarifies the requirements the architecture must meet.
+
+Question 18: What is an objective of the ADM Implementation Governance Phase?
+A: To ensure conformance for the target architecture
+B: To establish the resources for architecture governance
+C: To provide continual monitoring of the governance framework
+D: To finalize the Implementation and Migration Plan
+Answer: A
+Explanation: Phase G ensures that implementation projects conform to the target architecture, preventing architectural drift.
+
+Question 19: Consider the following statements:
+1. A whole corporation or a division of a corporation
+2. A government agency or a single government department
+3. Partnerships and alliances of businesses working together, such as a consortium or supply chain
+What are those examples of according to the TOGAF Standard?
+A: Business Units
+B: Organizations
+C: Architectures Scopes
+D: Enterprises
+Answer: D
+Explanation: In TOGAF an enterprise is any collection of organizations that share common goals or a mission. It can be a corporation, a division, a government body or a multi-organization partnership.
+
+Question 20: Complete the following sentence. Business principles, business goals, and business drivers provide context for architecture work, by describing the needs and ways of working employed by the enterprise.
+A: Architecture Contracts
+B: Stakeholder needs
+C: Business principles, business goals, and business drivers
+D: Strategy and vision
+Answer: C
+Explanation: Business principles describe ways of working, goals describe needs, and drivers explain why change is needed. Together they give architecture work its context.
+
+Question 21: Complete the sentence. The Architecture Landscape is divided into levels known as ______________________.
+A: Transitional, Complete, and Incremental Architectures
+B: Segment, Strategic, and Capability Architectures
+C: Baseline, Transition, and To Be Architectures
+D: Gaps, Plateaus, and Target Architectures
+Answer: B
+Explanation: The Architecture Landscape has Strategic, Segment and Capability levels. Baseline, Transition and Target describe states, not levels.
+
+Question 23: Complete the sentence. Actions arising from the Business Transformation Readiness Assessment technique should be incorporated in the __________________________.
+A: Architecture Requirements Specification
+B: Implementation and Migration Plan
+C: Implementation Governance Model
+D: Architecture Roadmap
+Answer: B
+Explanation: Actions from the readiness assessment are operational steps to prepare the organization for transition. They belong in the Implementation and Migration Plan, which details how the change is executed.
+
+Question 24: Complete the following sentence. In the ADM, documents which are under development and have not undergone any formal review and approval process are ______________.
+A: known as "Version 0.1"
+B: called "draft"
+C: in between phases
+D: invalid
+Answer: B
+Explanation: Documents still being developed and not yet formally reviewed or approved are called drafts. A version number describes versioning, not status.
+
+Question 25: What are the following activities part of? Initial risk assessment, Risk mitigation and residual risk assessment, Risk monitoring
+A: Security Architecture
+B: Risk Management
+C: Phase C
+D: Phase A
+Answer: B
+Explanation: Initial risk assessment, mitigation with residual risk assessment, and monitoring together form the risk management lifecycle.
+
+Question 26: When considering the scope of an architecture, what dimension considers to what level of detail the architecting effort should go?
+A: Breadth
+B: Architecture Domains
+C: Depth
+D: Project
+Answer: C
+Explanation: Depth is the level of detail or granularity of the architecting effort. Breadth is the coverage of the enterprise.
+
+Question 27: Which of the following best describes the purpose of the Architecture Roadmap?
+A: It forms the basis of a contractual agreement between the sponsor and the architecture organization
+B: It lists work packages on a timeline showing progress towards the Target Architecture
+C: It provides for effective communication of the end architecture project to the stakeholders
+D: It is sent from the sponsor and triggers the start of an architecture development cycle
+Answer: B
+Explanation: The Architecture Roadmap sequences work packages over time to show progress from the Baseline towards the Target Architecture. The trigger for a cycle is the Request for Architecture Work.
+
+Question 31: Which of the following does the TOGAF standard define as the representation of a related set of concerns?
+A: Diagram
+B: Matrix
+C: Catalog
+D: Architecture view
+Answer: D
+Explanation: An Architecture View represents a related set of stakeholder concerns. Diagrams, matrices and catalogs are artifacts that are used within views.
+
+Question 33: Which deliverable is being referred to? According to the TOGAF Standard, a governed approach of a particular deliverable will ensure a system of continuous monitoring to check integrity, changes, decision-making, and audit of all architecture-related activities.
+A: The Architecture Definition Document
+B: The Statement of Architecture Work
+C: An Architecture Contract
+D: The Architecture Vision
+Answer: C
+Explanation: An Architecture Contract formalizes agreements with implementation teams and sets audit points, compliance checks and change processes, providing continuous monitoring.
+
+Question 35: Which of the following statements about architecture partitioning is correct?
+A: Partitions are used to simplify the management of the Enterprise Architecture.
+B: Partitions reflect the organization's structure.
+C: Partitions are equivalent to architecture levels.
+D: Partitions are defined and assigned to agile Enterprise Architecture teams.
+Answer: A
+Explanation: Partitioning breaks a large architecture into manageable parts to simplify management and governance. It is not the same as organization structure, architecture levels or agile team assignment.
+
+Question 36: What is presented as "striking a balance between positive and negative outcomes resulting from the realization of either opportunities or threats"?
+A: Architecture Security
+B: Agile development
+C: Risk Management
+D: Transition Management
+Answer: C
+Explanation: Risk management balances the positive and negative outcomes of both opportunities and threats.
+
+Question 37: Which section of the TOGAF template for Architecture Principles should describe the relationship to other principles?
+A: Rationale
+B: Statement
+C: Name
+D: Implications
+Answer: A
+Explanation: The Rationale justifies the principle and describes how it relates to other principles. The Statement gives the principle itself, and the Implications describe its consequences.
+
+Question 38: Which phase of the ADM has the purpose to develop an Enterprise Architecture Capability?
+A: Phase G
+B: Phase B
+C: Preliminary Phase
+D: Phase A
+Answer: C
+Explanation: The Preliminary Phase establishes and customizes the architecture capability: where, what, why and how architecture is done in the enterprise.
+
+Question 39: Which of the following is the ability to develop, use and sustain the architecture of a particular enterprise using architecture to govern change?
+A: An EA Capability
+B: An Enterprise Architecture
+C: An EA framework
+D: An EA repository
+Answer: A
+Explanation: An EA Capability is the organizational ability to develop, use and sustain architecture to govern change. The architecture itself is the output, and the framework and repository are enablers.
+
+Question 40: Consider the following statement: Separate projects may operate their own ADM cycles concurrently, with relationships between the different projects. What does it illustrate?
+A: Iteration
+B: Implementation governance
+C: Requirements management
+D: Enterprise Architecture
+Answer: A
+Explanation: Running ADM cycles repeatedly and concurrently across related projects is an example of iteration.
+
+Question 42: Which statement best describes iteration and the ADM?
+A: The ADM is iterative within the first cycle, and then between phases.
+B: The ADM is sequential. Iteration is applied within phases.
+C: The level of detail is defined once and applies to all iterations.
+D: The ADM is iterative, over the whole process, between phases, and within phases.
+Answer: D
+Explanation: Iteration applies across the whole ADM, between phases and within phases. The ADM is not purely sequential, and the level of detail is refined through each iteration.
